@@ -1,0 +1,54 @@
+Dependencies for Project 'serial', Target 'serial': (DO NOT MODIFY !)
+F (.\startup_LPC11xx.s)(0x56C3B3F1)(--cpu Cortex-M0 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\NXP\LPC11xx--pd "__UVISION_VERSION SETA 518"--list .\startup_lpc11xx.lst --xref -o .\startup_lpc11xx.o --depend .\startup_lpc11xx.d)
+F (.\system_LPC11xx.c)(0x56C3B3F1)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I C:\LPCOpen\software\lpc_core\lpc_chip\chip_11xx-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\NXP\LPC11xx-D__UVISION_VERSION="518"-o .\system_lpc11xx.o --omf_browse .\system_lpc11xx.crf --depend .\system_lpc11xx.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569EAF1A)
+I (C:\Keil_v5\ARM\Inc\NXP\LPC11xx\LPC11xx.h)(0x56C3C7F3)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm0.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\Inc\NXP\LPC11xx\system_LPC11xx.h)(0x55AFA95C)
+F (.\main.c)(0x56C7EBF8)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I C:\LPCOpen\software\lpc_core\lpc_chip\chip_11xx-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\NXP\LPC11xx-D__UVISION_VERSION="518"-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (C:\Keil_v5\ARM\Inc\NXP\LPC11xx\LPC11xx.h)(0x56C3C7F3)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm0.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569EAF1A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\Inc\NXP\LPC11xx\system_LPC11xx.h)(0x55AFA95C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x569EAF1A)
+I (C:\Keil_v5\ARM\ARMCC\include\rt_misc.h)(0x569EAF1A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x569EAF1A)
+I (6050.h)(0x56C7EE41)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x569EAF1A)
+I (i2c.h)(0x56C7F293)
+F (.\Serial.c)(0x56C3B3F1)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I C:\LPCOpen\software\lpc_core\lpc_chip\chip_11xx-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\NXP\LPC11xx-D__UVISION_VERSION="518"-o .\serial.o --omf_browse .\serial.crf --depend .\serial.d)
+I (C:\Keil_v5\ARM\Inc\NXP\LPC11xx\LPC11xx.h)(0x56C3C7F3)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm0.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569EAF1A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\Inc\NXP\LPC11xx\system_LPC11xx.h)(0x55AFA95C)
+F (.\Retarget.c)(0x56C3B3F1)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I C:\LPCOpen\software\lpc_core\lpc_chip\chip_11xx-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\NXP\LPC11xx-D__UVISION_VERSION="518"-o .\retarget.o --omf_browse .\retarget.crf --depend .\retarget.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x569EAF1A)
+I (C:\Keil_v5\ARM\ARMCC\include\rt_misc.h)(0x569EAF1A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x569EAF1A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569EAF1A)
+F (.\i2c.c)(0x56C7F2D9)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I C:\LPCOpen\software\lpc_core\lpc_chip\chip_11xx-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\NXP\LPC11xx-D__UVISION_VERSION="518"-o .\i2c.o --omf_browse .\i2c.crf --depend .\i2c.d)
+I (i2c.h)(0x56C7F293)
+I (C:\Keil_v5\ARM\Inc\NXP\LPC11xx\LPC11xx.h)(0x56C3C7F3)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm0.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569EAF1A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\Inc\NXP\LPC11xx\system_LPC11xx.h)(0x55AFA95C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x569EAF1A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x569EAF1A)
+F (.\6050.c)(0x56C7EE3B)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I C:\LPCOpen\software\lpc_core\lpc_chip\chip_11xx-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\NXP\LPC11xx-D__UVISION_VERSION="518"-o .\6050.o --omf_browse .\6050.crf --depend .\6050.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x569EAF1A)
+I (i2c.h)(0x56C7F293)
+I (C:\Keil_v5\ARM\Inc\NXP\LPC11xx\LPC11xx.h)(0x56C3C7F3)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm0.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569EAF1A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x55AFAB90)
+I (C:\Keil_v5\ARM\Inc\NXP\LPC11xx\system_LPC11xx.h)(0x55AFA95C)
+I (6050.h)(0x56C7EE41)
