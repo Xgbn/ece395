@@ -1,0 +1,10 @@
+.\6050.o: 6050.c
+.\6050.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\6050.o: i2c.h
+.\6050.o: C:\Keil_v5\ARM\Inc\NXP\LPC11xx\LPC11xx.h
+.\6050.o: C:\Keil_v5\ARM\CMSIS\Include\core_cm0.h
+.\6050.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\6050.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\6050.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\6050.o: C:\Keil_v5\ARM\Inc\NXP\LPC11xx\system_LPC11xx.h
+.\6050.o: 6050.h
