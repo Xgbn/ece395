@@ -3,30 +3,48 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: µVision V5.18.0.0
-Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Chen Huang, lol, LIC=----
+IDE-Version: µVision V5.16.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Engineering Workstations UIUC Flex license: MDK-ARM Professional: 100 user(s) (mdk_pro) Operation stops: 30 Nov 2016
  
 Tool Versions:
-Toolchain:       MDK-Lite  Version: 5.18
+Toolchain:       MDK-ARM Professional: 100 user(s)  Version: 5.16.0.0
 Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 1 (build 61)
-Assembler:       Armasm.exe V5.06 update 1 (build 61)
-Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
-Library Manager: ArmAr.exe V5.06 update 1 (build 61)
-Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
-CPU DLL:         SARMCM3.DLL V5.18
+C Compiler:      Armcc.exe V5.06 (build 20)
+Assembler:       Armasm.exe V5.06 (build 20)
+Linker/Locator:  ArmLink.exe V5.06 (build 20)
+Library Manager: ArmAr.exe V5.06 (build 20)
+Hex Converter:   FromElf.exe V5.06 (build 20)
+CPU DLL:         SARMCM3.DLL V5.16.0.0
 Dialog DLL:      DARMP1.DLL V1.25.0.0
-Target DLL:      UL2CM3.DLL V1.157.5.0
+Target DLL:      UL2CM3.DLL V1.155.12.0
 Dialog DLL:      TARMP1.DLL V1.24.0.0
  
 <h2>Project:</h2>
-D:\Project\ece-395\serial\serial.uvproj
-Project File Date:  02/19/2016
+\\ad.uillinois.edu\engr\instructional\chuan102\Desktop\ece_395\trunk\serial\serial.uvproj
+Project File Date:  02/20/2016
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 (build 20)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'serial'
+assembling startup_LPC11xx.s...
+compiling system_LPC11xx.c...
+compiling main.c...
+i2c.h(32): warning:  #1295-D: Deprecated declaration i2c_Init - give arg types
+  extern void i2c_Init();
+i2c.h(43): warning:  #1295-D: Deprecated declaration i2c_rep_start - give arg types
+  extern void i2c_rep_start();
+i2c.h(88): warning:  #1295-D: Deprecated declaration i2c_end - give arg types
+  extern void i2c_end();
+6050.h(28): warning:  #1295-D: Deprecated declaration mpu_6050_Init - give arg types
+  extern void mpu_6050_Init();
+main.c(40): warning:  #177-D: variable "i" was declared but never referenced
+  	int i, j = 0;
+main.c(40): warning:  #177-D: variable "j" was declared but never referenced
+  	int i, j = 0;
+main.c: 6 warnings, 0 errors
+compiling Retarget.c...
+compiling Serial.c...
 compiling i2c.c...
 i2c.h(32): warning:  #1295-D: Deprecated declaration i2c_Init - give arg types
   extern void i2c_Init();
@@ -37,10 +55,19 @@ i2c.h(88): warning:  #1295-D: Deprecated declaration i2c_end - give arg types
 i2c.c(15): warning:  #177-D: variable "lpc_i2c" was declared but never referenced
   	volatile LPC_I2C_TypeDef* lpc_i2c = LPC_I2C;
 i2c.c: 4 warnings, 0 errors
+compiling 6050.c...
+i2c.h(32): warning:  #1295-D: Deprecated declaration i2c_Init - give arg types
+  extern void i2c_Init();
+i2c.h(43): warning:  #1295-D: Deprecated declaration i2c_rep_start - give arg types
+  extern void i2c_rep_start();
+i2c.h(88): warning:  #1295-D: Deprecated declaration i2c_end - give arg types
+  extern void i2c_end();
+6050.h(28): warning:  #1295-D: Deprecated declaration mpu_6050_Init - give arg types
+  extern void mpu_6050_Init();
 linking...
 Program Size: Code=2764 RO-data=264 RW-data=12 ZI-data=612  
-".\serial.axf" - 0 Error(s), 4 Warning(s).
-Build Time Elapsed:  00:00:01
+".\serial.axf" - 0 Error(s), 14 Warning(s).
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

@@ -362,8 +362,7 @@ ARM Macro Assembler    Page 6
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
 ork --depend=.\startup_lpc11xx.d -o.\startup_lpc11xx.o -IC:\Keil_v5\ARM\RV31\IN
 C -IC:\Keil_v5\ARM\CMSIS\Include -IC:\Keil_v5\ARM\Inc\NXP\LPC11xx --predefine="
-__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 518" --list=.\startup_lpc11x
-x.lst startup_LPC11xx.s
+__UVISION_VERSION SETA 516" --list=.\startup_lpc11xx.lst startup_LPC11xx.s
 
 
 
@@ -839,4 +838,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
-383 symbols in table
+382 symbols in table
