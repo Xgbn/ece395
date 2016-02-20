@@ -41,6 +41,7 @@ int main()
 	SER_init();
 	configureGPIO();
 		i2c_Init();
+	LPC_I2C->CONSET = 0x40;
 	
 	
 //		ledOn();
@@ -54,7 +55,14 @@ int main()
 //		{
 //		}
 //		j++;
-		mpu_6050_Init();
-	while (1)
-	{}
+		//mpu_6050_Init();
+		//printf("lol, the control register is: %x\n\r", (LPC_I2C->CONSET));
+
+	while (1){
+		ledOn();
+		STASET;
+		SICLR;
+		printf("lol, the control register is: %x\n\r", (LPC_I2C->CONSET));
+		ledOff();
+	}
 }
