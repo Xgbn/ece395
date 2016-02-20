@@ -40,29 +40,30 @@ int main()
 	int i, j = 0;
 	SER_init();
 	configureGPIO();
-		i2c_Init();
-	LPC_I2C->CONSET = 0x40;
+	printf("Start init for i2c\n\r");
+	i2c_Init();
+	printf("\n\r\n\r");
 	
+	printf("ready\n\r");
 	
-//		ledOn();
-//		printf("Led On, Iteration %d\n\r", j);
-//		for (i = 0; i < 0x0027FFFF; i++)
-//		{
-//		}
-//		ledOff();
-//		printf("Led Off, Iteration %d\n\r", j);
-//		for (i = 0; i < 0x0007FFFF; i++)
-//		{
-//		}
-//		j++;
-		//mpu_6050_Init();
-		//printf("lol, the control register is: %x\n\r", (LPC_I2C->CONSET));
-
+	while(1){
+		ledOn();
+		i2c_begin(MPU_ADDR, I2C_WRITE);
+		i2c_end();
+		printf("checkpoint\n\r");
+		ledOff();
+	}
+	
 	while (1){
 		ledOn();
+		LPC_I2C->CONSET |= 0x40;
 		STASET;
+		//SICLR;
+		while((I2C_STAT_REG & 0xff) != 0x08){}
+		printf("%x\n\r", I2C_STAT_REG);
+		printf("START sent from master to slave\n\r");
+		while(1);
 		SICLR;
-		printf("lol, the control register is: %x\n\r", (LPC_I2C->CONSET));
 		ledOff();
 	}
 }

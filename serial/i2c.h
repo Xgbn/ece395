@@ -16,6 +16,7 @@
 #define I2C_DATA_REG LPC_I2C->DAT
 #define I2C_STAT_REG LPC_I2C->STAT
 #define I2C_SI (LPC_I2C->CONSET && 0x8)
+#define I2C_CONSET LPC_I2C->CONSET
 
 #define I2C_EVENT_START 0x8						// start condition has been sent
 #define I2C_EVENT_REP_START 0x10			// repeat start condition has started
