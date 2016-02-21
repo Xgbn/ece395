@@ -1,4 +1,5 @@
 #include <stdbool.h>
+#include <stdio.h>
 #include "i2c.h"
 #include "6050.h"
 
@@ -12,9 +13,8 @@ Output:
 	none
 */
 void mpu_6050_Init(){
-	char msg = 0x00;
+	uint8_t msg = 0x00;
 	mpu_6050_write(0x6B, 1, &msg);
-	i2c_end();
 }
 
 
@@ -31,7 +31,7 @@ Input:
 Output:
 	none
 */
-void mpu_6050_write(char addr, int bytenum, char* buff){
+void mpu_6050_write(uint8_t addr, int bytenum, uint8_t* buff){
 	int i;
 	
 	i2c_begin(MPU_ADDR, I2C_WRITE);	// start a write to mpu
@@ -47,6 +47,27 @@ void mpu_6050_write(char addr, int bytenum, char* buff){
 
 
 
+void mpu_6050_read(uint8_t reg_addr, int bytenum, uint8_t* buff){
+	int i,k;
+	uint32_t dummy = 0;
+	bool stop = false;
+	printf("checkpoint1\n\r");
+	i2c_begin(MPU_ADDR, I2C_WRITE);
+	i2c_write(reg_addr);
+	i2c_rep_start(MPU_ADDR, I2C_READ);
+	printf("checkpoint2\n\r");
+	for(i = 0; i < bytenum; i++){
+		for(k = 0; k < 1000; k++){
+			if(k % 15 == 0)
+				dummy ++;
+		}
+		if(i == bytenum -1)
+			stop = true;
+		buff[i] = i2c_read(stop);
+	}
+	printf("checkpoint3\n\r");
+	i2c_end();
+}
 
 
 

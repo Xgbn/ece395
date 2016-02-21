@@ -37,15 +37,18 @@ void ledOff()
 
 int main()
 {
-	int j = 0;
+	int j = 0, k;
 	unsigned int i = 0;
   unsigned int status = 0;
+	uint8_t buff[14] = {0};
+	uint8_t low, high;
+	uint32_t output;
 	SER_init();
 	configureGPIO();
 	printf("Start init for i2c\n\r");
 	i2c_Init();
 	printf("\n\r\n\r");
-	
+	mpu_6050_Init();
 	
 	
 	
@@ -58,10 +61,15 @@ int main()
 		i++;
 		printf("%d\n\r", i);
 		
-		i2c_begin(MPU_ADDR, I2C_WRITE);
-		i2c_write(0xAA);
-		i2c_write(0xAA);
-		i2c_end();
+		mpu_6050_read(0x3B, 14, buff);
+		for(k=0; k < 7; k++){
+			high = buff[k*2];
+			low = buff[k*2+1];
+			output = 0xFFFF & (high<<8 | low);
+			printf("%x\n\r", output);
+		}
+		printf("\n\r\n\r");
+		
 		}
 		
 		

@@ -27,19 +27,16 @@ Project File Date:  02/20/2016
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 (build 20)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'serial'
-compiling i2c.c...
+compiling 6050.c...
 i2c.h(37): warning:  #1295-D: Deprecated declaration i2c_Init - give arg types
   extern void i2c_Init();
-i2c.h(48): warning:  #1295-D: Deprecated declaration i2c_rep_start - give arg types
-  extern void i2c_rep_start();
 i2c.h(93): warning:  #1295-D: Deprecated declaration i2c_end - give arg types
   extern void i2c_end();
-i2c.c(99): warning:  #177-D: variable "status" was declared but never referenced
-  	uint32_t status;
-i2c.c: 4 warnings, 0 errors
+6050.h(28): warning:  #1295-D: Deprecated declaration mpu_6050_Init - give arg types
+  extern void mpu_6050_Init();
 linking...
-Program Size: Code=2624 RO-data=224 RW-data=12 ZI-data=612  
-".\serial.axf" - 0 Error(s), 4 Warning(s).
+Program Size: Code=3154 RO-data=266 RW-data=12 ZI-data=612  
+".\serial.axf" - 0 Error(s), 3 Warning(s).
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

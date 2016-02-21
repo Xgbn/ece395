@@ -40,11 +40,43 @@ Input:
 Output:
 	none
 */
-void i2c_rep_start(){
-	STASET;
+void i2c_rep_start(char addr, int rw){
+	int i = 0;
+	uint32_t status;
+	uint32_t ack_event;
+	// get data ready to send
+	addr = addr << 1;
+	if(rw == I2C_WRITE){
+		addr &= 0xFE;		/* change r/w bit to 0 for write */
+		ack_event = I2C_EVENT_SLAW_ACK;
+	}
+	else{
+		addr |= 0x1;	/* change r/w bit to 1 for read */
+		ack_event = I2C_EVENT_SLAR_ACK;
+	}
+			
+	LPC_I2C->CONSET |= (1<<5);             //set start bit to initiate transmission (sec 15.7.1)
+	
 	SICLR;
-	while(!I2C_SI){};
-	STACLR;
+	
+	do{                                    //wait for start condition to be sent
+			status = LPC_I2C->STAT & 0xF8;          //store current state (sec 15.7.2)
+			//printf("%x\n\r", status);
+	}while(status != I2C_EVENT_REP_START);
+	//printf("start sent...\n\r");
+	
+	LPC_I2C->DAT        = addr;            //transmit device address (sec 15.7.3)
+	LPC_I2C->CONCLR     = 0x28;            //clear STA and SI bit (sec 15.7.6)
+	
+	while((I2C_STAT_REG & 0xF8) != ack_event)		//  && status != 0x30
+	{
+		i++;
+		if(i > 100000){
+		printf("waited too long begin, abort\n\r");
+		i2c_end();
+		return;
+		}
+	}
 }
 
 
@@ -84,7 +116,7 @@ void i2c_begin(char addr, int rw){
 	{
 		i++;
 		if(i > 100000){
-		printf("waited too long, abort\n\r");
+		printf("waited too long begin, abort\n\r");
 		i2c_end();
 		return;
 		}
@@ -104,7 +136,7 @@ void i2c_write(char msg){
 	{
 		i++;
 		if(i > 100000){
-		printf("waited too long, abort\n\r");
+		printf("waited too long write, abort\n\r");
 		i2c_end();
 		return;
 		}
@@ -121,7 +153,7 @@ Input:
 Output:
 	return the char read from device
 */
-char i2c_read(bool stop){
+uint8_t i2c_read(bool stop){
 	int i=0;
 	char read;
 	if(stop)
@@ -133,12 +165,12 @@ char i2c_read(bool stop){
 	{
 		i++;
 		if(i > 100000){
-		printf("waited too long, abort\n\r");
+		printf("%x\n\r", (I2C_STAT_REG & 0xF8));
 		i2c_end();
 		return 0x0;
 		}
 	}
-	read = (char)(0xFF && I2C_DATA_REG);
+	read = (0xFF & I2C_DATA_REG);
 	AACLR;
 	return read;
 }

@@ -45,7 +45,7 @@ Input:
 Output:
 	none
 */
-extern void i2c_rep_start();
+extern void i2c_rep_start(char addr, int rw);
 
 
 /*
@@ -79,7 +79,7 @@ Input:
 Output:
 	return the char read from device
 */
-extern char i2c_read(bool stop);
+extern uint8_t i2c_read(bool stop);
 
 
 

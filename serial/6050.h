@@ -15,7 +15,7 @@ Input:
 Output:
 	none
 */
-extern void mpu_6050_write(char addr, int bytenum, char* buff);
+extern void mpu_6050_write(uint8_t addr, int bytenum, uint8_t* buff);
 
 
 /*
@@ -26,6 +26,18 @@ Output:
 	none
 */
 extern void mpu_6050_Init();
+
+
+/*
+reads bytenum bytes from register starting from reg_addr
+Input:
+	reg_addr	: address of the register to start reading from
+	bytenum		: number of bytes to read 
+	buff			: buffer to store the read bytes
+Output:
+	none
+*/
+extern void mpu_6050_read(uint8_t reg_addr, int bytenum, uint8_t* buff);
 
 
 #endif
