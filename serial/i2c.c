@@ -12,26 +12,23 @@ __IRC_OSC_CLK     (12000000UL)
 
 
 void i2c_Init(){
-	volatile LPC_I2C_TypeDef* lpc_i2c = LPC_I2C;
 	// configure pins 0.4 and 0.5 for I2C
 
-	LPC_IOCON->PIO0_4 |= (1 << 0);			// P0.4 set to SCL (pin 27)
-	LPC_IOCON->PIO0_5 |= (1 << 0);			// P0.5 set to SDA (pin 5)
-
-	LPC_SYSCON->SYSAHBCLKCTRL |= (1 <<  5);   /* enable clock for I2C     */
-	
-	LPC_SYSCON->PRESETCTRL &= ~(1 << 1);	// reset i2c
-	LPC_SYSCON->PRESETCTRL |= 1 << 1;	// de-assert reset i2c
-
-	// clear control register
-	LPC_I2C->CONCLR = 0x3C;		
+	//INITIALIZE I2C pins, system components, and enable master transmit mode
+     LPC_IOCON->PIO0_4         &= ~(0x303); //clear "FUNC" and "I2CMODE" bits (sec 7.4.11)
+     LPC_IOCON->PIO0_4         |= 0x1;      //select I2C function SCL (sec 7.4.11)
+     LPC_IOCON->PIO0_5         &= ~(0x303); //clear "FUNC" and "I2CMODE" bits (sec 7.4.12)
+     LPC_IOCON->PIO0_5         |= 0x1;      //select I2C function SDA (sec 7.4.12)
+     LPC_SYSCON->SYSAHBCLKCTRL |= (1<<5);   //enable clock to I2C block (sec 3.5.14)
+     LPC_SYSCON->PRESETCTRL    |= (0x2);    //disable reset to I2C unit (sec 3.5.2)
+     
 	
 	// set duty cycle for i2c for 400kb/s, SCLH + SCLL = 50
-	LPC_I2C->SCLH = 0x14;
-	LPC_I2C->SCLL = 0x1e;
+	LPC_I2C->SCLH = 0x54;
+	LPC_I2C->SCLL = 0x50;
+	
+	LPC_I2C->CONSET           |= (1<<6);   //put I2C unit in master transmit mode (sec 15.8.1 and 15.7.1)
 
-	// set I2EN to enable i2c
-	LPC_I2C->CONSET |= 0x40;
 //	printf("stat reg after init: %x\n\r", I2C_STAT_REG);
 //	printf("control register after init: %x\n\r", (LPC_I2C->CONSET));
 }
@@ -60,12 +57,6 @@ Output:
 	return 0 on success, -1 on fail
 */
 void i2c_begin(char addr, int rw){
-	// set start signal
-	STASET;
-	// wait for start sig sent
-	while((I2C_STAT_REG & 0xff) != 0x08){}
-	printf("checkpoint 1\n\r");
-	STACLR;
 	// get data ready to send
 	addr = addr << 1;
 	if(rw == I2C_WRITE)
@@ -73,13 +64,24 @@ void i2c_begin(char addr, int rw){
 	else
 		addr |= 0x1;	/* change r/w bit to 1 for read */
 	I2C_DATA_REG = addr;
-	printf("%x\n\r", I2C_CONSET & 0xff);
+	
+	// set start signal
+	STASET;
+	printf("%x\n\r", I2C_STAT_REG & 0xff);
+	// wait for start sig sent
+	while((I2C_STAT_REG & 0xff) != 0x08){
+	}
 	SICLR;
+	
+	printf("%x\n\r", I2C_STAT_REG & 0xff);
+	printf("checkpoint 1\n\r");
+	//STACLR;
+
 	while((I2C_STAT_REG & 0xff) != I2C_EVENT_SLAW_ACK){
 	//printf("%x\n\r", I2C_STAT_REG & 0xff);
 	}
 	// for debugging
-	printf("checkpoint 1\n\r");
+	printf("checkpoint 2\n\r");
 }
 
 void i2c_write(char msg){

@@ -37,33 +37,50 @@ void ledOff()
 
 int main()
 {
-	int i, j = 0;
+	int j = 0;
+	unsigned int i = 0;
+  unsigned int status = 0;
 	SER_init();
 	configureGPIO();
 	printf("Start init for i2c\n\r");
 	i2c_Init();
 	printf("\n\r\n\r");
 	
-	printf("ready\n\r");
 	
-	while(1){
-		ledOn();
-		i2c_begin(MPU_ADDR, I2C_WRITE);
-		i2c_end();
-		printf("checkpoint\n\r");
-		ledOff();
-	}
-	
-	while (1){
-		ledOn();
-		LPC_I2C->CONSET |= 0x40;
-		STASET;
-		//SICLR;
-		while((I2C_STAT_REG & 0xff) != 0x08){}
-		printf("%x\n\r", I2C_STAT_REG);
-		printf("START sent from master to slave\n\r");
-		while(1);
-		SICLR;
-		ledOff();
-	}
+	while(1){                              //infinite loop
+		if(i%2==0)
+			ledOn();
+		else
+			ledOff();
+		//I2C TRANSMIT
+		LPC_I2C->CONSET |= (1<<5);             //set start bit to initiate transmission (sec 15.7.1)
+		do{                                    //wait for start condition to be sent
+				status = LPC_I2C->STAT & 0xF8;          //store current state (sec 15.7.2)
+		}while(status != 0x08);                //compare current state with possible states (sec 15.10.1 table 235)
+		printf("start sent...\n\r");
+		//TRANSMIT DEVICE ADDRESS
+		LPC_I2C->DAT        = 0xD0;            //transmit device address (sec 15.7.3)
+		LPC_I2C->CONCLR     = 0x28;            //clear STA and SI bit (sec 15.7.6)
+		//TRANSMIT CONTROL BYTE
+		do{                                    //wait for start condition to be sent
+				status = LPC_I2C->STAT & 0xF8;          //store current state (sec 15.7.2)
+		}while(status != 0x18 && status != 0x20);          //wait for address byte to be sent (sec 15.10.1 table 235)
+		printf("address sent...\n\r");
+		LPC_I2C->DAT        = 0xAA;            //send data (sec 15.7.3)
+		LPC_I2C->CONCLR     = (1<<3);          //clear SIC (sec 15.7.6)
+		//TRANSMIT DATA BYTE
+		do{                                    //wait for start condition to be sent
+				status = LPC_I2C->STAT & 0xF8;          //store current state (sec 15.7.2)
+		}while(status != 0x28 && status != 0x30);          //wait for address byte to be sent (sec 15.10.1 table 235)
+		printf("register addr sent...\n\r");
+		LPC_I2C->DAT        = 0xAA;             //send data (sec 15.7.3)
+		LPC_I2C->CONCLR     = (1<<3);          //clear SIC (sec 15.7.6)
+		//INITIATE STOP CONDITION
+		while((LPC_I2C->CONSET & 0x8) != 0x8); //set STOP bit (sec 15.7.1)
+		printf("data sent...\n\r");
+		LPC_I2C->CONSET     = 0x10;            //set stop bit (sec 15.7.1)
+		LPC_I2C->CONCLR     = (1<<3);          //clear SIC (sec 15.7.6)
+		i++;
+		printf("%d\n\r", i);
+     }
 }

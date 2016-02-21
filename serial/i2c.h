@@ -5,12 +5,12 @@
 
 // macro for controlling I2C
 #define STASET LPC_I2C->CONSET |= 0x20
-#define STACLR LPC_I2C->CONCLR |= 0x20
+#define STACLR LPC_I2C->CONCLR = 0x20
 #define STOSET LPC_I2C->CONSET |= 0x10
-#define STOCLR LPC_I2C->CONCLR |= 0x10
+#define STOCLR LPC_I2C->CONCLR = 0x10
 #define AASET LPC_I2C->CONSET |= 0x04
-#define AACLR LPC_I2C->CONCLR |= 0x04	
-#define SICLR LPC_I2C->CONCLR |= 0x8		// clear interrupt flag
+#define AACLR LPC_I2C->CONCLR = 0x04	
+#define SICLR LPC_I2C->CONCLR = 0x8		// clear interrupt flag
 #define SISET LPC_I2C->CONSET |= 0x8
 
 #define I2C_DATA_REG LPC_I2C->DAT
