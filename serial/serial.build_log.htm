@@ -27,21 +27,19 @@ Project File Date:  02/20/2016
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 (build 20)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'serial'
-compiling main.c...
-i2c.h(33): warning:  #1295-D: Deprecated declaration i2c_Init - give arg types
+compiling i2c.c...
+i2c.h(37): warning:  #1295-D: Deprecated declaration i2c_Init - give arg types
   extern void i2c_Init();
-i2c.h(44): warning:  #1295-D: Deprecated declaration i2c_rep_start - give arg types
+i2c.h(48): warning:  #1295-D: Deprecated declaration i2c_rep_start - give arg types
   extern void i2c_rep_start();
-i2c.h(89): warning:  #1295-D: Deprecated declaration i2c_end - give arg types
+i2c.h(93): warning:  #1295-D: Deprecated declaration i2c_end - give arg types
   extern void i2c_end();
-6050.h(28): warning:  #1295-D: Deprecated declaration mpu_6050_Init - give arg types
-  extern void mpu_6050_Init();
-main.c(40): warning:  #177-D: variable "j" was declared but never referenced
-  	int j = 0;
-main.c: 5 warnings, 0 errors
+i2c.c(99): warning:  #177-D: variable "status" was declared but never referenced
+  	uint32_t status;
+i2c.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=2912 RO-data=264 RW-data=12 ZI-data=612  
-".\serial.axf" - 0 Error(s), 5 Warning(s).
+Program Size: Code=2624 RO-data=224 RW-data=12 ZI-data=612  
+".\serial.axf" - 0 Error(s), 4 Warning(s).
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

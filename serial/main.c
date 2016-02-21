@@ -47,7 +47,25 @@ int main()
 	printf("\n\r\n\r");
 	
 	
-	while(1){                              //infinite loop
+	
+	
+		while(1){
+		// set trigger signal
+		if(i%2==0)
+			ledOn();
+		else
+			ledOff();
+		i++;
+		printf("%d\n\r", i);
+		
+		i2c_begin(MPU_ADDR, I2C_WRITE);
+		i2c_write(0xAA);
+		i2c_write(0xAA);
+		i2c_end();
+		}
+		
+		
+		while(1){                              //infinite loop
 		if(i%2==0)
 			ledOn();
 		else

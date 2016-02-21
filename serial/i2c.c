@@ -57,39 +57,59 @@ Output:
 	return 0 on success, -1 on fail
 */
 void i2c_begin(char addr, int rw){
+	int i = 0;
+	uint32_t status;
+	uint32_t ack_event;
 	// get data ready to send
 	addr = addr << 1;
-	if(rw == I2C_WRITE)
+	if(rw == I2C_WRITE){
 		addr &= 0xFE;		/* change r/w bit to 0 for write */
-	else
+		ack_event = I2C_EVENT_SLAW_ACK;
+	}
+	else{
 		addr |= 0x1;	/* change r/w bit to 1 for read */
-	I2C_DATA_REG = addr;
-	
-	// set start signal
-	STASET;
-	printf("%x\n\r", I2C_STAT_REG & 0xff);
-	// wait for start sig sent
-	while((I2C_STAT_REG & 0xff) != 0x08){
+		ack_event = I2C_EVENT_SLAR_ACK;
 	}
-	SICLR;
+			
+	LPC_I2C->CONSET |= (1<<5);             //set start bit to initiate transmission (sec 15.7.1)
+	do{                                    //wait for start condition to be sent
+			status = LPC_I2C->STAT & 0xF8;          //store current state (sec 15.7.2)
+	}while(status != I2C_EVENT_START);
+	//printf("start sent...\n\r");
 	
-	printf("%x\n\r", I2C_STAT_REG & 0xff);
-	printf("checkpoint 1\n\r");
-	//STACLR;
-
-	while((I2C_STAT_REG & 0xff) != I2C_EVENT_SLAW_ACK){
-	//printf("%x\n\r", I2C_STAT_REG & 0xff);
+	LPC_I2C->DAT        = addr;            //transmit device address (sec 15.7.3)
+	LPC_I2C->CONCLR     = 0x28;            //clear STA and SI bit (sec 15.7.6)
+	
+	while((I2C_STAT_REG & 0xF8) != ack_event)		//  && status != 0x30
+	{
+		i++;
+		if(i > 100000){
+		printf("waited too long, abort\n\r");
+		i2c_end();
+		return;
+		}
 	}
-	// for debugging
-	printf("checkpoint 2\n\r");
+	
+	//printf("perif addr sent...\n\r");
+	
 }
 
 void i2c_write(char msg){
-	I2C_DATA_REG = msg;
-	SICLR;
-	while(!I2C_SI){};
-	// for debugging
-	printf("msg sent!\n");
+	int i = 0;
+	uint32_t status;
+	LPC_I2C->DAT = msg;
+	LPC_I2C->CONCLR = (1<<3);
+        //store current state (sec 15.7.2)
+	while((I2C_STAT_REG & 0xF8) != I2C_EVENT_DATW_ACK)		//  && status != 0x30
+	{
+		i++;
+		if(i > 100000){
+		printf("waited too long, abort\n\r");
+		i2c_end();
+		return;
+		}
+	}
+	printf("data sent...\n\r");
 }
 
 
@@ -102,13 +122,22 @@ Output:
 	return the char read from device
 */
 char i2c_read(bool stop){
+	int i=0;
 	char read;
 	if(stop)
 		AACLR;
 	else
 		AASET;
 	SICLR;
-	while(!I2C_SI){};
+	while((I2C_STAT_REG & 0xF8) != I2C_EVENT_DATR_ACK)		//  && status != 0x30
+	{
+		i++;
+		if(i > 100000){
+		printf("waited too long, abort\n\r");
+		i2c_end();
+		return 0x0;
+		}
+	}
 	read = (char)(0xFF && I2C_DATA_REG);
 	AACLR;
 	return read;
@@ -123,9 +152,8 @@ Output:
 	none
 */
 extern void i2c_end(){
-	STOSET;
-	SICLR;
-	STOCLR;
+	LPC_I2C->CONSET = 0x10;            //set stop bit (sec 15.7.1)
+	LPC_I2C->CONCLR = (1<<3);
 }
 
 

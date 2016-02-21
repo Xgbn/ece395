@@ -22,6 +22,10 @@
 #define I2C_EVENT_REP_START 0x10			// repeat start condition has started
 #define I2C_EVENT_SLAW_ACK 0x18				// SLA + write bit has been sent, ack recieved
 #define I2C_EVENT_SLAW_NACK 0x20			// SLA + write bit has been sent, not ack recieved
+#define I2C_EVENT_SLAR_NACK 0x48			// SLA + read bit has been sent, not ack recieved
+#define I2C_EVENT_SLAR_ACK 0x40				// SLA + read bit has been sent, ack recieved
+#define I2C_EVENT_DATR_ACK 0x50				// data to be written has been sent, ack recieved
+#define I2C_EVENT_DATR_NACK 0x58			// data to be written has been sent, not ack recieved 
 #define I2C_EVENT_DATW_ACK 0x28				// data to be written has been sent, ack recieved
 #define I2C_EVENT_DATW_NACK 0x30			// data to be written has been sent, not ack recieved 
 #define I2C_READ 0x1
