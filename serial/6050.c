@@ -33,9 +33,16 @@ Output:
 */
 void mpu_6050_write(uint8_t addr, int bytenum, uint8_t* buff){
 	int i;
-	
-	i2c_begin(MPU_ADDR, I2C_WRITE);	// start a write to mpu
+	int ret_val;
+	ret_val = i2c_begin(MPU_ADDR, I2C_WRITE);
+	while(ret_val){
+		ret_val = i2c_rep_start(MPU_ADDR, I2C_WRITE);
+	}
+
+	// start a write to mpu
 	// loop to write bytenum bytes
+	i2c_write(addr);
+	
 	for(i=0; i < bytenum; i++){
 	i2c_write(buff[i]);
 	}
@@ -51,11 +58,11 @@ void mpu_6050_read(uint8_t reg_addr, int bytenum, uint8_t* buff){
 	int i,k;
 	uint32_t dummy = 0;
 	bool stop = false;
-	printf("checkpoint1\n\r");
+	
 	i2c_begin(MPU_ADDR, I2C_WRITE);
 	i2c_write(reg_addr);
 	i2c_rep_start(MPU_ADDR, I2C_READ);
-	printf("checkpoint2\n\r");
+	
 	for(i = 0; i < bytenum; i++){
 		for(k = 0; k < 1000; k++){
 			if(k % 15 == 0)
@@ -65,7 +72,7 @@ void mpu_6050_read(uint8_t reg_addr, int bytenum, uint8_t* buff){
 			stop = true;
 		buff[i] = i2c_read(stop);
 	}
-	printf("checkpoint3\n\r");
+	
 	i2c_end();
 }
 

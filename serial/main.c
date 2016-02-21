@@ -7,6 +7,16 @@
 extern void SER_init (void);
 
 
+char * mpu_register[7] = {
+	"Ac_X: ",
+	"Ac_Y: ",
+	"Ac_Z: ",
+	"Temp: ",
+	"Gy_X: ",
+	"Gy_Y: ",
+	"Gy_Z: "
+};
+
 void configureGPIO()
 {
 	//Enable CLKOUT
@@ -42,15 +52,15 @@ int main()
   unsigned int status = 0;
 	uint8_t buff[14] = {0};
 	uint8_t low, high;
-	uint32_t output;
+	int16_t output;
 	SER_init();
 	configureGPIO();
 	printf("Start init for i2c\n\r");
 	i2c_Init();
 	printf("\n\r\n\r");
+	
+	
 	mpu_6050_Init();
-	
-	
 	
 		while(1){
 		// set trigger signal
@@ -59,16 +69,15 @@ int main()
 		else
 			ledOff();
 		i++;
-		printf("%d\n\r", i);
+		printf("\n\r\n\rloop %d:\n\r", i);
 		
 		mpu_6050_read(0x3B, 14, buff);
 		for(k=0; k < 7; k++){
 			high = buff[k*2];
 			low = buff[k*2+1];
 			output = 0xFFFF & (high<<8 | low);
-			printf("%x\n\r", output);
+			printf("%s%d\n\r",mpu_register[k] ,output);
 		}
-		printf("\n\r\n\r");
 		
 		}
 		

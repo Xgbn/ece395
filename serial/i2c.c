@@ -11,6 +11,9 @@ __IRC_OSC_CLK     (12000000UL)
 */
 
 
+
+
+
 void i2c_Init(){
 	// configure pins 0.4 and 0.5 for I2C
 
@@ -24,8 +27,8 @@ void i2c_Init(){
      
 	
 	// set duty cycle for i2c for 400kb/s, SCLH + SCLL = 50
-	LPC_I2C->SCLH = 0x54;
-	LPC_I2C->SCLL = 0x50;
+	LPC_I2C->SCLH = 0x84;
+	LPC_I2C->SCLL = 0x80;
 	
 	LPC_I2C->CONSET           |= (1<<6);   //put I2C unit in master transmit mode (sec 15.8.1 and 15.7.1)
 
@@ -40,7 +43,7 @@ Input:
 Output:
 	none
 */
-void i2c_rep_start(char addr, int rw){
+int i2c_rep_start(char addr, int rw){
 	int i = 0;
 	uint32_t status;
 	uint32_t ack_event;
@@ -73,10 +76,13 @@ void i2c_rep_start(char addr, int rw){
 		i++;
 		if(i > 100000){
 		printf("waited too long begin, abort\n\r");
-		i2c_end();
-		return;
+		i = 0;
+			return 1;
+		//return;
 		}
 	}
+	
+	return 0;
 }
 
 
@@ -88,7 +94,7 @@ Input:
 Output:
 	return 0 on success, -1 on fail
 */
-void i2c_begin(char addr, int rw){
+int i2c_begin(char addr, int rw){
 	int i = 0;
 	uint32_t status;
 	uint32_t ack_event;
@@ -112,16 +118,18 @@ void i2c_begin(char addr, int rw){
 	LPC_I2C->DAT        = addr;            //transmit device address (sec 15.7.3)
 	LPC_I2C->CONCLR     = 0x28;            //clear STA and SI bit (sec 15.7.6)
 	
-	while((I2C_STAT_REG & 0xF8) != ack_event)		//  && status != 0x30
+	while((I2C_STAT_REG & 0xF8) != ack_event )		//  && status != 0x30
 	{
 		i++;
 		if(i > 100000){
 		printf("waited too long begin, abort\n\r");
-		i2c_end();
-		return;
+		printf("%x\n\r", I2C_STAT_REG);
+			//i2c_end();
+			i = 0;
+		return 1;
 		}
 	}
-	
+	return 0;
 	//printf("perif addr sent...\n\r");
 	
 }
@@ -137,11 +145,11 @@ void i2c_write(char msg){
 		i++;
 		if(i > 100000){
 		printf("waited too long write, abort\n\r");
-		i2c_end();
-		return;
+		i = 0;
+		//return;
 		}
 	}
-	printf("data sent...\n\r");
+	
 }
 
 
@@ -161,15 +169,17 @@ uint8_t i2c_read(bool stop){
 	else
 		AASET;
 	SICLR;
-	while((I2C_STAT_REG & 0xF8) != I2C_EVENT_DATR_ACK)		//  && status != 0x30
+	while((I2C_STAT_REG & 0xF8) != I2C_EVENT_DATR_ACK && (I2C_STAT_REG & 0xF8) != I2C_EVENT_DATR_NACK)		//  && status != 0x30
 	{
 		i++;
 		if(i > 100000){
 		printf("%x\n\r", (I2C_STAT_REG & 0xF8));
-		i2c_end();
-		return 0x0;
+		printf("%d\n\r", stop);
+		i = 0;
+		//return 0x0;
 		}
 	}
+	//printf("I2C_STAT_REG %x\n\r", (I2C_STAT_REG & 0xF8));
 	read = (0xFF & I2C_DATA_REG);
 	AACLR;
 	return read;

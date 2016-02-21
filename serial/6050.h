@@ -6,6 +6,8 @@
 
 
 
+
+
 /*
 write bytes to register in mpu 6050
 Input:

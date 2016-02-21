@@ -45,7 +45,7 @@ Input:
 Output:
 	none
 */
-extern void i2c_rep_start(char addr, int rw);
+extern int i2c_rep_start(char addr, int rw);
 
 
 /*
@@ -56,7 +56,7 @@ Input:
 Output:
 	return 0 on success, -1 on fail
 */
-extern void i2c_begin(char addr, int rw);
+extern int i2c_begin(char addr, int rw);
 
 
 /*
