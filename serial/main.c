@@ -48,6 +48,7 @@ void ledOff()
 int main()
 {
 	int j = 0, k;
+	int www;
 	unsigned int i = 0;
   unsigned int status = 0;
 	uint8_t buff[14] = {0};
@@ -63,22 +64,25 @@ int main()
 	mpu_6050_Init();
 	
 		while(1){
+		scanf("%d", &www);
+		printf("Get input %d;", www);
 		// set trigger signal
 		if(i%2==0)
 			ledOn();
 		else
 			ledOff();
 		i++;
-		printf("\n\r\n\rloop %d:\n\r", i);
+		printf("loop_start %d;", i);
 		
 		mpu_6050_read(0x3B, 14, buff);
 		for(k=0; k < 7; k++){
 			high = buff[k*2];
 			low = buff[k*2+1];
 			output = 0xFFFF & (high<<8 | low);
-			printf("%s%d\n\r",mpu_register[k] ,output);
+			printf("%s%d;",mpu_register[k] ,output);
 		}
-		
+		printf("loop_end %d;", i);
+		printf("\n");
 		}
 		
 		
