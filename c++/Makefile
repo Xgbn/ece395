@@ -13,4 +13,4 @@ $(TARGET): $(TARGET).o
 	g++ -Wall $(TARGET).o -L/usr/local/lib -lserial -o $(TARGET)
  
 $(TARGET).o: $(TARGET).cpp
-	g++ -I$(BOOST_INC) -fPIC -c $(TARGET).cpp
+	g++ -fPIC -c $(TARGET).cpp
