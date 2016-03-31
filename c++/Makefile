@@ -7,7 +7,7 @@ CC=g++
 CCFLAGS=-Wall -std=c++11
 LDFLAGS=-L/usr/local/lib -lboost_system -lboost_thread
 SOURCES=$(wildcard *.cpp)
-OBJECTS=$(SOURCES:.c=.o)
+OBJECTS=$(SOURCES:.cpp=.o)
 TARGET=test
 
 all: $(TARGET)
