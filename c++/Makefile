@@ -10,7 +10,10 @@ BOOST_LIB = /usr/local/lib
 TARGET = test
  
 $(TARGET): $(TARGET).o
-	g++ -Wall $(TARGET).o -L/usr/local/lib -lserial -o $(TARGET)
+	g++ -std=c++11 -Wall $(TARGET).o -L/usr/local/lib -lserial -lpthread -o $(TARGET)
  
 $(TARGET).o: $(TARGET).cpp
-	g++ -fPIC -c $(TARGET).cpp
+	g++ -std=c++11 -fPIC -c $(TARGET).cpp
+
+clean:
+	rm -r *.o test
