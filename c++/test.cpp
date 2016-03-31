@@ -1,40 +1,32 @@
 #include <string>
 #include <iostream>
 #include "serial.h"
+#include "json.h"
 
 
 using namespace std;
 
 int main() {
-	// asio::io_service io;
-	// asio::serial_port* port;
-
-	// port = new asio::serial_port(io);
-
-	// port->open("/dev/ttyUSB0");
-	// port->set_option(asio::serial_port_base::baud_rate(115200));
-
-	// char c;
-	// std::string line;
-
-	// while(1){
-	// 	line.clear();
-	// 	c = '1';
-	// 	asio::write(*port, asio::buffer(&c,1));
-	// 	while(1){
-	// 		asio::read(*port, asio::buffer(&c,1));
-	// 		if(c == '\n')
-	// 			break;
-	// 		line += c;
-	// 	}
-	// 	std::cout << line << std::endl << std::endl;
-	// }
-	// port->close();
-	// delete port;
 
 	serial_port port("/dev/ttyUSB0");
-	while(1){
-		cout << port.readline() << endl << endl;
+
+	string test_json = "{\"Ac_X\": 1244, \"Ac_Y\": 772, \"Ac_Z\": 13948, \"Temp\": -3248, \"Gy_X\": -36, \"Gy_Y\": 118, \"Gy_Z\": -78}";
+
+	Json::Value root;
+	Json::Reader reader;
+	bool parse_success;
+
+	parse_success = reader.parse(test_json.c_str(), root);
+
+	if(parse_success){
+		cout << root << endl;
+	
+		cout << endl << endl;
+	
+		cout << root["Ac_X"] << endl;
+	}
+	else{
+		cout << "parse fail" << endl;
 	}
 
 	return 0;

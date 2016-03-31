@@ -2,23 +2,24 @@
 
 # location of the Boost Python include files and library
  
-BOOST_INC = /usr/local/include
-BOOST_LIB = /usr/local/lib
-BOOST_LINK = -lboost_system -lboost_thread
-CFLAGS = -Wall -std=c++11
-INCLUDE = serial
+BOOST_INC = -I/usr/local/include
+CC=g++
+CCFLAGS=-Wall -std=c++11
+LDFLAGS=-L/usr/local/lib -lboost_system -lboost_thread
+SOURCES=$(wildcard *.cpp)
+OBJECTS=$(SOURCES:.c=.o)
+TARGET=test
 
-# compile mesh classes
-TARGET = test
- 
-$(TARGET): $(TARGET).o $(INCLUDE).o
-	g++ $(CFLAGS) $(TARGET).o $(INCLUDE).o -L$(BOOST_LIB) $(BOOST_LINK) -o $(TARGET)
- 
-$(TARGET).o: $(TARGET).cpp
-	g++ -I$(BOOST_INC) -fPIC -c $(TARGET).cpp
+all: $(TARGET)
 
-$(INCLUDE).o: $(INCLUDE).cpp
-	g++ -I$(BOOST_INC) -fPIC -c $(INCLUDE).cpp
+$(TARGET): $(OBJECTS)
+	$(CC) $(CCFLAGS) -o $@ $^ $(LDFLAGS) 
+
+%.o: %.cpp %.h
+	$(CC) $(CCFLAGS) $(BOOST_INC) -fPIC -c $<
+
+%.o: %.cpp
+	$(CC) $(CCFLAGS) $(BOOST_INC) -fPIC -c $<
 
 clean:
-	rm -r *.o $(TARGET)
+	rm -f *.o $(TARGET)
