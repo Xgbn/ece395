@@ -3,7 +3,7 @@
 # location of the Boost Python include files and library
  
 BOOST_INC = -I/usr/local/include
-CC=g++
+CC=clang++
 CCFLAGS=-Wall -std=c++11
 LDFLAGS=-L/usr/local/lib -lboost_system -lboost_thread
 SOURCES=$(wildcard *.cpp)
