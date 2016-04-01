@@ -28,7 +28,7 @@
 #define ROT_SENSITIVITY_2 32.8f
 #define ROT_SENSITIVITY_3 16.4f
 
-#define DEFAULT_LOW_PASS 0.9f
+#define DEFAULT_LOW_PASS 0.8f
 #define GRAVITY 9.81f
 
 

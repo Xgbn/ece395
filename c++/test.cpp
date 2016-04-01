@@ -16,10 +16,10 @@ int main() {
 	Json::Value root;
 	Json::Reader reader;
 	bool parse_success;
-	coordinates mycoord(10);
+	coordinates mycoord(5);
 
 	while(1){
-		for(int i=0; i< 10; i++){
+		for(int i=0; i< 5; i++){
 			test_json = port.readline();
 			parse_success = reader.parse(test_json.c_str(), root);
 			if(parse_success){
