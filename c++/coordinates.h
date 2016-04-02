@@ -28,7 +28,8 @@
 #define ROT_SENSITIVITY_2 32.8f
 #define ROT_SENSITIVITY_3 16.4f
 
-#define DEFAULT_LOW_PASS 0.8f
+#define DEFAULT_LOW_PASS 0.5f
+#define VELOCITY_RESET_VAL 5
 #define GRAVITY 9.81f
 
 
@@ -97,10 +98,12 @@ public:
 private:
 	float X, Y, Z;			// coordinates of x y z
 	float vX, vY, vZ;		// speed of x y z
+	float aX, aY, aZ;
 	float gX, gY, gZ;		// value for low pass filter
 	float a;			// constant for low pass band
 	int buff_size;
 	int count, acc_sensitivity;
+	int velocity_reset_counter;
 	float rot_sensitivity;
 	vector<data> buff;
 	mytime_point start, finish;

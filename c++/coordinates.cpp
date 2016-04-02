@@ -1,4 +1,8 @@
 #include "coordinates.h"
+#include <algorithm>
+#include <cmath>
+
+using namespace std;
 
 coordinates::coordinates():acc_sensitivity(ACC_SENSITIVITY_0), rot_sensitivity(ROT_SENSITIVITY_0){
 	reset();
@@ -77,6 +81,9 @@ void coordinates::print(){
 	cout << "vX: " << vX << endl;
 	cout << "vY: " << vY << endl;
 	cout << "vZ: " << vZ << endl;
+	cout << "aX: " << aX << endl;
+	cout << "aY: " << aY << endl;
+	cout << "aZ: " << aZ << endl;
 }
 
 
@@ -100,6 +107,7 @@ void coordinates::reset(){
 	gZ = 0;
 	buff_size = 0;
 	count = 0;
+	velocity_reset_counter = 0;
 	a = DEFAULT_LOW_PASS;
 }
 
@@ -118,6 +126,7 @@ void coordinates::filterCurr(){
 
 void coordinates::flush(){
 	float delta;
+	float test;
 	float preVX, preVY, preVZ;
 	data avg;
 	std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(finish - start);
@@ -129,10 +138,26 @@ void coordinates::flush(){
 	vX += avg.Ac_X * delta;
 	vY += avg.Ac_Y * delta;
 	vZ += avg.Ac_Z * delta;
+	test = max(max(abs(aX), abs(aY)), abs(aZ));
+	//cout << "test: " << test << endl;
+	if(max(max(abs(aX), abs(aY)), abs(aZ)) < 0.3)
+		if(velocity_reset_counter != VELOCITY_RESET_VAL)
+			velocity_reset_counter += 1;
+		else{
+			vX = 0;
+			vY = 0;
+			vZ = 0;
+			count = 0;
+			cout << "hold velocity at zero..." << endl;
+			return;
+		}
+	else
+		velocity_reset_counter = 0;
 	X += (preVX + vX) * delta / 2;
 	Y += (preVY + vY) * delta / 2;
 	Z += (preVZ + vZ) * delta / 2;
 
+	//std::cout << delta << std::endl;
 	count = 0;
 }
 
@@ -149,6 +174,10 @@ data coordinates::getBuffAvg(){
 	avg.Gy_X = avg.Gy_X / count;
 	avg.Gy_Y = avg.Gy_Y / count;
 	avg.Gy_Z = avg.Gy_Z / count;
+
+	aX = avg.Ac_X;
+	aY = avg.Ac_Y;
+	aZ = avg.Ac_Z;
 
 	return avg;
 }
