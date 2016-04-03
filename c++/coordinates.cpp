@@ -63,9 +63,10 @@ void coordinates::update(raw_data new_data){
 	buff[count].Ac_X = GRAVITY * (double)new_data.Ac_X / acc_sensitivity;
 	buff[count].Ac_Y = GRAVITY * (double)new_data.Ac_Y / acc_sensitivity;
 	buff[count].Ac_Z = GRAVITY * (double)new_data.Ac_Z / acc_sensitivity;
-	buff[count].Gy_X = (double)new_data.Gy_X / acc_sensitivity;
-	buff[count].Gy_Y = (double)new_data.Gy_Y / acc_sensitivity;
-	buff[count].Gy_Z = (double)new_data.Gy_Z / acc_sensitivity;
+	buff[count].Gy_X = (double)new_data.Gy_X / rot_sensitivity;
+	buff[count].Gy_Y = (double)new_data.Gy_Y / rot_sensitivity;
+	buff[count].Gy_Z = (double)new_data.Gy_Z / rot_sensitivity;
+
 
 	filterCurr();
 
@@ -88,6 +89,24 @@ void coordinates::print(){
 	cout << "aZ: " << aZ << endl;
 }
 
+void coordinates::printPos(){
+	cout << "X: " << X << endl;
+	cout << "Y: " << Y << endl;
+	cout << "Z: " << Z << endl;
+}
+
+void coordinates::printRot(){
+	cout << "rX: " << rX << endl;
+	cout << "rY: " << rY << endl;
+	cout << "rZ: " << rZ << endl;
+}
+
+void coordinates::printRotSpeed(){
+	cout << "gyX: " << gyX << endl;
+	cout << "gyY: " << gyY << endl;
+	cout << "gyZ: " << gyZ << endl;
+}
+
 
 
 
@@ -101,6 +120,12 @@ void coordinates::reset(){
 	X = 0;
 	Y = 0;
 	Z = 0;
+	rX = 0;
+	rY = 0;
+	rZ = 0;
+	gyX = 0;
+	gyY = 0;
+	gyZ = 0;
 	vX = 0;
 	vY = 0;
 	vZ = 0;
@@ -137,17 +162,45 @@ void coordinates::filterCurr(){
 void coordinates::flush(){
 	float delta;
 	float preVX, preVY, preVZ;
+	float prevGyX, prevGyY, prevGyZ;
 	data avg;
+	// get time interval
 	std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(finish - start);
 	delta = time_span.count();
 	start = finish;
+	// get avg of previous data
 	avg = getBuffAvg();
+	// record previous velocity
 	preVX = vX;
 	preVY = vY;
 	preVZ = vZ;
+	// update new velocity
 	vX += avg.Ac_X * delta;
 	vY += avg.Ac_Y * delta;
 	vZ += avg.Ac_Z * delta;
+	// update rotation and modulate inside [0, 360]
+	prevGyX = gyX;
+	gyX = avg.Gy_X;
+	rX += (prevGyX + gyX) * delta / 2;
+	if(rX < 0)
+		rX += 360;
+	else if(rX > 360)
+		rX -= 360;
+	prevGyY = gyY;
+	gyY = avg.Gy_Y;
+	rY += (prevGyY + gyY) * delta / 2;
+	if(rY < 0)
+		rY += 360;
+	else if(rY > 360)
+		rY -= 360;
+	prevGyZ = gyZ;
+	gyZ = avg.Gy_Z;
+	rZ += (prevGyX + gyX) * delta / 2;
+	if(rZ < 0)
+		rZ += 360;
+	else if(rZ > 360)
+		rZ -= 360;
+	// check if velocity should be reset to zero
 	if(max(max(abs(aX), abs(aY)), abs(aZ)) < 0.3)
 		if(velocity_reset_counter != VELOCITY_RESET_VAL)
 			velocity_reset_counter += 1;
@@ -161,6 +214,7 @@ void coordinates::flush(){
 		}
 	else
 		velocity_reset_counter = 0;
+	// accumulate position shift based on velocity
 	X += (preVX + vX) * delta / 2;
 	Y += (preVY + vY) * delta / 2;
 	Z += (preVZ + vZ) * delta / 2;

@@ -29,13 +29,15 @@ int main() {
 			new_data.Gy_X = root["Gy_X"].asInt();
 			new_data.Gy_Y = root["Gy_Y"].asInt();
 			new_data.Gy_Z = root["Gy_Z"].asInt();
+			//cout << root["Gy_Z"].asInt() << endl;
 			//G = sqrt(ax*ax + ay*ay + az*az);
 			mycoord.update(new_data);}
 			else{
 				cout << "parse fail" << endl;
 			}
 		}
-		mycoord.print();
+		mycoord.printRotSpeed();
+		mycoord.printRot();
 		cout << endl << endl << endl << endl << endl;
 		//cout << G << endl << endl;
 	}

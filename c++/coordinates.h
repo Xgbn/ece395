@@ -23,7 +23,7 @@
 #define ACC_SENSITIVITY_1 8192
 #define ACC_SENSITIVITY_2 4069
 #define ACC_SENSITIVITY_3 2048
-#define ROT_SENSITIVITY_0 131
+#define ROT_SENSITIVITY_0 131.0f
 #define ROT_SENSITIVITY_1 65.5f
 #define ROT_SENSITIVITY_2 32.8f
 #define ROT_SENSITIVITY_3 16.4f
@@ -32,7 +32,7 @@
 #define VELOCITY_RESET_VAL 5
 #define GRAVITY 9.81f
 #define SAMPLE_SIZE 4
-
+#define PI_CONST 3.1415926f
 
 using namespace std;
 
@@ -92,12 +92,17 @@ public:
 	void setSensitivity(int acc_sen, int rot_sen);
 	void update(raw_data new_data);
 	void print();
+	void printPos();
+	void printRot();
+	void printRotSpeed();
 
 
 
 
 private:
 	float X, Y, Z;			// coordinates of x y z
+	float rX, rY, rZ;		// rotation offset in Pi
+	float gyX, gyY, gyZ;	// speed of gyroscope
 	float vX, vY, vZ;		// speed of x y z
 	float aX, aY, aZ;
 	float gX, gY, gZ;		// value for low pass filter
