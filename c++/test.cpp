@@ -1,8 +1,10 @@
 #include <string>
 #include <iostream>
 #include <cmath>
+#include <thread>
 #include "serial.h"
 #include "json.h"
+#include "plot.h"
 #include "coordinates.h"
 
 
@@ -10,6 +12,29 @@ using namespace std;
 
 int main() {
 	//double ax, ay, az, G;
+	DotPlot dot;
+	std::thread dot_th(&DotPlot::run, &dot);
+	double x,y,z;
+	x = 0;
+	y = 0;
+	z = 0;
+	while(1) {
+		if (x > 2){
+			x = 0;
+		}
+		if (y > 2){
+			y = 0;
+		}
+		if (z > 2){
+			z = 0;
+		}
+		x += 0.01;
+		y += 0.01;
+		z += 0.01;
+		dot.updateDot(x,y,z);
+		usleep(30000);
+	}
+	return 0;
 	serial_port port("/dev/ttyUSB0");
 	string test_json;
 	raw_data new_data;
