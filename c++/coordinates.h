@@ -28,9 +28,10 @@
 #define ROT_SENSITIVITY_2 32.8f
 #define ROT_SENSITIVITY_3 16.4f
 
-#define DEFAULT_LOW_PASS 0.5f
+#define DEFAULT_LOW_PASS 0.95f
 #define VELOCITY_RESET_VAL 5
 #define GRAVITY 9.81f
+#define SAMPLE_SIZE 4
 
 
 using namespace std;
@@ -104,6 +105,7 @@ private:
 	int buff_size;
 	int count, acc_sensitivity;
 	int velocity_reset_counter;
+	bool first;
 	float rot_sensitivity;
 	vector<data> buff;
 	mytime_point start, finish;

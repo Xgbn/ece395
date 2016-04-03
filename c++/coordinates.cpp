@@ -55,8 +55,10 @@ void coordinates::setSensitivity(int acc_sen, int rot_sen){
 
 
 void coordinates::update(raw_data new_data){
-	if(count == 0)
+	if(first){
 		start = myclock::now();
+		first = false;
+	}
 
 	buff[count].Ac_X = GRAVITY * (double)new_data.Ac_X / acc_sensitivity;
 	buff[count].Ac_Y = GRAVITY * (double)new_data.Ac_Y / acc_sensitivity;
@@ -109,6 +111,7 @@ void coordinates::reset(){
 	count = 0;
 	velocity_reset_counter = 0;
 	a = DEFAULT_LOW_PASS;
+	first = true;
 }
 
 /**
@@ -122,15 +125,22 @@ void coordinates::filterCurr(){
 	buff[count].Ac_X -= gX;
 	buff[count].Ac_Y -= gY;
 	buff[count].Ac_Z -= gZ;
+
+	// if(abs(buff[count].Ac_X) < 0.3)
+	// 	buff[count].Ac_X = 0;
+	// if(abs(buff[count].Ac_Y) < 0.3)
+	// 	buff[count].Ac_Y = 0;
+	// if(abs(buff[count].Ac_Z) < 0.3)
+	// 	buff[count].Ac_Z = 0;
 }
 
 void coordinates::flush(){
 	float delta;
-	float test;
 	float preVX, preVY, preVZ;
 	data avg;
 	std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(finish - start);
 	delta = time_span.count();
+	start = finish;
 	avg = getBuffAvg();
 	preVX = vX;
 	preVY = vY;
@@ -138,8 +148,6 @@ void coordinates::flush(){
 	vX += avg.Ac_X * delta;
 	vY += avg.Ac_Y * delta;
 	vZ += avg.Ac_Z * delta;
-	test = max(max(abs(aX), abs(aY)), abs(aZ));
-	//cout << "test: " << test << endl;
 	if(max(max(abs(aX), abs(aY)), abs(aZ)) < 0.3)
 		if(velocity_reset_counter != VELOCITY_RESET_VAL)
 			velocity_reset_counter += 1;
