@@ -39,7 +39,7 @@ void DotPlot::run() {
         gp << x << ' '<< y << ' ' << z << std::endl;
         gp << 'e' << std::endl;
         pos_lock.unlock();
-        usleep(10000);
+        usleep(100);
     }
     return;
 }

@@ -28,8 +28,8 @@
 #define ROT_SENSITIVITY_2 32.8f
 #define ROT_SENSITIVITY_3 16.4f
 
-#define DEFAULT_LOW_PASS 0.95f
-#define VELOCITY_RESET_VAL 5
+#define DEFAULT_LOW_PASS 0.98f
+#define VELOCITY_RESET_VAL 2
 #define GRAVITY 9.81f
 #define SAMPLE_SIZE 4
 #define PI_CONST 3.1415926f
@@ -95,6 +95,9 @@ public:
 	void printPos();
 	void printRot();
 	void printRotSpeed();
+	float getX();
+	float getY();
+	float getZ();
 
 
 
@@ -110,7 +113,7 @@ private:
 	int buff_size;
 	int count, acc_sensitivity;
 	int velocity_reset_counter;
-	bool first;
+	bool first, first_zero;
 	float rot_sensitivity;
 	vector<data> buff;
 	mytime_point start, finish;

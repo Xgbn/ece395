@@ -107,6 +107,17 @@ void coordinates::printRotSpeed(){
 	cout << "gyZ: " << gyZ << endl;
 }
 
+float coordinates::getX(){
+	return X;
+}
+
+float coordinates::getY(){
+	return Y;
+}
+
+float coordinates::getZ(){
+	return Z;
+}
 
 
 
@@ -137,6 +148,7 @@ void coordinates::reset(){
 	velocity_reset_counter = 0;
 	a = DEFAULT_LOW_PASS;
 	first = true;
+	first_zero = true;
 }
 
 /**
@@ -195,16 +207,22 @@ void coordinates::flush(){
 		rY -= 360;
 	prevGyZ = gyZ;
 	gyZ = avg.Gy_Z;
-	rZ += (prevGyX + gyX) * delta / 2;
+	rZ += (prevGyZ + gyZ) * delta / 2;
 	if(rZ < 0)
 		rZ += 360;
 	else if(rZ > 360)
 		rZ -= 360;
 	// check if velocity should be reset to zero
-	if(max(max(abs(aX), abs(aY)), abs(aZ)) < 0.3)
+	if(max(max(abs(aX), abs(aY)), abs(aZ)) < 0.2)
 		if(velocity_reset_counter != VELOCITY_RESET_VAL)
 			velocity_reset_counter += 1;
 		else{
+			if(first_zero){
+				X = 0;
+				Y = 0;
+				Z = 0;
+				first_zero = false;
+			}
 			vX = 0;
 			vY = 0;
 			vZ = 0;
