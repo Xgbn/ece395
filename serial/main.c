@@ -2,19 +2,23 @@
 #include <stdio.h>
 #include <rt_misc.h>
 #include "6050.h"
+#include "spi.h"
 
 /* Import external functions from Serial.c file                               */
 extern void SER_init (void);
+extern int getkey (void);
+extern int nonBlockGetKey (void);
+extern void flushTX(void);
 
 
-char * mpu_register[7] = {
-	"Ac_X: ",
-	"Ac_Y: ",
-	"Ac_Z: ",
-	"Temp: ",
-	"Gy_X: ",
-	"Gy_Y: ",
-	"Gy_Z: "
+char* mpu_register[7] = {
+	"Ac_X",
+	"Ac_Y",
+	"Ac_Z",
+	"Temp",
+	"Gy_X",
+	"Gy_Y",
+	"Gy_Z"
 };
 
 void configureGPIO()
@@ -48,41 +52,68 @@ void ledOff()
 int main()
 {
 	int j = 0, k;
-	int www;
 	unsigned int i = 0;
+	int www = -1;
   unsigned int status = 0;
 	uint8_t buff[14] = {0};
 	uint8_t low, high;
 	int16_t output;
+	
+	configureGPIO();
+	//spi_init();
+		// test SPI
+	//while(1){
+		
+//		if(i%2==0)
+	//		ledOn();
+	//	else
+	//		ledOff();
+	//	i++;
+		
+		//spi_write(0x13, 8);
+		//spi_waitTillSent();
+	//}
+		
+	
 	SER_init();
 	configureGPIO();
 	printf("Start init for i2c\n\r");
 	i2c_Init();
 	printf("\n\r\n\r");
 	
+
+
+	
 	
 	mpu_6050_Init();
-	
 		while(1){
-		scanf("%d", &www);
-		printf("Get input %d;", www);
+		www = nonBlockGetKey();
+		
 		// set trigger signal
 		if(i%2==0)
 			ledOn();
 		else
 			ledOff();
 		i++;
-		printf("loop_start %d;", i);
+		//printf("loop_start %d;", i);
 		
 		mpu_6050_read(0x3B, 14, buff);
+		if (www == -1){
+			continue;
+		}
+		printf("{");
 		for(k=0; k < 7; k++){
 			high = buff[k*2];
 			low = buff[k*2+1];
 			output = 0xFFFF & (high<<8 | low);
-			printf("%s%d;",mpu_register[k] ,output);
+			
+			printf("\"%s\": %d",mpu_register[k],output);
+			if(k!=6){
+				printf(", ");
+			}
 		}
-		printf("loop_end %d;", i);
-		printf("\n");
+		printf("}\n");
+		
 		}
 		
 		

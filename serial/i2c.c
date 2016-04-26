@@ -26,7 +26,7 @@ void i2c_Init(){
      LPC_SYSCON->PRESETCTRL    |= (0x2);    //disable reset to I2C unit (sec 3.5.2)
      
 	
-	// set duty cycle for i2c for 400kb/s, SCLH + SCLL = 50
+	// set duty cycle for i2c for 400kb/s, SCLH + SCLL = 30
 	LPC_I2C->SCLH = 0x84;
 	LPC_I2C->SCLL = 0x80;
 	

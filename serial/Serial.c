@@ -60,3 +60,18 @@ int getkey (void) {
   while (!(LPC_UART->LSR & 0x01));
   return (LPC_UART->RBR);
 }
+
+int nonBlockGetKey (void){
+	if(!(LPC_UART->LSR & 0x01))
+		return -1;
+	else
+		return (LPC_UART->RBR);
+}
+
+void flushTX(void){
+	(LPC_UART->FCR) = 0x04;
+}
+
+void flushRX(void){
+	(LPC_UART->FCR) = 0x02;
+}

@@ -11,3 +11,4 @@
 .\main.o: 6050.h
 .\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\main.o: i2c.h
+.\main.o: spi.h

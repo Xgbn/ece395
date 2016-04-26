@@ -26,7 +26,9 @@ Project File Date:  02/20/2016
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 (build 20)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
-Build target 'serial'
+Rebuild target 'serial'
+assembling startup_LPC11xx.s...
+compiling system_LPC11xx.c...
 compiling main.c...
 i2c.h(37): warning:  #1295-D: Deprecated declaration i2c_Init - give arg types
   extern void i2c_Init();
@@ -34,15 +36,42 @@ i2c.h(93): warning:  #1295-D: Deprecated declaration i2c_end - give arg types
   extern void i2c_end();
 6050.h(30): warning:  #1295-D: Deprecated declaration mpu_6050_Init - give arg types
   extern void mpu_6050_Init();
-main.c(89): warning:  #128-D: loop is not reachable
+spi.h(6): warning:  #1295-D: Deprecated declaration spi_init - give arg types
+  extern void spi_init();
+spi.h(12): warning:  #1295-D: Deprecated declaration spi_enable - give arg types
+  extern void spi_enable();
+spi.h(13): warning:  #1295-D: Deprecated declaration spi_loopbackNormal - give arg types
+  extern void spi_loopbackNormal();
+spi.h(14): warning:  #1295-D: Deprecated declaration spi_read - give arg types
+  extern uint16_t spi_read();
+spi.h(17): warning:  #1295-D: Deprecated declaration spi_waitTillSent - give arg types
+  extern void spi_waitTillSent();
+main.c(120): warning:  #128-D: loop is not reachable
   		while(1){                              //infinite loop
-main.c(50): warning:  #177-D: variable "j" was declared but never referenced
+main.c(54): warning:  #177-D: variable "j" was declared but never referenced
   	int j = 0, k;
-main.c: 5 warnings, 0 errors
+main.c: 10 warnings, 0 errors
+compiling Serial.c...
+compiling Retarget.c...
+compiling i2c.c...
+i2c.h(37): warning:  #1295-D: Deprecated declaration i2c_Init - give arg types
+  extern void i2c_Init();
+i2c.h(93): warning:  #1295-D: Deprecated declaration i2c_end - give arg types
+  extern void i2c_end();
+i2c.c(139): warning:  #177-D: variable "status" was declared but never referenced
+  	uint32_t status;
+i2c.c: 3 warnings, 0 errors
+compiling 6050.c...
+i2c.h(37): warning:  #1295-D: Deprecated declaration i2c_Init - give arg types
+  extern void i2c_Init();
+i2c.h(93): warning:  #1295-D: Deprecated declaration i2c_end - give arg types
+  extern void i2c_end();
+6050.h(30): warning:  #1295-D: Deprecated declaration mpu_6050_Init - give arg types
+  extern void mpu_6050_Init();
 linking...
-Program Size: Code=5088 RO-data=592 RW-data=40 ZI-data=608  
-".\serial.axf" - 0 Error(s), 5 Warning(s).
-Build Time Elapsed:  00:00:02
+Program Size: Code=3344 RO-data=320 RW-data=40 ZI-data=608  
+".\serial.axf" - 0 Error(s), 16 Warning(s).
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>
