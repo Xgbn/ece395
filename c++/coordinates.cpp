@@ -79,7 +79,7 @@ void coordinates::update(raw_data new_data){
 }
 
 void coordinates::print(){
-	cout << endl << endl << endl;
+	cout << endl << endl << endl << endl << endl << endl << endl << endl;
 	cout << "X: " << X << endl;
 	cout << "Y: " << Y << endl;
 	cout << "Z: " << Z << endl;

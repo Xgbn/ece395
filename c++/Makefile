@@ -1,7 +1,7 @@
 # location of the Python header files
 
 # location of the Boost Python include files and library
- 
+
 BOOST_INC = -I/usr/local/include
 CC=g++
 CCFLAGS=-Wall -std=c++11

@@ -1,18 +1,21 @@
 #include <string>
 #include <iostream>
+#include <cstdlib>
 #include <cmath>
 #include <thread>
 #include "serial.h"
 #include "json.h"
 #include "plot.h"
 #include "coordinates.h"
-
+#define HC_BLUETOOTH "/dev/rfcomm0"
+#define HC_WIRED "/dev/ttyUSB0"
 
 using namespace std;
 
 int main() {
 	//double ax, ay, az, G;
-	serial_port port("/dev/rfcomm0");
+	int loop_num = 0;
+	serial_port port(HC_WIRED);
         cout << "x1" << endl;
         ofstream f;
         f.open("log.txt");
@@ -24,7 +27,7 @@ int main() {
 	bool parse_success;
 	coordinates mycoord(SAMPLE_SIZE);
 	DotPlot dot;
-	std::thread dot_th(&DotPlot::run, &dot);
+	//std::thread dot_th(&DotPlot::run, &dot);
 	std::thread poll_key_th(&coordinates::pollResetKey, &mycoord, 'd');
 	double x,y,z;
 	x = 0;
@@ -54,8 +57,12 @@ int main() {
 		x = (double)mycoord.getX();
 		y = (double)mycoord.getY();
 		z = (double)mycoord.getZ();
-		//mycoord.printToFile(f);
-                dot.updateDot(x,y,z);
+		mycoord.printToFile(f);
+    //dot.updateDot(x,y,z);
+		continue;
+		loop_num++;
+		if(loop_num > 50)
+			exit(0);
 	}
 	return 0;
 
@@ -96,6 +103,5 @@ int main() {
 	else{
 		cout << "parse fail" << endl;
 	}
-	poll_key_th.join();
 	return 0;
 }
