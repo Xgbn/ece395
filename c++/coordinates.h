@@ -5,7 +5,7 @@
 #include <chrono>
 #include <iostream>
 #include "json.h"
-
+#include <fstream>
 /**
 *	sensitivity of acceleration is determined by AFS_SEL
 *	Register 0x1C bit 4 bit 3
@@ -31,7 +31,7 @@
 #define DEFAULT_LOW_PASS 0.98f
 #define VELOCITY_RESET_VAL 2
 #define GRAVITY 9.81f
-#define SAMPLE_SIZE 4
+#define SAMPLE_SIZE 2
 #define PI_CONST 3.1415926f
 
 using namespace std;
@@ -98,12 +98,13 @@ public:
 	float getX();
 	float getY();
 	float getZ();
-
+        void printToFile(ofstream& f);
 
 
 
 private:
-	float X, Y, Z;			// coordinates of x y z
+        float elapsed_time;
+        float X, Y, Z;			// coordinates of x y z
 	float rX, rY, rZ;		// rotation offset in Pi
 	float gyX, gyY, gyZ;	// speed of gyroscope
 	float vX, vY, vZ;		// speed of x y z

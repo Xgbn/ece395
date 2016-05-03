@@ -4,8 +4,8 @@
  
 BOOST_INC = -I/usr/local/include
 CC=g++
-CCFLAGS=-Wall -std=c++11 -pthread
-LDFLAGS=-L/usr/local/lib -lpthread -lutil -lboost_system -lboost_thread -lboost_iostreams -lboost_filesystem
+CCFLAGS=-Wall -std=c++11
+LDFLAGS=-L/usr/local/lib -lpthread -lutil -lboost_system -lboost_iostreams -lboost_filesystem
 SOURCES=$(wildcard *.cpp)
 OBJECTS=$(SOURCES:.cpp=.o)
 TARGET=test

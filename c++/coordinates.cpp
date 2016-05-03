@@ -119,6 +119,28 @@ float coordinates::getZ(){
 	return Z;
 }
 
+void coordinates::printToFile(ofstream& f){
+  //  if(first_zero){
+  //      return;
+  //  }
+    if(!f.is_open()){
+        return;
+    }
+    f << elapsed_time << ",";
+    f << X << ",";
+    f << Y << ",";
+    f << Z << ",";
+    f << vX << ",";
+    f << vY << ",";
+    f << vZ << ",";
+    f << aX << ",";
+    f << aY << ",";
+    f << aZ << endl;
+
+
+
+    return;
+}
 
 
 /**
@@ -128,7 +150,8 @@ float coordinates::getZ(){
 **/
 
 void coordinates::reset(){
-	X = 0;
+	elapsed_time = 0.0;
+        X = 0;
 	Y = 0;
 	Z = 0;
 	rX = 0;
@@ -155,6 +178,7 @@ void coordinates::reset(){
 *	Filter noise out of data
 **/
 void coordinates::filterCurr(){
+        return;
 	gX = gX * a + (1-a) * buff[count].Ac_X;
 	gY = gY * a + (1-a) * buff[count].Ac_Y;
 	gZ = gZ * a + (1-a) * buff[count].Ac_Z;
@@ -179,7 +203,8 @@ void coordinates::flush(){
 	// get time interval
 	std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(finish - start);
 	delta = time_span.count();
-	start = finish;
+	elapsed_time += delta;
+        start = finish;
 	// get avg of previous data
 	avg = getBuffAvg();
 	// record previous velocity
@@ -213,7 +238,7 @@ void coordinates::flush(){
 	else if(rZ > 360)
 		rZ -= 360;
 	// check if velocity should be reset to zero
-	if(max(max(abs(aX), abs(aY)), abs(aZ)) < 0.2)
+	if(max(max(abs(aX), abs(aY)), abs(aZ)) < 0.2 && false)
 		if(velocity_reset_counter != VELOCITY_RESET_VAL)
 			velocity_reset_counter += 1;
 		else{
@@ -221,7 +246,10 @@ void coordinates::flush(){
 				X = 0;
 				Y = 0;
 				Z = 0;
-				first_zero = false;
+				
+                                
+                                
+                                first_zero = false;
 			}
 			vX = 0;
 			vY = 0;

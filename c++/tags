@@ -1,0 +1,1260 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACC_SENSITIVITY_0	coordinates.h	/^#define ACC_SENSITIVITY_0 /;"	d
+ACC_SENSITIVITY_1	coordinates.h	/^#define ACC_SENSITIVITY_1 /;"	d
+ACC_SENSITIVITY_2	coordinates.h	/^#define ACC_SENSITIVITY_2 /;"	d
+ACC_SENSITIVITY_3	coordinates.h	/^#define ACC_SENSITIVITY_3 /;"	d
+ALIGNAS	jsoncpp.cpp	/^#define ALIGNAS(/;"	d	file:
+Ac_X	coordinates.h	/^	float Ac_X=0, Ac_Y=0, Ac_Z=0, Gy_X=0, Gy_Y=0, Gy_Z=0;$/;"	m	struct:processed_data
+Ac_X	coordinates.h	/^	int Ac_X, Ac_Y, Ac_Z, Gy_X, Gy_Y, Gy_Z;$/;"	m	struct:__anon1
+Ac_Y	coordinates.h	/^	float Ac_X=0, Ac_Y=0, Ac_Z=0, Gy_X=0, Gy_Y=0, Gy_Z=0;$/;"	m	struct:processed_data
+Ac_Y	coordinates.h	/^	int Ac_X, Ac_Y, Ac_Z, Gy_X, Gy_Y, Gy_Z;$/;"	m	struct:__anon1
+Ac_Z	coordinates.h	/^	float Ac_X=0, Ac_Y=0, Ac_Z=0, Gy_X=0, Gy_Y=0, Gy_Z=0;$/;"	m	struct:processed_data
+Ac_Z	coordinates.h	/^	int Ac_X, Ac_Y, Ac_Z, Gy_X, Gy_Y, Gy_Z;$/;"	m	struct:__anon1
+All	jsoncpp.cpp	/^    All  \/\/\/< Keep all comments.$/;"	e	enum:Json::CommentStyle::Enum	file:
+Args	json.h	/^  typedef std::vector<PathArgument> Args;$/;"	t	class:Json::Path
+ArrayIndex	json.h	/^  typedef Json::ArrayIndex ArrayIndex;$/;"	t	class:Json::Value
+ArrayIndex	json.h	/^typedef unsigned int ArrayIndex;$/;"	t	namespace:Json
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits {$/;"	c	namespace:gnuplotio
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits<T&&> : public ArrayTraits<T> { };$/;"	c	namespace:gnuplotio
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits<T&> : public ArrayTraits<T> { };$/;"	c	namespace:gnuplotio
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits<T,$/;"	c	namespace:gnuplotio
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits<T[N]> : public ArrayTraitsDefaults<T> {$/;"	c	namespace:gnuplotio
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits<arma::Col<T> > : public ArrayTraitsDefaults<T> {$/;"	c	namespace:gnuplotio
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits<arma::Cube<T> > : public ArrayTraitsDefaults<T> {$/;"	c	namespace:gnuplotio
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits<arma::Mat<T> > : public ArrayTraits_ArmaMatOrField<arma::Mat<T>, T> { };$/;"	c	namespace:gnuplotio
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits<arma::Row<T> > : public ArrayTraitsDefaults<T> {$/;"	c	namespace:gnuplotio
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits<arma::field<T> > : public ArrayTraits_ArmaMatOrField<arma::field<T>, T> { };$/;"	c	namespace:gnuplotio
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits<blitz::Array<T, ArrayDim> > : public ArrayTraitsDefaults<T> {$/;"	c	namespace:gnuplotio
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits<std::pair<T, U> > {$/;"	c	namespace:gnuplotio
+ArrayTraits	gnuplot-iostream.h	/^class ArrayTraits<std::tuple<Args...> > :$/;"	c	namespace:gnuplotio
+ArrayTraitsDefaults	gnuplot-iostream.h	/^class ArrayTraitsDefaults {$/;"	c	namespace:gnuplotio
+ArrayTraits_ArmaMatOrField	gnuplot-iostream.h	/^class ArrayTraits_ArmaMatOrField : public ArrayTraitsDefaults<T> {$/;"	c	namespace:gnuplotio
+BOOST_INC	Makefile	/^BOOST_INC = -I\/usr\/local\/include$/;"	m
+BinarySender	gnuplot-iostream.h	/^struct BinarySender {$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^struct BinarySender<T,$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^struct BinarySender<blitz::TinyVector<T, N> > {$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^struct BinarySender<std::complex<T> > {$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^struct BinarySender<std::pair<T, U> > {$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^struct BinarySender<std::tuple<Args...> > {$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^template<> struct BinarySender< float> : public FlatBinarySender< float> { };$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^template<> struct BinarySender<boost::  int8_t> : public FlatBinarySender<boost::  int8_t> { };$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^template<> struct BinarySender<boost:: int16_t> : public FlatBinarySender<boost:: int16_t> { };$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^template<> struct BinarySender<boost:: int32_t> : public FlatBinarySender<boost:: int32_t> { };$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^template<> struct BinarySender<boost:: int64_t> : public FlatBinarySender<boost:: int64_t> { };$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^template<> struct BinarySender<boost:: uint8_t> : public FlatBinarySender<boost:: uint8_t> { };$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^template<> struct BinarySender<boost::uint16_t> : public FlatBinarySender<boost::uint16_t> { };$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^template<> struct BinarySender<boost::uint32_t> : public FlatBinarySender<boost::uint32_t> { };$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^template<> struct BinarySender<boost::uint64_t> : public FlatBinarySender<boost::uint64_t> { };$/;"	s	namespace:gnuplotio
+BinarySender	gnuplot-iostream.h	/^template<> struct BinarySender<double> : public FlatBinarySender<double> { };$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^struct BinfmtSender {$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^struct BinfmtSender<T,$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^struct BinfmtSender<blitz::TinyVector<T, N> > {$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^struct BinfmtSender<std::complex<T> > {$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^struct BinfmtSender<std::pair<T, U> > {$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^struct BinfmtSender<std::tuple<Args...> > {$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^template<> struct BinfmtSender< float> { static void send(std::ostream &stream) { stream << "%float";  } };$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost::  int8_t> { static void send(std::ostream &stream) { stream << "%int8";   } };$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost:: int16_t> { static void send(std::ostream &stream) { stream << "%int16";  } };$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost:: int32_t> { static void send(std::ostream &stream) { stream << "%int32";  } };$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost:: int64_t> { static void send(std::ostream &stream) { stream << "%int64";  } };$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost:: uint8_t> { static void send(std::ostream &stream) { stream << "%uint8";  } };$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost::uint16_t> { static void send(std::ostream &stream) { stream << "%uint16"; } };$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost::uint32_t> { static void send(std::ostream &stream) { stream << "%uint32"; } };$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost::uint64_t> { static void send(std::ostream &stream) { stream << "%uint64"; } };$/;"	s	namespace:gnuplotio
+BinfmtSender	gnuplot-iostream.h	/^template<> struct BinfmtSender<double> { static void send(std::ostream &stream) { stream << "%double"; } };$/;"	s	namespace:gnuplotio
+BlitzIterator	gnuplot-iostream.h	/^	BlitzIterator($/;"	f	class:gnuplotio::BlitzIterator
+BlitzIterator	gnuplot-iostream.h	/^	BlitzIterator() : p(NULL) { }$/;"	f	class:gnuplotio::BlitzIterator
+BlitzIterator	gnuplot-iostream.h	/^class BlitzIterator {$/;"	c	namespace:gnuplotio
+BlitzIterator	gnuplot-iostream.h	/^class BlitzIterator<T, ArrayDim, 1> {$/;"	c	namespace:gnuplotio
+BuiltStyledStreamWriter	jsoncpp.cpp	/^BuiltStyledStreamWriter::BuiltStyledStreamWriter($/;"	f	class:Json::BuiltStyledStreamWriter
+BuiltStyledStreamWriter	jsoncpp.cpp	/^struct BuiltStyledStreamWriter : public StreamWriter$/;"	s	namespace:Json	file:
+CC	Makefile	/^CC=g++$/;"	m
+CCFLAGS	Makefile	/^CCFLAGS=-Wall -std=c++11 -pthread$/;"	m
+CPPTL_JSON_ALLOCATOR_H_INCLUDED	json.h	/^#define CPPTL_JSON_ALLOCATOR_H_INCLUDED$/;"	d
+CPPTL_JSON_ASSERTIONS_H_INCLUDED	json.h	/^#define CPPTL_JSON_ASSERTIONS_H_INCLUDED$/;"	d
+CPPTL_JSON_FEATURES_H_INCLUDED	json.h	/^#define CPPTL_JSON_FEATURES_H_INCLUDED$/;"	d
+CPPTL_JSON_H_INCLUDED	json.h	/^#define CPPTL_JSON_H_INCLUDED$/;"	d
+CPPTL_JSON_READER_H_INCLUDED	json.h	/^#define CPPTL_JSON_READER_H_INCLUDED$/;"	d
+CZString	json.h	/^  class CZString {$/;"	c	class:Json::Value
+CZString	jsoncpp.cpp	/^Value::CZString::CZString(ArrayIndex aindex) : cstr_(0), index_(aindex) {}$/;"	f	class:Json::Value::CZString
+CZString	jsoncpp.cpp	/^Value::CZString::CZString(CZString&& other)$/;"	f	class:Json::Value::CZString
+CZString	jsoncpp.cpp	/^Value::CZString::CZString(char const* str, unsigned ulength, DuplicationPolicy allocate)$/;"	f	class:Json::Value::CZString
+CZString	jsoncpp.cpp	/^Value::CZString::CZString(const CZString& other) {$/;"	f	class:Json::Value::CZString
+CastIntTextSender	gnuplot-iostream.h	/^struct CastIntTextSender {$/;"	s	namespace:gnuplotio
+Char	json.h	/^  typedef char Char;$/;"	t	class:Json::Reader
+Char	jsoncpp.cpp	/^  typedef char Char;$/;"	t	class:Json::OurReader	file:
+CharReader	json.h	/^class JSON_API CharReader {$/;"	c	namespace:Json
+CharReaderBuilder	json.h	/^class JSON_API CharReaderBuilder : public CharReader::Factory {$/;"	c	namespace:Json
+CharReaderBuilder	jsoncpp.cpp	/^CharReaderBuilder::CharReaderBuilder()$/;"	f	class:Json::CharReaderBuilder
+CharReaderPtr	jsoncpp.cpp	/^typedef std::unique_ptr<CharReader> CharReaderPtr;$/;"	t	namespace:Json	file:
+ChildValues	json.h	/^  typedef std::vector<JSONCPP_STRING> ChildValues;$/;"	t	class:Json::StyledStreamWriter
+ChildValues	json.h	/^  typedef std::vector<JSONCPP_STRING> ChildValues;$/;"	t	class:Json::StyledWriter
+ChildValues	jsoncpp.cpp	/^  typedef std::vector<JSONCPP_STRING> ChildValues;$/;"	t	struct:Json::BuiltStyledStreamWriter	file:
+ColRange	gnuplot-iostream.h	/^		ColRange() : p(NULL), row(0), col(0) { }$/;"	f	class:gnuplotio::ArrayTraits::ColRange
+ColRange	gnuplot-iostream.h	/^		ColRange() : p(NULL), row(0), col(0) { }$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField::ColRange
+ColRange	gnuplot-iostream.h	/^		explicit ColRange(const RF *_p, size_t _row) :$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField::ColRange
+ColRange	gnuplot-iostream.h	/^		explicit ColRange(const arma::Cube<T> *_p, size_t _row) :$/;"	f	class:gnuplotio::ArrayTraits::ColRange
+ColRange	gnuplot-iostream.h	/^	class ColRange {$/;"	c	class:gnuplotio::ArrayTraits
+ColRange	gnuplot-iostream.h	/^	class ColRange {$/;"	c	class:gnuplotio::ArrayTraits_ArmaMatOrField
+ColUnwrapNo	gnuplot-iostream.h	/^struct ColUnwrapNo  { };$/;"	s	namespace:gnuplotio
+ColUnwrapYes	gnuplot-iostream.h	/^struct ColUnwrapYes { };$/;"	s	namespace:gnuplotio
+CommentInfo	json.h	/^  struct CommentInfo {$/;"	s	class:Json::Value
+CommentInfo	jsoncpp.cpp	/^Value::CommentInfo::CommentInfo() : comment_(0)$/;"	f	class:Json::Value::CommentInfo
+CommentPlacement	json.h	/^enum CommentPlacement {$/;"	g	namespace:Json
+CommentStyle	jsoncpp.cpp	/^struct CommentStyle {$/;"	s	namespace:Json	file:
+DEFAULT_LOW_PASS	coordinates.h	/^#define DEFAULT_LOW_PASS /;"	d
+DotPlot	plot.cpp	/^DotPlot::DotPlot() {$/;"	f	class:DotPlot
+DotPlot	plot.cpp	/^DotPlot::DotPlot(double x, double y, double z) {$/;"	f	class:DotPlot
+DotPlot	plot.h	/^class DotPlot {$/;"	c
+DuplicationPolicy	json.h	/^    enum DuplicationPolicy {$/;"	g	class:Json::Value::CZString
+Enum	jsoncpp.cpp	/^  enum Enum {$/;"	g	struct:Json::CommentStyle	file:
+ErrorInfo	json.h	/^  class ErrorInfo {$/;"	c	class:Json::Reader
+ErrorInfo	jsoncpp.cpp	/^  class ErrorInfo {$/;"	c	class:Json::OurReader	file:
+Error_InappropriateDeref	gnuplot-iostream.h	/^struct Error_InappropriateDeref { };$/;"	s	namespace:gnuplotio
+Error_WasBlitzPartialSlice	gnuplot-iostream.h	/^class Error_WasBlitzPartialSlice { };$/;"	c	namespace:gnuplotio
+Error_WasNotContainer	gnuplot-iostream.h	/^struct Error_WasNotContainer {$/;"	s	namespace:gnuplotio
+Errors	json.h	/^  typedef std::deque<ErrorInfo> Errors;$/;"	t	class:Json::Reader
+Errors	jsoncpp.cpp	/^  typedef std::deque<ErrorInfo> Errors;$/;"	t	class:Json::OurReader	file:
+Exception	json.h	/^class JSON_API Exception : public std::exception {$/;"	c	namespace:Json
+Exception	jsoncpp.cpp	/^Exception::Exception(JSONCPP_STRING const& msg)$/;"	f	class:Json::Exception
+Factory	json.h	/^  class JSON_API Factory {$/;"	c	class:Json::CharReader
+Factory	json.h	/^  class JSON_API Factory {$/;"	c	class:Json::StreamWriter
+FastWriter	json.h	/^class JSON_API FastWriter : public Writer {$/;"	c	namespace:Json
+FastWriter	jsoncpp.cpp	/^FastWriter::FastWriter()$/;"	f	class:Json::FastWriter
+Features	json.h	/^class JSON_API Features {$/;"	c	namespace:Json
+Features	jsoncpp.cpp	/^Features::Features()$/;"	f	class:Json::Features
+FileHandleWrapper	gnuplot-iostream.h	/^	FileHandleWrapper(std::FILE *_fh, bool _should_use_pclose) :$/;"	f	struct:gnuplotio::FileHandleWrapper
+FileHandleWrapper	gnuplot-iostream.h	/^struct FileHandleWrapper {$/;"	s	namespace:gnuplotio
+FlatBinarySender	gnuplot-iostream.h	/^struct FlatBinarySender {$/;"	s	namespace:gnuplotio
+FloatTextSender	gnuplot-iostream.h	/^struct FloatTextSender {$/;"	s	namespace:gnuplotio
+GNUPLOT_ARMADILLO_SUPPORT_LOADED	gnuplot-iostream.h	/^#define GNUPLOT_ARMADILLO_SUPPORT_LOADED$/;"	d
+GNUPLOT_BLITZ_SUPPORT_LOADED	gnuplot-iostream.h	/^#define GNUPLOT_BLITZ_SUPPORT_LOADED$/;"	d
+GNUPLOT_DEFAULT_COMMAND	gnuplot-iostream.h	/^#	define GNUPLOT_DEFAULT_COMMAND /;"	d
+GNUPLOT_DEPRECATE	gnuplot-iostream.h	/^#		define GNUPLOT_DEPRECATE(/;"	d
+GNUPLOT_DEPRECATE	gnuplot-iostream.h	/^#	define GNUPLOT_DEPRECATE(/;"	d
+GNUPLOT_ENABLE_CXX11	gnuplot-iostream.h	/^#	define GNUPLOT_ENABLE_CXX11 /;"	d
+GNUPLOT_ENABLE_FEEDBACK	gnuplot-iostream.h	/^#define GNUPLOT_ENABLE_FEEDBACK$/;"	d
+GNUPLOT_FILENO	gnuplot-iostream.h	/^#	define GNUPLOT_FILENO /;"	d
+GNUPLOT_IOSTREAM_H	gnuplot-iostream.h	/^#define GNUPLOT_IOSTREAM_H$/;"	d
+GNUPLOT_IOSTREAM_VERSION	gnuplot-iostream.h	/^#define GNUPLOT_IOSTREAM_VERSION /;"	d
+GNUPLOT_ISNAN	gnuplot-iostream.h	/^#	define GNUPLOT_ISNAN /;"	d
+GNUPLOT_MSVC_WARNING_4996_POP	gnuplot-iostream.h	/^#	define GNUPLOT_MSVC_WARNING_4996_POP /;"	d
+GNUPLOT_MSVC_WARNING_4996_POP	gnuplot-iostream.h	/^#	define GNUPLOT_MSVC_WARNING_4996_POP$/;"	d
+GNUPLOT_MSVC_WARNING_4996_PUSH	gnuplot-iostream.h	/^#	define GNUPLOT_MSVC_WARNING_4996_PUSH /;"	d
+GNUPLOT_MSVC_WARNING_4996_PUSH	gnuplot-iostream.h	/^#	define GNUPLOT_MSVC_WARNING_4996_PUSH$/;"	d
+GNUPLOT_PCLOSE	gnuplot-iostream.h	/^#	define GNUPLOT_PCLOSE /;"	d
+GNUPLOT_POPEN	gnuplot-iostream.h	/^#	define GNUPLOT_POPEN /;"	d
+GNUPLOT_STATIC_ASSERT_MSG	gnuplot-iostream.h	/^#	define GNUPLOT_STATIC_ASSERT_MSG(/;"	d
+GNUPLOT_USE_TMPFILE	gnuplot-iostream.h	/^#	define GNUPLOT_USE_TMPFILE$/;"	d
+GRAVITY	coordinates.h	/^#define GRAVITY /;"	d
+Gnuplot	gnuplot-iostream.h	/^	explicit Gnuplot(FILE *_fh) :$/;"	f	class:gnuplotio::Gnuplot
+Gnuplot	gnuplot-iostream.h	/^	explicit Gnuplot(const std::string &_cmd="") :$/;"	f	class:gnuplotio::Gnuplot
+Gnuplot	gnuplot-iostream.h	/^class Gnuplot :$/;"	c	namespace:gnuplotio
+GnuplotFeedback	gnuplot-iostream.h	/^	GnuplotFeedback() { }$/;"	f	class:gnuplotio::GnuplotFeedback
+GnuplotFeedback	gnuplot-iostream.h	/^class GnuplotFeedback {$/;"	c	namespace:gnuplotio
+GnuplotFeedbackPty	gnuplot-iostream.h	/^	explicit GnuplotFeedbackPty(bool debug_messages) :$/;"	f	class:gnuplotio::GnuplotFeedbackPty
+GnuplotFeedbackPty	gnuplot-iostream.h	/^class GnuplotFeedbackPty : public GnuplotFeedback {$/;"	c	namespace:gnuplotio
+GnuplotTmpfile	gnuplot-iostream.h	/^	GnuplotTmpfile() :$/;"	f	class:gnuplotio::GnuplotTmpfile
+GnuplotTmpfile	gnuplot-iostream.h	/^class GnuplotTmpfile {$/;"	c	namespace:gnuplotio
+Gy_X	coordinates.h	/^	float Ac_X=0, Ac_Y=0, Ac_Z=0, Gy_X=0, Gy_Y=0, Gy_Z=0;$/;"	m	struct:processed_data
+Gy_X	coordinates.h	/^	int Ac_X, Ac_Y, Ac_Z, Gy_X, Gy_Y, Gy_Z;$/;"	m	struct:__anon1
+Gy_Y	coordinates.h	/^	float Ac_X=0, Ac_Y=0, Ac_Z=0, Gy_X=0, Gy_Y=0, Gy_Z=0;$/;"	m	struct:processed_data
+Gy_Y	coordinates.h	/^	int Ac_X, Ac_Y, Ac_Z, Gy_X, Gy_Y, Gy_Z;$/;"	m	struct:__anon1
+Gy_Z	coordinates.h	/^	float Ac_X=0, Ac_Y=0, Ac_Z=0, Gy_X=0, Gy_Y=0, Gy_Z=0;$/;"	m	struct:processed_data
+Gy_Z	coordinates.h	/^	int Ac_X, Ac_Y, Ac_Z, Gy_X, Gy_Y, Gy_Z;$/;"	m	struct:__anon1
+HT	gnuplot-iostream.h	/^	typedef typename T::head_type HT;$/;"	t	class:gnuplotio::ArrayTraits
+InArgs	json.h	/^  typedef std::vector<const PathArgument*> InArgs;$/;"	t	class:Json::Path
+InRange	jsoncpp.cpp	/^static inline bool InRange(double d, T min, U max) {$/;"	f	namespace:Json
+Int	json.h	/^  typedef Json::Int Int;$/;"	t	class:Json::Value
+Int	json.h	/^typedef int Int;$/;"	t	namespace:Json
+Int64	json.h	/^  typedef Json::Int64 Int64;$/;"	t	class:Json::Value
+Int64	json.h	/^typedef __int64 Int64;$/;"	t	namespace:Json
+Int64	json.h	/^typedef long long int Int64;$/;"	t	namespace:Json
+IsIntegral	jsoncpp.cpp	/^static bool IsIntegral(double d) {$/;"	f	namespace:Json
+IteratorRange	gnuplot-iostream.h	/^	IteratorRange() { }$/;"	f	class:gnuplotio::IteratorRange
+IteratorRange	gnuplot-iostream.h	/^	IteratorRange(const TI &_it, const TI &_end) : it(_it), end(_end) { }$/;"	f	class:gnuplotio::IteratorRange
+IteratorRange	gnuplot-iostream.h	/^class IteratorRange {$/;"	c	namespace:gnuplotio
+JSONCPP_DEPRECATED	json.h	/^#    define JSONCPP_DEPRECATED(/;"	d
+JSONCPP_DEPRECATED	json.h	/^#define JSONCPP_DEPRECATED(/;"	d
+JSONCPP_ISTREAM	json.h	/^#define JSONCPP_ISTREAM /;"	d
+JSONCPP_ISTRINGSTREAM	json.h	/^#define JSONCPP_ISTRINGSTREAM /;"	d
+JSONCPP_NORETURN	json.h	/^#    define JSONCPP_NORETURN /;"	d
+JSONCPP_OSTREAM	json.h	/^#define JSONCPP_OSTREAM /;"	d
+JSONCPP_OSTRINGSTREAM	json.h	/^#define JSONCPP_OSTRINGSTREAM /;"	d
+JSONCPP_OVERRIDE	json.h	/^  CharReader* newCharReader() const JSONCPP_OVERRIDE;$/;"	m	class:Json::CharReaderBuilder
+JSONCPP_OVERRIDE	json.h	/^  JSONCPP_STRING write(const Value& root) JSONCPP_OVERRIDE;$/;"	m	class:Json::FastWriter
+JSONCPP_OVERRIDE	json.h	/^  JSONCPP_STRING write(const Value& root) JSONCPP_OVERRIDE;$/;"	m	class:Json::StyledWriter
+JSONCPP_OVERRIDE	json.h	/^  StreamWriter* newStreamWriter() const JSONCPP_OVERRIDE;$/;"	m	class:Json::StreamWriterBuilder
+JSONCPP_OVERRIDE	json.h	/^  char const* what() const throw() JSONCPP_OVERRIDE;$/;"	m	class:Json::Exception
+JSONCPP_OVERRIDE	json.h	/^  ~CharReaderBuilder() JSONCPP_OVERRIDE;$/;"	m	class:Json::CharReaderBuilder
+JSONCPP_OVERRIDE	json.h	/^  ~Exception() throw() JSONCPP_OVERRIDE;$/;"	m	class:Json::Exception
+JSONCPP_OVERRIDE	json.h	/^  ~StreamWriterBuilder() JSONCPP_OVERRIDE;$/;"	m	class:Json::StreamWriterBuilder
+JSONCPP_OVERRIDE	json.h	/^# define JSONCPP_OVERRIDE$/;"	d
+JSONCPP_OVERRIDE	jsoncpp.cpp	/^  int write(Value const& root, JSONCPP_OSTREAM* sout) JSONCPP_OVERRIDE;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+JSONCPP_STRING	json.h	/^#define JSONCPP_STRING /;"	d
+JSONCPP_USING_SECURE_MEMORY	json.h	/^#define JSONCPP_USING_SECURE_MEMORY /;"	d
+JSONCPP_USING_SECURE_MEMORY	json.h	/^#undef JSONCPP_USING_SECURE_MEMORY$/;"	d
+JSONCPP_VERSION_HEXA	json.h	/^# define JSONCPP_VERSION_HEXA /;"	d
+JSONCPP_VERSION_MAJOR	json.h	/^# define JSONCPP_VERSION_MAJOR /;"	d
+JSONCPP_VERSION_MINOR	json.h	/^# define JSONCPP_VERSION_MINOR /;"	d
+JSONCPP_VERSION_PATCH	json.h	/^# define JSONCPP_VERSION_PATCH /;"	d
+JSONCPP_VERSION_QUALIFIER	json.h	/^# define JSONCPP_VERSION_QUALIFIER$/;"	d
+JSONCPP_VERSION_STRING	json.h	/^# define JSONCPP_VERSION_STRING /;"	d
+JSON_AMALGATED_H_INCLUDED	json.h	/^# define JSON_AMALGATED_H_INCLUDED$/;"	d
+JSON_API	json.h	/^#define JSON_API /;"	d
+JSON_API	json.h	/^#define JSON_API$/;"	d
+JSON_ASSERT	json.h	/^# define JSON_ASSERT(/;"	d
+JSON_ASSERT_MESSAGE	json.h	/^#define JSON_ASSERT_MESSAGE(/;"	d
+JSON_ASSERT_UNREACHABLE	jsoncpp.cpp	/^#define JSON_ASSERT_UNREACHABLE /;"	d	file:
+JSON_CONFIG_H_INCLUDED	json.h	/^#define JSON_CONFIG_H_INCLUDED$/;"	d
+JSON_FAIL_MESSAGE	json.h	/^# define JSON_FAIL_MESSAGE(/;"	d
+JSON_FORWARDS_H_INCLUDED	json.h	/^#define JSON_FORWARDS_H_INCLUDED$/;"	d
+JSON_HAS_INT64	json.h	/^#define JSON_HAS_INT64$/;"	d
+JSON_HAS_INT64	json.h	/^#undef JSON_HAS_INT64$/;"	d
+JSON_HAS_RVALUE_REFERENCES	json.h	/^#define JSON_HAS_RVALUE_REFERENCES /;"	d
+JSON_IS_AMALGAMATION	json.h	/^#define JSON_IS_AMALGAMATION$/;"	d
+JSON_USE_CPPTL	json.h	/^#define JSON_USE_CPPTL /;"	d
+JSON_USE_EXCEPTION	json.h	/^#define JSON_USE_EXCEPTION /;"	d
+JSON_USE_INT64_DOUBLE_CONVERSION	json.h	/^#    define JSON_USE_INT64_DOUBLE_CONVERSION /;"	d
+JSON_USE_INT64_DOUBLE_CONVERSION	json.h	/^#  define JSON_USE_INT64_DOUBLE_CONVERSION /;"	d
+JSON_VERSION_H_INCLUDED	json.h	/^# define JSON_VERSION_H_INCLUDED$/;"	d
+JSON_WRITER_H_INCLUDED	json.h	/^#define JSON_WRITER_H_INCLUDED$/;"	d
+Json	json.h	/^namespace Json {$/;"	n
+Json	jsoncpp.cpp	/^namespace Json {$/;"	n	file:
+Kind	json.h	/^  enum Kind {$/;"	g	class:Json::PathArgument
+LDFLAGS	Makefile	/^LDFLAGS=-L\/usr\/local\/lib -lpthread -lutil -lboost_system -lboost_thread -lboost_iostreams -lboost_filesystem$/;"	m
+LIB_JSONCPP_JSON_TOOL_H_INCLUDED	jsoncpp.cpp	/^#define LIB_JSONCPP_JSON_TOOL_H_INCLUDED$/;"	d	file:
+LargestInt	json.h	/^  typedef Json::LargestInt LargestInt;$/;"	t	class:Json::Value
+LargestInt	json.h	/^typedef Int64 LargestInt;$/;"	t	namespace:Json
+LargestInt	json.h	/^typedef int LargestInt;$/;"	t	namespace:Json
+LargestUInt	json.h	/^  typedef Json::LargestUInt LargestUInt;$/;"	t	class:Json::Value
+LargestUInt	json.h	/^typedef UInt64 LargestUInt;$/;"	t	namespace:Json
+LargestUInt	json.h	/^typedef unsigned int LargestUInt;$/;"	t	namespace:Json
+Location	json.h	/^  typedef const Char* Location;$/;"	t	class:Json::Reader
+Location	jsoncpp.cpp	/^  typedef const Char* Location;$/;"	t	class:Json::OurReader	file:
+LogicError	json.h	/^class JSON_API LogicError : public Exception {$/;"	c	namespace:Json
+LogicError	jsoncpp.cpp	/^LogicError::LogicError(JSONCPP_STRING const& msg)$/;"	f	class:Json::LogicError
+Members	json.h	/^  typedef std::vector<JSONCPP_STRING> Members;$/;"	t	class:Json::Value
+Mode1D	gnuplot-iostream.h	/^struct Mode1D       { static std::string class_name() { return "Mode1D"      ; } };$/;"	s	namespace:gnuplotio
+Mode1DUnwrap	gnuplot-iostream.h	/^struct Mode1DUnwrap { static std::string class_name() { return "Mode1DUnwrap"; } };$/;"	s	namespace:gnuplotio
+Mode2D	gnuplot-iostream.h	/^struct Mode2D       { static std::string class_name() { return "Mode2D"      ; } };$/;"	s	namespace:gnuplotio
+Mode2DUnwrap	gnuplot-iostream.h	/^struct Mode2DUnwrap { static std::string class_name() { return "Mode2DUnwrap"; } };$/;"	s	namespace:gnuplotio
+ModeAuto	gnuplot-iostream.h	/^struct ModeAuto     { static std::string class_name() { return "ModeAuto"    ; } };$/;"	s	namespace:gnuplotio
+ModeAutoDecoder	gnuplot-iostream.h	/^struct ModeAutoDecoder { };$/;"	s	namespace:gnuplotio
+ModeAutoDecoder	gnuplot-iostream.h	/^struct ModeAutoDecoder<T,$/;"	s	namespace:gnuplotio
+ModeBinary	gnuplot-iostream.h	/^struct ModeBinary { static const bool is_text = 0; static const bool is_binfmt = 0; static const bool is_size = 0; };$/;"	s	namespace:gnuplotio
+ModeBinfmt	gnuplot-iostream.h	/^struct ModeBinfmt { static const bool is_text = 0; static const bool is_binfmt = 1; static const bool is_size = 0; };$/;"	s	namespace:gnuplotio
+ModeSize	gnuplot-iostream.h	/^struct ModeSize   { static const bool is_text = 0; static const bool is_binfmt = 0; static const bool is_size = 1; };$/;"	s	namespace:gnuplotio
+ModeText	gnuplot-iostream.h	/^struct ModeText   { static const bool is_text = 1; static const bool is_binfmt = 0; static const bool is_size = 0; };$/;"	s	namespace:gnuplotio
+Most	jsoncpp.cpp	/^    Most,  \/\/\/< Recover odd behavior of previous versions (not implemented yet).$/;"	e	enum:Json::CommentStyle::Enum	file:
+Nodes	json.h	/^  typedef std::stack<Value*> Nodes;$/;"	t	class:Json::Reader
+Nodes	jsoncpp.cpp	/^  typedef std::stack<Value*> Nodes;$/;"	t	class:Json::OurReader	file:
+None	jsoncpp.cpp	/^    None,  \/\/\/< Drop all comments.$/;"	e	enum:Json::CommentStyle::Enum	file:
+OBJECTS	Makefile	/^OBJECTS=$(SOURCES:.cpp=.o)$/;"	m
+ObjectValues	json.h	/^  typedef CppTL::SmallMap<CZString, Value> ObjectValues;$/;"	t	class:Json::Value
+ObjectValues	json.h	/^  typedef std::map<CZString, Value> ObjectValues;$/;"	t	class:Json::Value
+OurCharReader	jsoncpp.cpp	/^  OurCharReader($/;"	f	class:Json::OurCharReader
+OurCharReader	jsoncpp.cpp	/^class OurCharReader : public CharReader {$/;"	c	namespace:Json	file:
+OurFeatures	jsoncpp.cpp	/^class OurFeatures {$/;"	c	namespace:Json	file:
+OurReader	jsoncpp.cpp	/^OurReader::OurReader(OurFeatures const& features)$/;"	f	class:Json::OurReader
+OurReader	jsoncpp.cpp	/^class OurReader {$/;"	c	namespace:Json	file:
+PI_CONST	coordinates.h	/^#define PI_CONST /;"	d
+PLOT_H	plot.h	/^#define PLOT_H$/;"	d
+PairOfRange	gnuplot-iostream.h	/^	PairOfRange() { }$/;"	f	class:gnuplotio::PairOfRange
+PairOfRange	gnuplot-iostream.h	/^	PairOfRange(const RT &_l, const RU &_r) : l(_l), r(_r) { }$/;"	f	class:gnuplotio::PairOfRange
+PairOfRange	gnuplot-iostream.h	/^class PairOfRange {$/;"	c	namespace:gnuplotio
+Path	json.h	/^class JSON_API Path {$/;"	c	namespace:Json
+Path	jsoncpp.cpp	/^Path::Path(const JSONCPP_STRING& path,$/;"	f	class:Json::Path
+PathArgument	json.h	/^class JSON_API PathArgument {$/;"	c	namespace:Json
+PathArgument	jsoncpp.cpp	/^PathArgument::PathArgument() : key_(), index_(), kind_(kindNone) {}$/;"	f	class:Json::PathArgument
+PathArgument	jsoncpp.cpp	/^PathArgument::PathArgument(ArrayIndex index)$/;"	f	class:Json::PathArgument
+PathArgument	jsoncpp.cpp	/^PathArgument::PathArgument(const JSONCPP_STRING& key)$/;"	f	class:Json::PathArgument
+PathArgument	jsoncpp.cpp	/^PathArgument::PathArgument(const char* key)$/;"	f	class:Json::PathArgument
+ROT_SENSITIVITY_0	coordinates.h	/^#define ROT_SENSITIVITY_0 /;"	d
+ROT_SENSITIVITY_1	coordinates.h	/^#define ROT_SENSITIVITY_1 /;"	d
+ROT_SENSITIVITY_2	coordinates.h	/^#define ROT_SENSITIVITY_2 /;"	d
+ROT_SENSITIVITY_3	coordinates.h	/^#define ROT_SENSITIVITY_3 /;"	d
+Reader	json.h	/^class JSON_API Reader {$/;"	c	namespace:Json
+Reader	jsoncpp.cpp	/^Reader::Reader()$/;"	f	class:Json::Reader
+Reader	jsoncpp.cpp	/^Reader::Reader(const Features& features)$/;"	f	class:Json::Reader
+RowRange	gnuplot-iostream.h	/^		RowRange() : p(NULL), row(0) { }$/;"	f	class:gnuplotio::ArrayTraits::RowRange
+RowRange	gnuplot-iostream.h	/^		RowRange() : p(NULL), row(0) { }$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField::RowRange
+RowRange	gnuplot-iostream.h	/^		explicit RowRange(const RF *_p) : p(_p), row(0) { }$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField::RowRange
+RowRange	gnuplot-iostream.h	/^		explicit RowRange(const arma::Cube<T> *_p) : p(_p), row(0) { }$/;"	f	class:gnuplotio::ArrayTraits::RowRange
+RowRange	gnuplot-iostream.h	/^	class RowRange {$/;"	c	class:gnuplotio::ArrayTraits
+RowRange	gnuplot-iostream.h	/^	class RowRange {$/;"	c	class:gnuplotio::ArrayTraits_ArmaMatOrField
+RuntimeError	json.h	/^class JSON_API RuntimeError : public Exception {$/;"	c	namespace:Json
+RuntimeError	jsoncpp.cpp	/^RuntimeError::RuntimeError(JSONCPP_STRING const& msg)$/;"	f	class:Json::RuntimeError
+SAMPLE_SIZE	coordinates.h	/^#define SAMPLE_SIZE /;"	d
+SOURCES	Makefile	/^SOURCES=$(wildcard *.cpp)$/;"	m
+SecureAllocator	json.h	/^		SecureAllocator() {}$/;"	f	class:Json::SecureAllocator
+SecureAllocator	json.h	/^		template<typename U> SecureAllocator(const SecureAllocator<U>&) {}$/;"	f	class:Json::SecureAllocator
+SecureAllocator	json.h	/^class SecureAllocator {$/;"	c	namespace:Json
+SelfType	json.h	/^  typedef ValueConstIterator SelfType;$/;"	t	class:Json::ValueConstIterator
+SelfType	json.h	/^  typedef ValueIterator SelfType;$/;"	t	class:Json::ValueIterator
+SelfType	json.h	/^  typedef ValueIteratorBase SelfType;$/;"	t	class:Json::ValueIteratorBase
+SliceRange	gnuplot-iostream.h	/^		SliceRange() : p(NULL), col(0), slice(0) { }$/;"	f	class:gnuplotio::ArrayTraits::SliceRange
+SliceRange	gnuplot-iostream.h	/^		explicit SliceRange(const arma::Cube<T> *_p, size_t _row, size_t _col) :$/;"	f	class:gnuplotio::ArrayTraits::SliceRange
+SliceRange	gnuplot-iostream.h	/^	class SliceRange {$/;"	c	class:gnuplotio::ArrayTraits
+StaticString	json.h	/^  explicit StaticString(const char* czstring) : c_str_(czstring) {}$/;"	f	class:Json::StaticString
+StaticString	json.h	/^class JSON_API StaticString {$/;"	c	namespace:Json
+StdTupUnwinder	gnuplot-iostream.h	/^struct StdTupUnwinder {$/;"	s	namespace:gnuplotio
+StdTupUnwinder	gnuplot-iostream.h	/^struct StdTupUnwinder<Tuple, 0> {$/;"	s	namespace:gnuplotio
+StreamWriter	json.h	/^class JSON_API StreamWriter {$/;"	c	namespace:Json
+StreamWriter	jsoncpp.cpp	/^StreamWriter::StreamWriter()$/;"	f	class:Json::StreamWriter
+StreamWriterBuilder	json.h	/^class JSON_API StreamWriterBuilder : public StreamWriter::Factory {$/;"	c	namespace:Json
+StreamWriterBuilder	jsoncpp.cpp	/^StreamWriterBuilder::StreamWriterBuilder()$/;"	f	class:Json::StreamWriterBuilder
+StreamWriterPtr	jsoncpp.cpp	/^typedef std::unique_ptr<StreamWriter> StreamWriterPtr;$/;"	t	namespace:Json	file:
+StringStorage	json.h	/^    struct StringStorage {$/;"	s	class:Json::Value::CZString
+StructuredError	json.h	/^  struct StructuredError {$/;"	s	class:Json::Reader
+StructuredError	jsoncpp.cpp	/^  struct StructuredError {$/;"	s	class:Json::OurReader	file:
+StyledStreamWriter	json.h	/^class JSON_API StyledStreamWriter {$/;"	c	namespace:Json
+StyledStreamWriter	jsoncpp.cpp	/^StyledStreamWriter::StyledStreamWriter(JSONCPP_STRING indentation)$/;"	f	class:Json::StyledStreamWriter
+StyledWriter	json.h	/^class JSON_API StyledWriter : public Writer {$/;"	c	namespace:Json
+StyledWriter	jsoncpp.cpp	/^StyledWriter::StyledWriter()$/;"	f	class:Json::StyledWriter
+TARGET	Makefile	/^TARGET=test$/;"	m
+TT	gnuplot-iostream.h	/^	typedef typename T::tail_type TT;$/;"	t	class:gnuplotio::ArrayTraits
+TextSender	gnuplot-iostream.h	/^struct TextSender {$/;"	s	namespace:gnuplotio
+TextSender	gnuplot-iostream.h	/^struct TextSender<T,$/;"	s	namespace:gnuplotio
+TextSender	gnuplot-iostream.h	/^struct TextSender<blitz::TinyVector<T, N> > {$/;"	s	namespace:gnuplotio
+TextSender	gnuplot-iostream.h	/^struct TextSender<std::complex<T> > {$/;"	s	namespace:gnuplotio
+TextSender	gnuplot-iostream.h	/^struct TextSender<std::pair<T, U> > {$/;"	s	namespace:gnuplotio
+TextSender	gnuplot-iostream.h	/^struct TextSender<std::tuple<Args...> > {$/;"	s	namespace:gnuplotio
+TextSender	gnuplot-iostream.h	/^template<> struct TextSender<          char> : public CastIntTextSender<          char> { };$/;"	s	namespace:gnuplotio
+TextSender	gnuplot-iostream.h	/^template<> struct TextSender<      float> : FloatTextSender<      float> { };$/;"	s	namespace:gnuplotio
+TextSender	gnuplot-iostream.h	/^template<> struct TextSender<     double> : FloatTextSender<     double> { };$/;"	s	namespace:gnuplotio
+TextSender	gnuplot-iostream.h	/^template<> struct TextSender<   signed char> : public CastIntTextSender<   signed char> { };$/;"	s	namespace:gnuplotio
+TextSender	gnuplot-iostream.h	/^template<> struct TextSender< unsigned char> : public CastIntTextSender< unsigned char> { };$/;"	s	namespace:gnuplotio
+TextSender	gnuplot-iostream.h	/^template<> struct TextSender<long double> : FloatTextSender<long double> { };$/;"	s	namespace:gnuplotio
+Token	json.h	/^  class Token {$/;"	c	class:Json::Reader
+Token	jsoncpp.cpp	/^  class Token {$/;"	c	class:Json::OurReader	file:
+TokenType	json.h	/^  enum TokenType {$/;"	g	class:Json::Reader
+TokenType	jsoncpp.cpp	/^  enum TokenType {$/;"	g	class:Json::OurReader	file:
+Tuple	gnuplot-iostream.h	/^	typedef std::tuple<Args...> Tuple;$/;"	t	class:gnuplotio::ArrayTraits
+Tuple	gnuplot-iostream.h	/^	typedef typename std::tuple<Args...> Tuple;$/;"	t	struct:gnuplotio::BinarySender
+Tuple	gnuplot-iostream.h	/^	typedef typename std::tuple<Args...> Tuple;$/;"	t	struct:gnuplotio::BinfmtSender
+Tuple	gnuplot-iostream.h	/^	typedef typename std::tuple<Args...> Tuple;$/;"	t	struct:gnuplotio::TextSender
+UInt	json.h	/^  typedef Json::UInt UInt;$/;"	t	class:Json::Value
+UInt	json.h	/^typedef unsigned int UInt;$/;"	t	namespace:Json
+UInt64	json.h	/^  typedef Json::UInt64 UInt64;$/;"	t	class:Json::Value
+UInt64	json.h	/^typedef unsigned __int64 UInt64;$/;"	t	namespace:Json
+UInt64	json.h	/^typedef unsigned long long int UInt64;$/;"	t	namespace:Json
+UIntToStringBuffer	jsoncpp.cpp	/^typedef char UIntToStringBuffer[uintToStringBufferSize];$/;"	t	namespace:Json	file:
+VELOCITY_RESET_VAL	coordinates.h	/^#define VELOCITY_RESET_VAL /;"	d
+Value	json.h	/^class JSON_API Value {$/;"	c	namespace:Json
+Value	jsoncpp.cpp	/^Value::Value(Int value) {$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(Int64 value) {$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(UInt value) {$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(UInt64 value) {$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(Value const& other)$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(Value&& other) {$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(ValueType vtype) {$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(bool value) {$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(const CppTL::ConstString& value) {$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(const JSONCPP_STRING& value) {$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(const StaticString& value) {$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(const char* beginValue, const char* endValue) {$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(const char* value) {$/;"	f	class:Json::Value
+Value	jsoncpp.cpp	/^Value::Value(double value) {$/;"	f	class:Json::Value
+ValueConstIterator	json.h	/^class JSON_API ValueConstIterator : public ValueIteratorBase {$/;"	c	namespace:Json
+ValueConstIterator	jsoncpp.cpp	/^ValueConstIterator::ValueConstIterator($/;"	f	class:Json::ValueConstIterator
+ValueConstIterator	jsoncpp.cpp	/^ValueConstIterator::ValueConstIterator() {}$/;"	f	class:Json::ValueConstIterator
+ValueConstIterator	jsoncpp.cpp	/^ValueConstIterator::ValueConstIterator(ValueIterator const& other)$/;"	f	class:Json::ValueConstIterator
+ValueHolder	json.h	/^  union ValueHolder {$/;"	u	class:Json::Value
+ValueIterator	json.h	/^class JSON_API ValueIterator : public ValueIteratorBase {$/;"	c	namespace:Json
+ValueIterator	jsoncpp.cpp	/^ValueIterator::ValueIterator() {}$/;"	f	class:Json::ValueIterator
+ValueIterator	jsoncpp.cpp	/^ValueIterator::ValueIterator(const Value::ObjectValues::iterator& current)$/;"	f	class:Json::ValueIterator
+ValueIterator	jsoncpp.cpp	/^ValueIterator::ValueIterator(const ValueConstIterator& other)$/;"	f	class:Json::ValueIterator
+ValueIterator	jsoncpp.cpp	/^ValueIterator::ValueIterator(const ValueIterator& other)$/;"	f	class:Json::ValueIterator
+ValueIteratorBase	json.h	/^class JSON_API ValueIteratorBase {$/;"	c	namespace:Json
+ValueIteratorBase	jsoncpp.cpp	/^ValueIteratorBase::ValueIteratorBase($/;"	f	class:Json::ValueIteratorBase
+ValueIteratorBase	jsoncpp.cpp	/^ValueIteratorBase::ValueIteratorBase()$/;"	f	class:Json::ValueIteratorBase
+ValueType	json.h	/^enum ValueType {$/;"	g	namespace:Json
+VecOfRange	gnuplot-iostream.h	/^	VecOfRange() { }$/;"	f	class:gnuplotio::VecOfRange
+VecOfRange	gnuplot-iostream.h	/^	explicit VecOfRange(const std::vector<RT> &_rvec) : rvec(_rvec) { }$/;"	f	class:gnuplotio::VecOfRange
+VecOfRange	gnuplot-iostream.h	/^class VecOfRange {$/;"	c	namespace:gnuplotio
+Writer	json.h	/^class JSON_API Writer {$/;"	c	namespace:Json
+X	coordinates.h	/^	float X, Y, Z;			\/\/ coordinates of x y z$/;"	m	class:coordinates
+Y	coordinates.h	/^	float X, Y, Z;			\/\/ coordinates of x y z$/;"	m	class:coordinates
+Z	coordinates.h	/^	float X, Y, Z;			\/\/ coordinates of x y z$/;"	m	class:coordinates
+a	coordinates.h	/^	float a;			\/\/ constant for low pass band$/;"	m	class:coordinates
+aX	coordinates.h	/^	float aX, aY, aZ;$/;"	m	class:coordinates
+aY	coordinates.h	/^	float aX, aY, aZ;$/;"	m	class:coordinates
+aZ	coordinates.h	/^	float aX, aY, aZ;$/;"	m	class:coordinates
+acc_sensitivity	coordinates.h	/^	int count, acc_sensitivity;$/;"	m	class:coordinates
+addChildValues_	json.h	/^  bool addChildValues_;$/;"	m	class:Json::StyledWriter
+addChildValues_	jsoncpp.cpp	/^  bool addChildValues_ : 1;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+addComment	jsoncpp.cpp	/^OurReader::addComment(Location begin, Location end, CommentPlacement placement) {$/;"	f	class:Json::OurReader
+addComment	jsoncpp.cpp	/^Reader::addComment(Location begin, Location end, CommentPlacement placement) {$/;"	f	class:Json::Reader
+addError	jsoncpp.cpp	/^OurReader::addError(const JSONCPP_STRING& message, Token& token, Location extra) {$/;"	f	class:Json::OurReader
+addError	jsoncpp.cpp	/^Reader::addError(const JSONCPP_STRING& message, Token& token, Location extra) {$/;"	f	class:Json::Reader
+addErrorAndRecover	jsoncpp.cpp	/^bool OurReader::addErrorAndRecover(const JSONCPP_STRING& message,$/;"	f	class:Json::OurReader
+addErrorAndRecover	jsoncpp.cpp	/^bool Reader::addErrorAndRecover(const JSONCPP_STRING& message,$/;"	f	class:Json::Reader
+addPathInArg	jsoncpp.cpp	/^void Path::addPathInArg(const JSONCPP_STRING& \/*path*\/,$/;"	f	class:Json::Path
+address	json.h	/^		const_pointer address( const_reference x ) const {$/;"	f	class:Json::SecureAllocator
+address	json.h	/^		pointer address( reference x ) const {$/;"	f	class:Json::SecureAllocator
+all	jsoncpp.cpp	/^Features Features::all() { return Features(); }$/;"	f	class:Json::Features
+all	jsoncpp.cpp	/^OurFeatures OurFeatures::all() { return OurFeatures(); }$/;"	f	class:Json::OurFeatures
+allocFeedback	gnuplot-iostream.h	/^	void allocFeedback() {$/;"	f	class:gnuplotio::Gnuplot
+allocate	json.h	/^		pointer allocate(size_type n) {$/;"	f	class:Json::SecureAllocator
+allowComments_	json.h	/^  bool allowComments_;$/;"	m	class:Json::Features
+allowComments_	jsoncpp.cpp	/^  bool allowComments_;$/;"	m	class:Json::OurFeatures	file:
+allowDroppedNullPlaceholders_	json.h	/^  bool allowDroppedNullPlaceholders_;$/;"	m	class:Json::Features
+allowDroppedNullPlaceholders_	jsoncpp.cpp	/^  bool allowDroppedNullPlaceholders_;$/;"	m	class:Json::OurFeatures	file:
+allowNumericKeys_	json.h	/^  bool allowNumericKeys_;$/;"	m	class:Json::Features
+allowNumericKeys_	jsoncpp.cpp	/^  bool allowNumericKeys_;$/;"	m	class:Json::OurFeatures	file:
+allowSingleQuotes_	jsoncpp.cpp	/^  bool allowSingleQuotes_;$/;"	m	class:Json::OurFeatures	file:
+allowSpecialFloats_	jsoncpp.cpp	/^  bool allowSpecialFloats_;$/;"	m	class:Json::OurFeatures	file:
+allow_auto_unwrap	gnuplot-iostream.h	/^	static const bool allow_auto_unwrap = false;$/;"	m	class:gnuplotio::ArrayTraits
+allow_auto_unwrap	gnuplot-iostream.h	/^	static const bool allow_auto_unwrap = false;$/;"	m	class:gnuplotio::ArrayTraits_ArmaMatOrField
+allow_auto_unwrap	gnuplot-iostream.h	/^	static const bool allow_auto_unwrap = false;$/;"	m	class:gnuplotio::VecOfRange
+allow_auto_unwrap	gnuplot-iostream.h	/^	static const bool allow_auto_unwrap = true;$/;"	m	class:gnuplotio::ArrayTraitsDefaults
+append	jsoncpp.cpp	/^Value& Value::append(const Value& value) { return (*this)[size()] = value; }$/;"	f	class:Json::Value
+args_	json.h	/^  Args args_;$/;"	m	class:Json::Path
+arrayValue	json.h	/^  arrayValue,    \/\/\/< array value (ordered list)$/;"	e	enum:Json::ValueType
+asBool	jsoncpp.cpp	/^bool Value::asBool() const {$/;"	f	class:Json::Value
+asCString	jsoncpp.cpp	/^const char* Value::asCString() const {$/;"	f	class:Json::Value
+asConstString	jsoncpp.cpp	/^CppTL::ConstString Value::asConstString() const {$/;"	f	class:Json::Value
+asDouble	jsoncpp.cpp	/^double Value::asDouble() const {$/;"	f	class:Json::Value
+asFloat	jsoncpp.cpp	/^float Value::asFloat() const {$/;"	f	class:Json::Value
+asInt	jsoncpp.cpp	/^Value::Int Value::asInt() const {$/;"	f	class:Json::Value
+asInt64	jsoncpp.cpp	/^Value::Int64 Value::asInt64() const {$/;"	f	class:Json::Value
+asLargestInt	jsoncpp.cpp	/^LargestInt Value::asLargestInt() const {$/;"	f	class:Json::Value
+asLargestUInt	jsoncpp.cpp	/^LargestUInt Value::asLargestUInt() const {$/;"	f	class:Json::Value
+asString	jsoncpp.cpp	/^JSONCPP_STRING Value::asString() const {$/;"	f	class:Json::Value
+asUInt	jsoncpp.cpp	/^Value::UInt Value::asUInt() const {$/;"	f	class:Json::Value
+asUInt64	jsoncpp.cpp	/^Value::UInt64 Value::asUInt64() const {$/;"	f	class:Json::Value
+begin	jsoncpp.cpp	/^Value::const_iterator Value::begin() const {$/;"	f	class:Json::Value
+begin	jsoncpp.cpp	/^Value::iterator Value::begin() {$/;"	f	class:Json::Value
+begin_	json.h	/^  Location begin_;$/;"	m	class:Json::Reader
+begin_	jsoncpp.cpp	/^  Location begin_;$/;"	m	class:Json::OurReader	file:
+binFile1d	gnuplot-iostream.h	/^	template <typename T> std::string binFile1d         (const T &arg, const std::string &arr_or_rec, const std::string &filename="") { return binaryFile(arg, filename, arr_or_rec,  Mode1D      ()); }$/;"	f	class:gnuplotio::Gnuplot
+binFile1d_colmajor	gnuplot-iostream.h	/^	template <typename T> std::string binFile1d_colmajor(const T &arg, const std::string &arr_or_rec, const std::string &filename="") { return binaryFile(arg, filename, arr_or_rec,  Mode1DUnwrap()); }$/;"	f	class:gnuplotio::Gnuplot
+binFile2d	gnuplot-iostream.h	/^	template <typename T> std::string binFile2d         (const T &arg, const std::string &arr_or_rec, const std::string &filename="") { return binaryFile(arg, filename, arr_or_rec,  Mode2D      ()); }$/;"	f	class:gnuplotio::Gnuplot
+binFile2d_colmajor	gnuplot-iostream.h	/^	template <typename T> std::string binFile2d_colmajor(const T &arg, const std::string &arr_or_rec, const std::string &filename="") { return binaryFile(arg, filename, arr_or_rec,  Mode2DUnwrap()); }$/;"	f	class:gnuplotio::Gnuplot
+binFmt1d	gnuplot-iostream.h	/^	template <typename T> std::string binFmt1d         (const T &arg, const std::string &arr_or_rec) { return binfmt(arg, arr_or_rec,  Mode1D      ()); }$/;"	f	class:gnuplotio::Gnuplot
+binFmt1d_colmajor	gnuplot-iostream.h	/^	template <typename T> std::string binFmt1d_colmajor(const T &arg, const std::string &arr_or_rec) { return binfmt(arg, arr_or_rec,  Mode1DUnwrap()); }$/;"	f	class:gnuplotio::Gnuplot
+binFmt2d	gnuplot-iostream.h	/^	template <typename T> std::string binFmt2d         (const T &arg, const std::string &arr_or_rec) { return binfmt(arg, arr_or_rec,  Mode2D      ()); }$/;"	f	class:gnuplotio::Gnuplot
+binFmt2d_colmajor	gnuplot-iostream.h	/^	template <typename T> std::string binFmt2d_colmajor(const T &arg, const std::string &arr_or_rec) { return binfmt(arg, arr_or_rec,  Mode2DUnwrap()); }$/;"	f	class:gnuplotio::Gnuplot
+binaryFile	gnuplot-iostream.h	/^		binaryFile(const T &arg, const std::string &filename="", const std::string &arr_or_rec="array")$/;"	f	class:gnuplotio::Gnuplot
+binaryFile	gnuplot-iostream.h	/^	std::string binaryFile(const T &arg, std::string filename, const std::string &arr_or_rec, OrganizationMode) {$/;"	f	class:gnuplotio::Gnuplot
+binfmt	gnuplot-iostream.h	/^		binfmt(const T &arg, const std::string &arr_or_rec="array")$/;"	f	class:gnuplotio::Gnuplot
+binfmt	gnuplot-iostream.h	/^	std::string binfmt(const T &arg, const std::string &arr_or_rec, OrganizationMode) {$/;"	f	class:gnuplotio::Gnuplot
+bool_	json.h	/^    bool bool_;$/;"	m	union:Json::Value::ValueHolder
+booleanValue	json.h	/^  booleanValue,  \/\/\/< bool value$/;"	e	enum:Json::ValueType
+buff	coordinates.h	/^	vector<data> buff;$/;"	m	class:coordinates
+buff_size	coordinates.h	/^	int buff_size;$/;"	m	class:coordinates
+c	serial.h	/^		char c;$/;"	m	class:serial_port
+c_str	json.h	/^  const char* c_str() const { return c_str_; }$/;"	f	class:Json::StaticString
+c_str_	json.h	/^  const char* c_str_;$/;"	m	class:Json::StaticString
+childValues_	json.h	/^  ChildValues childValues_;$/;"	m	class:Json::StyledStreamWriter
+childValues_	json.h	/^  ChildValues childValues_;$/;"	m	class:Json::StyledWriter
+childValues_	jsoncpp.cpp	/^  ChildValues childValues_;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+class_name	gnuplot-iostream.h	/^struct Mode1D       { static std::string class_name() { return "Mode1D"      ; } };$/;"	f	struct:gnuplotio::Mode1D
+class_name	gnuplot-iostream.h	/^struct Mode1DUnwrap { static std::string class_name() { return "Mode1DUnwrap"; } };$/;"	f	struct:gnuplotio::Mode1DUnwrap
+class_name	gnuplot-iostream.h	/^struct Mode2D       { static std::string class_name() { return "Mode2D"      ; } };$/;"	f	struct:gnuplotio::Mode2D
+class_name	gnuplot-iostream.h	/^struct Mode2DUnwrap { static std::string class_name() { return "Mode2DUnwrap"; } };$/;"	f	struct:gnuplotio::Mode2DUnwrap
+class_name	gnuplot-iostream.h	/^struct ModeAuto     { static std::string class_name() { return "ModeAuto"    ; } };$/;"	f	struct:gnuplotio::ModeAuto
+clear	jsoncpp.cpp	/^void Value::clear() {$/;"	f	class:Json::Value
+clearTmpfiles	gnuplot-iostream.h	/^	void clearTmpfiles() {$/;"	f	class:gnuplotio::Gnuplot
+codePointToUTF8	jsoncpp.cpp	/^static inline JSONCPP_STRING codePointToUTF8(unsigned int cp) {$/;"	f	namespace:Json
+col	gnuplot-iostream.h	/^		size_t row, col, slice;$/;"	m	class:gnuplotio::ArrayTraits::SliceRange
+col	gnuplot-iostream.h	/^		size_t row, col;$/;"	m	class:gnuplotio::ArrayTraits::ColRange
+col	gnuplot-iostream.h	/^		size_t row, col;$/;"	m	class:gnuplotio::ArrayTraits_ArmaMatOrField::ColRange
+collectComments_	json.h	/^  bool collectComments_;$/;"	m	class:Json::Reader
+collectComments_	jsoncpp.cpp	/^  bool collectComments_;$/;"	m	class:Json::OurReader	file:
+collectComments_	jsoncpp.cpp	/^  bool const collectComments_;$/;"	m	class:Json::OurCharReader	file:
+colonSymbol_	jsoncpp.cpp	/^  JSONCPP_STRING colonSymbol_;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+commentAfter	json.h	/^  commentAfter, \/\/\/< a comment on the line after a value (only make sense for$/;"	e	enum:Json::CommentPlacement
+commentAfterOnSameLine	json.h	/^  commentAfterOnSameLine, \/\/\/< a comment just after a value on the same line$/;"	e	enum:Json::CommentPlacement
+commentBefore	json.h	/^  commentBefore = 0,      \/\/\/< a comment placed on the line before a value$/;"	e	enum:Json::CommentPlacement
+comment_	json.h	/^    char* comment_;$/;"	m	struct:Json::Value::CommentInfo
+commentsBefore_	json.h	/^  JSONCPP_STRING commentsBefore_;$/;"	m	class:Json::Reader
+commentsBefore_	jsoncpp.cpp	/^  JSONCPP_STRING commentsBefore_;$/;"	m	class:Json::OurReader	file:
+comments_	json.h	/^  CommentInfo* comments_;$/;"	m	class:Json::Value
+compare	jsoncpp.cpp	/^int Value::compare(const Value& other) const {$/;"	f	class:Json::Value
+computeDistance	jsoncpp.cpp	/^ValueIteratorBase::computeDistance(const SelfType& other) const {$/;"	f	class:Json::ValueIteratorBase
+const_iterator	json.h	/^  typedef ValueConstIterator const_iterator;$/;"	t	class:Json::Value
+construct	json.h	/^		void construct(pointer p, Args&&... args) {$/;"	f	class:Json::SecureAllocator
+containsControlCharacter	jsoncpp.cpp	/^static bool containsControlCharacter(const char* str) {$/;"	f	namespace:Json
+containsControlCharacter0	jsoncpp.cpp	/^static bool containsControlCharacter0(const char* str, unsigned len) {$/;"	f	namespace:Json
+containsNewLine	jsoncpp.cpp	/^static bool containsNewLine(Reader::Location begin, Reader::Location end) {$/;"	f	namespace:Json
+coordinates	coordinates.cpp	/^coordinates::coordinates():acc_sensitivity(ACC_SENSITIVITY_0), rot_sensitivity(ROT_SENSITIVITY_0){$/;"	f	class:coordinates
+coordinates	coordinates.cpp	/^coordinates::coordinates(int new_buff_size, int acc_sen, int rot_sen){$/;"	f	class:coordinates
+coordinates	coordinates.h	/^class coordinates{$/;"	c
+copy	jsoncpp.cpp	/^void ValueIteratorBase::copy(const SelfType& other) {$/;"	f	class:Json::ValueIteratorBase
+count	coordinates.h	/^	int count, acc_sensitivity;$/;"	m	class:coordinates
+cs_	jsoncpp.cpp	/^  CommentStyle::Enum cs_;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+cstr_	json.h	/^    char const* cstr_;  \/\/ actually, a prefixed string, unless policy is noDup$/;"	m	class:Json::Value::CZString
+currentValue	jsoncpp.cpp	/^Value& OurReader::currentValue() { return *(nodes_.top()); }$/;"	f	class:Json::OurReader
+currentValue	jsoncpp.cpp	/^Value& Reader::currentValue() { return *(nodes_.top()); }$/;"	f	class:Json::Reader
+current_	json.h	/^  Location current_;$/;"	m	class:Json::Reader
+current_	json.h	/^  Value::ObjectValues::iterator current_;$/;"	m	class:Json::ValueIteratorBase
+current_	jsoncpp.cpp	/^  Location current_;$/;"	m	class:Json::OurReader	file:
+data	coordinates.h	/^typedef processed_data data;$/;"	t
+data	jsoncpp.cpp	/^const char* Value::CZString::data() const { return cstr_; }$/;"	f	class:Json::Value::CZString
+deallocate	json.h	/^		void deallocate(volatile pointer p, size_type n) {$/;"	f	class:Json::SecureAllocator
+debug_array_print	gnuplot-iostream.h	/^static bool debug_array_print = 0;$/;"	m	namespace:gnuplotio
+debug_messages	gnuplot-iostream.h	/^	bool debug_messages;$/;"	m	class:gnuplotio::Gnuplot
+decodeDouble	jsoncpp.cpp	/^bool OurReader::decodeDouble(Token& token) {$/;"	f	class:Json::OurReader
+decodeDouble	jsoncpp.cpp	/^bool OurReader::decodeDouble(Token& token, Value& decoded) {$/;"	f	class:Json::OurReader
+decodeDouble	jsoncpp.cpp	/^bool Reader::decodeDouble(Token& token) {$/;"	f	class:Json::Reader
+decodeDouble	jsoncpp.cpp	/^bool Reader::decodeDouble(Token& token, Value& decoded) {$/;"	f	class:Json::Reader
+decodeNumber	jsoncpp.cpp	/^bool OurReader::decodeNumber(Token& token) {$/;"	f	class:Json::OurReader
+decodeNumber	jsoncpp.cpp	/^bool OurReader::decodeNumber(Token& token, Value& decoded) {$/;"	f	class:Json::OurReader
+decodeNumber	jsoncpp.cpp	/^bool Reader::decodeNumber(Token& token) {$/;"	f	class:Json::Reader
+decodeNumber	jsoncpp.cpp	/^bool Reader::decodeNumber(Token& token, Value& decoded) {$/;"	f	class:Json::Reader
+decodePrefixedString	jsoncpp.cpp	/^inline static void decodePrefixedString($/;"	f	namespace:Json
+decodeString	jsoncpp.cpp	/^bool OurReader::decodeString(Token& token) {$/;"	f	class:Json::OurReader
+decodeString	jsoncpp.cpp	/^bool OurReader::decodeString(Token& token, JSONCPP_STRING& decoded) {$/;"	f	class:Json::OurReader
+decodeString	jsoncpp.cpp	/^bool Reader::decodeString(Token& token) {$/;"	f	class:Json::Reader
+decodeString	jsoncpp.cpp	/^bool Reader::decodeString(Token& token, JSONCPP_STRING& decoded) {$/;"	f	class:Json::Reader
+decodeUnicodeCodePoint	jsoncpp.cpp	/^bool OurReader::decodeUnicodeCodePoint(Token& token,$/;"	f	class:Json::OurReader
+decodeUnicodeCodePoint	jsoncpp.cpp	/^bool Reader::decodeUnicodeCodePoint(Token& token,$/;"	f	class:Json::Reader
+decodeUnicodeEscapeSequence	jsoncpp.cpp	/^bool OurReader::decodeUnicodeEscapeSequence(Token& token,$/;"	f	class:Json::OurReader
+decodeUnicodeEscapeSequence	jsoncpp.cpp	/^bool Reader::decodeUnicodeEscapeSequence(Token& token,$/;"	f	class:Json::Reader
+decrement	jsoncpp.cpp	/^void ValueIteratorBase::decrement() {$/;"	f	class:Json::ValueIteratorBase
+depth	gnuplot-iostream.h	/^	static const size_t depth = (l_depth < r_depth) ? l_depth : r_depth;$/;"	m	class:gnuplotio::ArrayTraits
+depth	gnuplot-iostream.h	/^	static const size_t depth = 0;$/;"	m	class:gnuplotio::ArrayTraits
+depth	gnuplot-iostream.h	/^	static const size_t depth = ArrayTraits<T>::depth + 2;$/;"	m	class:gnuplotio::ArrayTraits_ArmaMatOrField
+depth	gnuplot-iostream.h	/^	static const size_t depth = ArrayTraits<T>::depth + 3;$/;"	m	class:gnuplotio::ArrayTraits
+depth	gnuplot-iostream.h	/^	static const size_t depth = ArrayTraits<T>::depth + ArrayDim;$/;"	m	class:gnuplotio::ArrayTraits
+depth	gnuplot-iostream.h	/^	static const size_t depth = ArrayTraits<V>::depth + 1;$/;"	m	class:gnuplotio::ArrayTraitsDefaults
+deref	gnuplot-iostream.h	/^		value_type deref() const {$/;"	f	class:gnuplotio::ArrayTraits::ColRange
+deref	gnuplot-iostream.h	/^		value_type deref() const {$/;"	f	class:gnuplotio::ArrayTraits::RowRange
+deref	gnuplot-iostream.h	/^		value_type deref() const {$/;"	f	class:gnuplotio::ArrayTraits::SliceRange
+deref	gnuplot-iostream.h	/^		value_type deref() const {$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField::ColRange
+deref	gnuplot-iostream.h	/^		value_type deref() const {$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField::RowRange
+deref	gnuplot-iostream.h	/^	value_type deref() const {$/;"	f	class:gnuplotio::BlitzIterator
+deref	gnuplot-iostream.h	/^	value_type deref() const {$/;"	f	class:gnuplotio::IteratorRange
+deref	gnuplot-iostream.h	/^	value_type deref() const {$/;"	f	class:gnuplotio::PairOfRange
+deref	gnuplot-iostream.h	/^	value_type deref() const {$/;"	f	class:gnuplotio::VecOfRange
+deref	jsoncpp.cpp	/^Value& ValueIteratorBase::deref() const {$/;"	f	class:Json::ValueIteratorBase
+deref_and_print	gnuplot-iostream.h	/^deref_and_print(std::ostream &stream, const T &arg, PrintMode) {$/;"	f	namespace:gnuplotio
+deref_and_print	gnuplot-iostream.h	/^void deref_and_print(std::ostream &stream, const PairOfRange<T, U> &arg, PrintMode) {$/;"	f	namespace:gnuplotio
+deref_and_print	gnuplot-iostream.h	/^void deref_and_print(std::ostream &stream, const VecOfRange<T> &arg, PrintMode) {$/;"	f	namespace:gnuplotio
+deref_subiter	gnuplot-iostream.h	/^		subiter_type deref_subiter() const {$/;"	f	class:gnuplotio::ArrayTraits::ColRange
+deref_subiter	gnuplot-iostream.h	/^		subiter_type deref_subiter() const {$/;"	f	class:gnuplotio::ArrayTraits::RowRange
+deref_subiter	gnuplot-iostream.h	/^		subiter_type deref_subiter() const {$/;"	f	class:gnuplotio::ArrayTraits::SliceRange
+deref_subiter	gnuplot-iostream.h	/^		subiter_type deref_subiter() const {$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField::ColRange
+deref_subiter	gnuplot-iostream.h	/^		subiter_type deref_subiter() const {$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField::RowRange
+deref_subiter	gnuplot-iostream.h	/^	subiter_type deref_subiter() const {$/;"	f	class:gnuplotio::BlitzIterator
+deref_subiter	gnuplot-iostream.h	/^	subiter_type deref_subiter() const {$/;"	f	class:gnuplotio::IteratorRange
+deref_subiter	gnuplot-iostream.h	/^	subiter_type deref_subiter() const {$/;"	f	class:gnuplotio::PairOfRange
+deref_subiter	gnuplot-iostream.h	/^	subiter_type deref_subiter() const {$/;"	f	class:gnuplotio::VecOfRange
+destroy	json.h	/^		void destroy(pointer p) {$/;"	f	class:Json::SecureAllocator
+difference_type	json.h	/^  typedef int difference_type;$/;"	t	class:Json::ValueIterator
+difference_type	json.h	/^  typedef int difference_type;$/;"	t	class:Json::ValueIteratorBase
+do_flush	gnuplot-iostream.h	/^	void do_flush() {$/;"	f	class:gnuplotio::Gnuplot
+document_	json.h	/^  JSONCPP_OSTREAM* document_;$/;"	m	class:Json::StyledStreamWriter
+document_	json.h	/^  JSONCPP_STRING document_;$/;"	m	class:Json::FastWriter
+document_	json.h	/^  JSONCPP_STRING document_;$/;"	m	class:Json::Reader
+document_	json.h	/^  JSONCPP_STRING document_;$/;"	m	class:Json::StyledWriter
+document_	jsoncpp.cpp	/^  JSONCPP_STRING document_;$/;"	m	class:Json::OurReader	file:
+dont_treat_as_stl_container	gnuplot-iostream.h	/^struct dont_treat_as_stl_container {$/;"	s	namespace:gnuplotio
+dont_treat_as_stl_container	gnuplot-iostream.h	/^template <typename T> struct dont_treat_as_stl_container<arma::Col  <T> > { typedef boost::mpl::bool_<true> type; };$/;"	s	namespace:gnuplotio
+dont_treat_as_stl_container	gnuplot-iostream.h	/^template <typename T> struct dont_treat_as_stl_container<arma::Cube <T> > { typedef boost::mpl::bool_<true> type; };$/;"	s	namespace:gnuplotio
+dont_treat_as_stl_container	gnuplot-iostream.h	/^template <typename T> struct dont_treat_as_stl_container<arma::Mat  <T> > { typedef boost::mpl::bool_<true> type; };$/;"	s	namespace:gnuplotio
+dont_treat_as_stl_container	gnuplot-iostream.h	/^template <typename T> struct dont_treat_as_stl_container<arma::Row  <T> > { typedef boost::mpl::bool_<true> type; };$/;"	s	namespace:gnuplotio
+dont_treat_as_stl_container	gnuplot-iostream.h	/^template <typename T> struct dont_treat_as_stl_container<arma::field<T> > { typedef boost::mpl::bool_<true> type; };$/;"	s	namespace:gnuplotio
+dropNullPlaceholders	jsoncpp.cpp	/^void FastWriter::dropNullPlaceholders() { dropNullPlaceholders_ = true; }$/;"	f	class:Json::FastWriter
+dropNullPlaceholders_	json.h	/^  bool dropNullPlaceholders_;$/;"	m	class:Json::FastWriter
+duplicate	json.h	/^      duplicate,$/;"	e	enum:Json::Value::CZString::DuplicationPolicy
+duplicateAndPrefixStringValue	jsoncpp.cpp	/^static inline char* duplicateAndPrefixStringValue($/;"	f	namespace:Json
+duplicateOnCopy	json.h	/^      duplicateOnCopy$/;"	e	enum:Json::Value::CZString::DuplicationPolicy
+duplicateStringValue	jsoncpp.cpp	/^static inline char* duplicateStringValue(const char* value,$/;"	f	namespace:Json
+empty	jsoncpp.cpp	/^bool Value::empty() const {$/;"	f	class:Json::Value
+enableYAMLCompatibility	jsoncpp.cpp	/^void FastWriter::enableYAMLCompatibility() { yamlCompatiblityEnabled_ = true; }$/;"	f	class:Json::FastWriter
+end	gnuplot-iostream.h	/^	TI it, end;$/;"	m	class:gnuplotio::IteratorRange
+end	jsoncpp.cpp	/^Value::const_iterator Value::end() const {$/;"	f	class:Json::Value
+end	jsoncpp.cpp	/^Value::iterator Value::end() {$/;"	f	class:Json::Value
+end_	json.h	/^    Location end_;$/;"	m	class:Json::Reader::Token
+end_	json.h	/^  Location end_;$/;"	m	class:Json::Reader
+end_	jsoncpp.cpp	/^    Location end_;$/;"	m	class:Json::OurReader::Token	file:
+end_	jsoncpp.cpp	/^  Location end_;$/;"	m	class:Json::OurReader	file:
+endingLineFeedSymbol_	jsoncpp.cpp	/^  JSONCPP_STRING endingLineFeedSymbol_;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+errors_	json.h	/^  Errors errors_;$/;"	m	class:Json::Reader
+errors_	jsoncpp.cpp	/^  Errors errors_;$/;"	m	class:Json::OurReader	file:
+extra_	json.h	/^    Location extra_;$/;"	m	class:Json::Reader::ErrorInfo
+extra_	jsoncpp.cpp	/^    Location extra_;$/;"	m	class:Json::OurReader::ErrorInfo	file:
+failIfExtra_	jsoncpp.cpp	/^  bool failIfExtra_;$/;"	m	class:Json::OurFeatures	file:
+features_	json.h	/^  Features features_;$/;"	m	class:Json::Reader
+features_	jsoncpp.cpp	/^  OurFeatures const features_;$/;"	m	class:Json::OurReader	file:
+feedback	gnuplot-iostream.h	/^	GnuplotFeedback *feedback;$/;"	m	class:gnuplotio::Gnuplot
+fh_close	gnuplot-iostream.h	/^	void fh_close() {$/;"	f	struct:gnuplotio::FileHandleWrapper
+fh_fileno	gnuplot-iostream.h	/^	int fh_fileno() {$/;"	f	struct:gnuplotio::FileHandleWrapper
+file	gnuplot-iostream.h	/^		file(const T &arg, const std::string &filename="")$/;"	f	class:gnuplotio::Gnuplot
+file	gnuplot-iostream.h	/^	boost::filesystem::path file;$/;"	m	class:gnuplotio::GnuplotTmpfile
+file	gnuplot-iostream.h	/^	std::string file(const T &arg, std::string filename, OrganizationMode) {$/;"	f	class:gnuplotio::Gnuplot
+file1d	gnuplot-iostream.h	/^	template <typename T> std::string file1d         (const T &arg, const std::string &filename="") { return file(arg, filename, Mode1D      ()); }$/;"	f	class:gnuplotio::Gnuplot
+file1d_colmajor	gnuplot-iostream.h	/^	template <typename T> std::string file1d_colmajor(const T &arg, const std::string &filename="") { return file(arg, filename, Mode1DUnwrap()); }$/;"	f	class:gnuplotio::Gnuplot
+file2d	gnuplot-iostream.h	/^	template <typename T> std::string file2d         (const T &arg, const std::string &filename="") { return file(arg, filename, Mode2D      ()); }$/;"	f	class:gnuplotio::Gnuplot
+file2d_colmajor	gnuplot-iostream.h	/^	template <typename T> std::string file2d_colmajor(const T &arg, const std::string &filename="") { return file(arg, filename, Mode2DUnwrap()); }$/;"	f	class:gnuplotio::Gnuplot
+filename	gnuplot-iostream.h	/^	std::string filename() const {$/;"	f	class:gnuplotio::GnuplotFeedbackPty
+filterCurr	coordinates.cpp	/^void coordinates::filterCurr(){$/;"	f	class:coordinates
+find	jsoncpp.cpp	/^Value const* Value::find(char const* key, char const* cend) const$/;"	f	class:Json::Value
+finish	coordinates.h	/^	mytime_point start, finish;$/;"	m	class:coordinates
+first	coordinates.h	/^	bool first, first_zero;$/;"	m	class:coordinates
+first_zero	coordinates.h	/^	bool first, first_zero;$/;"	m	class:coordinates
+fixNumericLocale	jsoncpp.cpp	/^static inline void fixNumericLocale(char* begin, char* end) {$/;"	f	namespace:Json
+flush	coordinates.cpp	/^void coordinates::flush(){$/;"	f	class:coordinates
+gX	coordinates.h	/^	float gX, gY, gZ;		\/\/ value for low pass filter$/;"	m	class:coordinates
+gY	coordinates.h	/^	float gX, gY, gZ;		\/\/ value for low pass filter$/;"	m	class:coordinates
+gZ	coordinates.h	/^	float gX, gY, gZ;		\/\/ value for low pass filter$/;"	m	class:coordinates
+get	jsoncpp.cpp	/^Value Value::get(ArrayIndex index, const Value& defaultValue) const {$/;"	f	class:Json::Value
+get	jsoncpp.cpp	/^Value Value::get(JSONCPP_STRING const& key, Value const& defaultValue) const$/;"	f	class:Json::Value
+get	jsoncpp.cpp	/^Value Value::get(char const* key, Value const& defaultValue) const$/;"	f	class:Json::Value
+get	jsoncpp.cpp	/^Value Value::get(char const* key, char const* cend, Value const& defaultValue) const$/;"	f	class:Json::Value
+get	jsoncpp.cpp	/^Value Value::get(const CppTL::ConstString& key,$/;"	f	class:Json::Value
+getBuffAvg	coordinates.cpp	/^data coordinates::getBuffAvg(){$/;"	f	class:coordinates
+getCStringLength	jsoncpp.cpp	/^unsigned Value::getCStringLength() const {$/;"	f	class:Json::Value
+getComment	jsoncpp.cpp	/^JSONCPP_STRING Value::getComment(CommentPlacement placement) const {$/;"	f	class:Json::Value
+getFormatedErrorMessages	jsoncpp.cpp	/^JSONCPP_STRING Reader::getFormatedErrorMessages() const {$/;"	f	class:Json::Reader
+getFormattedErrorMessages	jsoncpp.cpp	/^JSONCPP_STRING OurReader::getFormattedErrorMessages() const {$/;"	f	class:Json::OurReader
+getFormattedErrorMessages	jsoncpp.cpp	/^JSONCPP_STRING Reader::getFormattedErrorMessages() const {$/;"	f	class:Json::Reader
+getLocationLineAndColumn	jsoncpp.cpp	/^JSONCPP_STRING OurReader::getLocationLineAndColumn(Location location) const {$/;"	f	class:Json::OurReader
+getLocationLineAndColumn	jsoncpp.cpp	/^JSONCPP_STRING Reader::getLocationLineAndColumn(Location location) const {$/;"	f	class:Json::Reader
+getLocationLineAndColumn	jsoncpp.cpp	/^void OurReader::getLocationLineAndColumn(Location location,$/;"	f	class:Json::OurReader
+getLocationLineAndColumn	jsoncpp.cpp	/^void Reader::getLocationLineAndColumn(Location location,$/;"	f	class:Json::Reader
+getMemberNames	jsoncpp.cpp	/^Value::Members Value::getMemberNames() const {$/;"	f	class:Json::Value
+getMouse	gnuplot-iostream.h	/^	void getMouse($/;"	f	class:gnuplotio::Gnuplot
+getNextChar	jsoncpp.cpp	/^OurReader::Char OurReader::getNextChar() {$/;"	f	class:Json::OurReader
+getNextChar	jsoncpp.cpp	/^Reader::Char Reader::getNextChar() {$/;"	f	class:Json::Reader
+getOffsetLimit	jsoncpp.cpp	/^ptrdiff_t Value::getOffsetLimit() const { return limit_; }$/;"	f	class:Json::Value
+getOffsetStart	jsoncpp.cpp	/^ptrdiff_t Value::getOffsetStart() const { return start_; }$/;"	f	class:Json::Value
+getString	jsoncpp.cpp	/^bool Value::getString(char const** str, char const** cend) const {$/;"	f	class:Json::Value
+getStructuredErrors	jsoncpp.cpp	/^std::vector<OurReader::StructuredError> OurReader::getStructuredErrors() const {$/;"	f	class:Json::OurReader
+getStructuredErrors	jsoncpp.cpp	/^std::vector<Reader::StructuredError> Reader::getStructuredErrors() const {$/;"	f	class:Json::Reader
+getValidReaderKeys	jsoncpp.cpp	/^static void getValidReaderKeys(std::set<JSONCPP_STRING>* valid_keys)$/;"	f	namespace:Json
+getValidWriterKeys	jsoncpp.cpp	/^static void getValidWriterKeys(std::set<JSONCPP_STRING>* valid_keys)$/;"	f	namespace:Json
+getX	coordinates.cpp	/^float coordinates::getX(){$/;"	f	class:coordinates
+getY	coordinates.cpp	/^float coordinates::getY(){$/;"	f	class:coordinates
+getZ	coordinates.cpp	/^float coordinates::getZ(){$/;"	f	class:coordinates
+get_columns_range	gnuplot-iostream.h	/^get_columns_range(const T &arg) {$/;"	f	namespace:gnuplotio
+get_default_cmd	gnuplot-iostream.h	/^	static std::string get_default_cmd() {$/;"	f	class:gnuplotio::Gnuplot
+get_range	gnuplot-iostream.h	/^	static range_type get_range(const RF &arg) {$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField
+get_range	gnuplot-iostream.h	/^	static range_type get_range(const T &) {$/;"	f	class:gnuplotio::ArrayTraits
+get_range	gnuplot-iostream.h	/^	static range_type get_range(const T &arg) {$/;"	f	class:gnuplotio::ArrayTraits
+get_range	gnuplot-iostream.h	/^	static range_type get_range(const arma::Col<T> &arg) {$/;"	f	class:gnuplotio::ArrayTraits
+get_range	gnuplot-iostream.h	/^	static range_type get_range(const arma::Cube<T> &arg) {$/;"	f	class:gnuplotio::ArrayTraits
+get_range	gnuplot-iostream.h	/^	static range_type get_range(const arma::Row<T> &arg) {$/;"	f	class:gnuplotio::ArrayTraits
+get_range	gnuplot-iostream.h	/^	static range_type get_range(const blitz::Array<T, ArrayDim> &arg) {$/;"	f	class:gnuplotio::ArrayTraits
+get_range	gnuplot-iostream.h	/^	static range_type get_range(const std::pair<T, U> &arg) {$/;"	f	class:gnuplotio::ArrayTraits
+get_range	gnuplot-iostream.h	/^	static typename ArrayTraits<type>::range_type get_range(const Tuple &arg) {$/;"	f	struct:gnuplotio::StdTupUnwinder
+get_range	gnuplot-iostream.h	/^	static typename parent::range_type get_range(const T &arg) {$/;"	f	class:gnuplotio::ArrayTraits
+get_range	gnuplot-iostream.h	/^	static typename parent::range_type get_range(const Tuple &arg) {$/;"	f	class:gnuplotio::ArrayTraits
+get_range_size	gnuplot-iostream.h	/^size_t get_range_size(const T &arg) {$/;"	f	namespace:gnuplotio
+gnuplotio	gnuplot-iostream.h	/^namespace gnuplotio {$/;"	n
+good	jsoncpp.cpp	/^bool OurReader::good() const {$/;"	f	class:Json::OurReader
+good	jsoncpp.cpp	/^bool Reader::good() const {$/;"	f	class:Json::Reader
+gp	plot.h	/^    Gnuplot gp;$/;"	m	class:DotPlot
+gyX	coordinates.h	/^	float gyX, gyY, gyZ;	\/\/ speed of gyroscope$/;"	m	class:coordinates
+gyY	coordinates.h	/^	float gyX, gyY, gyZ;	\/\/ speed of gyroscope$/;"	m	class:coordinates
+gyZ	coordinates.h	/^	float gyX, gyY, gyZ;	\/\/ speed of gyroscope$/;"	m	class:coordinates
+handle	gnuplot-iostream.h	/^	FILE *handle() const {$/;"	f	class:gnuplotio::GnuplotFeedbackPty
+handle_colunwrap_tag	gnuplot-iostream.h	/^void handle_colunwrap_tag(std::ostream &stream, const T &arg, ColUnwrapNo, PrintMode) {$/;"	f	namespace:gnuplotio
+handle_colunwrap_tag	gnuplot-iostream.h	/^void handle_colunwrap_tag(std::ostream &stream, const T &arg, ColUnwrapYes, PrintMode) {$/;"	f	namespace:gnuplotio
+handle_organization_tag	gnuplot-iostream.h	/^void handle_organization_tag(std::ostream &stream, const T &arg, Mode1D, PrintMode) {$/;"	f	namespace:gnuplotio
+handle_organization_tag	gnuplot-iostream.h	/^void handle_organization_tag(std::ostream &stream, const T &arg, Mode1DUnwrap, PrintMode) {$/;"	f	namespace:gnuplotio
+handle_organization_tag	gnuplot-iostream.h	/^void handle_organization_tag(std::ostream &stream, const T &arg, Mode2D, PrintMode) {$/;"	f	namespace:gnuplotio
+handle_organization_tag	gnuplot-iostream.h	/^void handle_organization_tag(std::ostream &stream, const T &arg, Mode2DUnwrap, PrintMode) {$/;"	f	namespace:gnuplotio
+handle_organization_tag	gnuplot-iostream.h	/^void handle_organization_tag(std::ostream &stream, const T &arg, ModeAuto, PrintMode) {$/;"	f	namespace:gnuplotio
+hasComment	jsoncpp.cpp	/^bool Value::hasComment(CommentPlacement placement) const {$/;"	f	class:Json::Value
+hasCommentForValue	jsoncpp.cpp	/^bool BuiltStyledStreamWriter::hasCommentForValue(const Value& value) {$/;"	f	class:Json::BuiltStyledStreamWriter
+hasCommentForValue	jsoncpp.cpp	/^bool StyledStreamWriter::hasCommentForValue(const Value& value) {$/;"	f	class:Json::StyledStreamWriter
+hasCommentForValue	jsoncpp.cpp	/^bool StyledWriter::hasCommentForValue(const Value& value) {$/;"	f	class:Json::StyledWriter
+idx	gnuplot-iostream.h	/^	blitz::TinyVector<int, ArrayDim> idx;$/;"	m	class:gnuplotio::BlitzIterator
+inc	gnuplot-iostream.h	/^		void inc() { ++col; }$/;"	f	class:gnuplotio::ArrayTraits::ColRange
+inc	gnuplot-iostream.h	/^		void inc() { ++col; }$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField::ColRange
+inc	gnuplot-iostream.h	/^		void inc() { ++row; }$/;"	f	class:gnuplotio::ArrayTraits::RowRange
+inc	gnuplot-iostream.h	/^		void inc() { ++row; }$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField::RowRange
+inc	gnuplot-iostream.h	/^		void inc() { ++slice; }$/;"	f	class:gnuplotio::ArrayTraits::SliceRange
+inc	gnuplot-iostream.h	/^	void inc() { ++it; }$/;"	f	class:gnuplotio::IteratorRange
+inc	gnuplot-iostream.h	/^	void inc() {$/;"	f	class:gnuplotio::BlitzIterator
+inc	gnuplot-iostream.h	/^	void inc() {$/;"	f	class:gnuplotio::PairOfRange
+inc	gnuplot-iostream.h	/^	void inc() {$/;"	f	class:gnuplotio::VecOfRange
+increment	jsoncpp.cpp	/^void ValueIteratorBase::increment() {$/;"	f	class:Json::ValueIteratorBase
+indent	jsoncpp.cpp	/^void BuiltStyledStreamWriter::indent() { indentString_ += indentation_; }$/;"	f	class:Json::BuiltStyledStreamWriter
+indent	jsoncpp.cpp	/^void StyledStreamWriter::indent() { indentString_ += indentation_; }$/;"	f	class:Json::StyledStreamWriter
+indent	jsoncpp.cpp	/^void StyledWriter::indent() { indentString_ += JSONCPP_STRING(indentSize_, ' '); }$/;"	f	class:Json::StyledWriter
+indentSize_	json.h	/^  unsigned int indentSize_;$/;"	m	class:Json::StyledWriter
+indentString_	json.h	/^  JSONCPP_STRING indentString_;$/;"	m	class:Json::StyledStreamWriter
+indentString_	json.h	/^  JSONCPP_STRING indentString_;$/;"	m	class:Json::StyledWriter
+indentString_	jsoncpp.cpp	/^  JSONCPP_STRING indentString_;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+indentation_	json.h	/^  JSONCPP_STRING indentation_;$/;"	m	class:Json::StyledStreamWriter
+indentation_	jsoncpp.cpp	/^  JSONCPP_STRING indentation_;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+indented_	jsoncpp.cpp	/^  bool indented_ : 1;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+index	jsoncpp.cpp	/^ArrayIndex Value::CZString::index() const { return index_; }$/;"	f	class:Json::Value::CZString
+index	jsoncpp.cpp	/^UInt ValueIteratorBase::index() const {$/;"	f	class:Json::ValueIteratorBase
+index_	json.h	/^      ArrayIndex index_;$/;"	m	union:Json::Value::CZString::__anon2
+index_	json.h	/^  ArrayIndex index_;$/;"	m	class:Json::PathArgument
+initBasic	jsoncpp.cpp	/^void Value::initBasic(ValueType vtype, bool allocated) {$/;"	f	class:Json::Value
+intValue	json.h	/^  intValue,      \/\/\/< signed integer value$/;"	e	enum:Json::ValueType
+int_	gnuplot-iostream.h	/^template<std::size_t> struct int_{}; \/\/ compile-time counter$/;"	s	namespace:gnuplotio
+int_	json.h	/^    LargestInt int_;$/;"	m	union:Json::Value::ValueHolder
+integerToDouble	jsoncpp.cpp	/^static inline double integerToDouble(Json::UInt64 value) {$/;"	f	namespace:Json
+integerToDouble	jsoncpp.cpp	/^template <typename T> static inline double integerToDouble(T value) {$/;"	f	namespace:Json
+invalidPath	jsoncpp.cpp	/^void Path::invalidPath(const JSONCPP_STRING& \/*path*\/, int \/*location*\/) {$/;"	f	class:Json::Path
+io	serial.h	/^		asio::io_service io;$/;"	m	class:serial_port
+isArray	jsoncpp.cpp	/^bool Value::isArray() const { return type_ == arrayValue; }$/;"	f	class:Json::Value
+isBool	jsoncpp.cpp	/^bool Value::isBool() const { return type_ == booleanValue; }$/;"	f	class:Json::Value
+isControlCharacter	jsoncpp.cpp	/^static inline bool isControlCharacter(char ch) { return ch > 0 && ch <= 0x1F; }$/;"	f	namespace:Json
+isConvertibleTo	jsoncpp.cpp	/^bool Value::isConvertibleTo(ValueType other) const {$/;"	f	class:Json::Value
+isDouble	jsoncpp.cpp	/^bool Value::isDouble() const { return type_ == realValue || isIntegral(); }$/;"	f	class:Json::Value
+isEqual	jsoncpp.cpp	/^bool ValueIteratorBase::isEqual(const SelfType& other) const {$/;"	f	class:Json::ValueIteratorBase
+isInt	jsoncpp.cpp	/^bool Value::isInt() const {$/;"	f	class:Json::Value
+isInt64	jsoncpp.cpp	/^bool Value::isInt64() const {$/;"	f	class:Json::Value
+isIntegral	jsoncpp.cpp	/^bool Value::isIntegral() const {$/;"	f	class:Json::Value
+isMember	jsoncpp.cpp	/^bool Value::isMember(JSONCPP_STRING const& key) const$/;"	f	class:Json::Value
+isMember	jsoncpp.cpp	/^bool Value::isMember(char const* key) const$/;"	f	class:Json::Value
+isMember	jsoncpp.cpp	/^bool Value::isMember(char const* key, char const* cend) const$/;"	f	class:Json::Value
+isMember	jsoncpp.cpp	/^bool Value::isMember(const CppTL::ConstString& key) const {$/;"	f	class:Json::Value
+isMultineArray	jsoncpp.cpp	/^bool BuiltStyledStreamWriter::isMultineArray(Value const& value) {$/;"	f	class:Json::BuiltStyledStreamWriter
+isMultineArray	jsoncpp.cpp	/^bool StyledStreamWriter::isMultineArray(const Value& value) {$/;"	f	class:Json::StyledStreamWriter
+isMultineArray	jsoncpp.cpp	/^bool StyledWriter::isMultineArray(const Value& value) {$/;"	f	class:Json::StyledWriter
+isNull	jsoncpp.cpp	/^bool Value::isNull() const { return type_ == nullValue; }$/;"	f	class:Json::Value
+isNull_	json.h	/^  bool isNull_;$/;"	m	class:Json::ValueIteratorBase
+isNumeric	jsoncpp.cpp	/^bool Value::isNumeric() const { return isIntegral() || isDouble(); }$/;"	f	class:Json::Value
+isObject	jsoncpp.cpp	/^bool Value::isObject() const { return type_ == objectValue; }$/;"	f	class:Json::Value
+isStaticString	jsoncpp.cpp	/^bool Value::CZString::isStaticString() const { return storage_.policy_ == noDuplication; }$/;"	f	class:Json::Value::CZString
+isString	jsoncpp.cpp	/^bool Value::isString() const { return type_ == stringValue; }$/;"	f	class:Json::Value
+isUInt	jsoncpp.cpp	/^bool Value::isUInt() const {$/;"	f	class:Json::Value
+isUInt64	jsoncpp.cpp	/^bool Value::isUInt64() const {$/;"	f	class:Json::Value
+isValidIndex	jsoncpp.cpp	/^bool Value::isValidIndex(ArrayIndex index) const { return index < size(); }$/;"	f	class:Json::Value
+is_binfmt	gnuplot-iostream.h	/^struct ModeBinary { static const bool is_text = 0; static const bool is_binfmt = 0; static const bool is_size = 0; };$/;"	m	struct:gnuplotio::ModeBinary
+is_binfmt	gnuplot-iostream.h	/^struct ModeBinfmt { static const bool is_text = 0; static const bool is_binfmt = 1; static const bool is_size = 0; };$/;"	m	struct:gnuplotio::ModeBinfmt
+is_binfmt	gnuplot-iostream.h	/^struct ModeSize   { static const bool is_text = 0; static const bool is_binfmt = 0; static const bool is_size = 1; };$/;"	m	struct:gnuplotio::ModeSize
+is_binfmt	gnuplot-iostream.h	/^struct ModeText   { static const bool is_text = 1; static const bool is_binfmt = 0; static const bool is_size = 0; };$/;"	m	struct:gnuplotio::ModeText
+is_boost_tuple	gnuplot-iostream.h	/^struct is_boost_tuple {$/;"	s	namespace:gnuplotio
+is_boost_tuple_nulltype	gnuplot-iostream.h	/^struct is_boost_tuple_nulltype {$/;"	s	namespace:gnuplotio
+is_boost_tuple_nulltype	gnuplot-iostream.h	/^struct is_boost_tuple_nulltype<boost::tuples::null_type> {$/;"	s	namespace:gnuplotio
+is_container	gnuplot-iostream.h	/^		static const bool is_container = false;$/;"	m	class:gnuplotio::ArrayTraits::SliceRange
+is_container	gnuplot-iostream.h	/^		static const bool is_container = false;$/;"	m	class:gnuplotio::ArrayTraits_ArmaMatOrField::ColRange
+is_container	gnuplot-iostream.h	/^		static const bool is_container = true;$/;"	m	class:gnuplotio::ArrayTraits::ColRange
+is_container	gnuplot-iostream.h	/^		static const bool is_container = true;$/;"	m	class:gnuplotio::ArrayTraits::RowRange
+is_container	gnuplot-iostream.h	/^		static const bool is_container = true;$/;"	m	class:gnuplotio::ArrayTraits_ArmaMatOrField::RowRange
+is_container	gnuplot-iostream.h	/^	static const bool is_container = ArrayTraits<T>::is_container && ArrayTraits<U>::is_container;$/;"	m	class:gnuplotio::ArrayTraits
+is_container	gnuplot-iostream.h	/^	static const bool is_container = ArrayTraits<TV>::is_container;$/;"	m	class:gnuplotio::IteratorRange
+is_container	gnuplot-iostream.h	/^	static const bool is_container = RT::is_container && RU::is_container;$/;"	m	class:gnuplotio::PairOfRange
+is_container	gnuplot-iostream.h	/^	static const bool is_container = RT::is_container;$/;"	m	class:gnuplotio::VecOfRange
+is_container	gnuplot-iostream.h	/^	static const bool is_container = false;$/;"	m	class:gnuplotio::ArrayTraits
+is_container	gnuplot-iostream.h	/^	static const bool is_container = false;$/;"	m	class:gnuplotio::BlitzIterator
+is_container	gnuplot-iostream.h	/^	static const bool is_container = true;$/;"	m	class:gnuplotio::ArrayTraitsDefaults
+is_container	gnuplot-iostream.h	/^	static const bool is_container = true;$/;"	m	class:gnuplotio::BlitzIterator
+is_end	gnuplot-iostream.h	/^		bool is_end() const { return col == p->n_cols; }$/;"	f	class:gnuplotio::ArrayTraits::ColRange
+is_end	gnuplot-iostream.h	/^		bool is_end() const { return col == p->n_cols; }$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField::ColRange
+is_end	gnuplot-iostream.h	/^		bool is_end() const { return row == p->n_rows; }$/;"	f	class:gnuplotio::ArrayTraits::RowRange
+is_end	gnuplot-iostream.h	/^		bool is_end() const { return row == p->n_rows; }$/;"	f	class:gnuplotio::ArrayTraits_ArmaMatOrField::RowRange
+is_end	gnuplot-iostream.h	/^		bool is_end() const { return slice == p->n_slices; }$/;"	f	class:gnuplotio::ArrayTraits::SliceRange
+is_end	gnuplot-iostream.h	/^	bool is_end() const { return it == end; }$/;"	f	class:gnuplotio::IteratorRange
+is_end	gnuplot-iostream.h	/^	bool is_end() const {$/;"	f	class:gnuplotio::BlitzIterator
+is_end	gnuplot-iostream.h	/^	bool is_end() const {$/;"	f	class:gnuplotio::PairOfRange
+is_end	gnuplot-iostream.h	/^	bool is_end() const {$/;"	f	class:gnuplotio::VecOfRange
+is_like_stl_container	gnuplot-iostream.h	/^struct is_like_stl_container {$/;"	s	namespace:gnuplotio
+is_size	gnuplot-iostream.h	/^struct ModeBinary { static const bool is_text = 0; static const bool is_binfmt = 0; static const bool is_size = 0; };$/;"	m	struct:gnuplotio::ModeBinary
+is_size	gnuplot-iostream.h	/^struct ModeBinfmt { static const bool is_text = 0; static const bool is_binfmt = 1; static const bool is_size = 0; };$/;"	m	struct:gnuplotio::ModeBinfmt
+is_size	gnuplot-iostream.h	/^struct ModeSize   { static const bool is_text = 0; static const bool is_binfmt = 0; static const bool is_size = 1; };$/;"	m	struct:gnuplotio::ModeSize
+is_size	gnuplot-iostream.h	/^struct ModeText   { static const bool is_text = 1; static const bool is_binfmt = 0; static const bool is_size = 0; };$/;"	m	struct:gnuplotio::ModeText
+is_text	gnuplot-iostream.h	/^struct ModeBinary { static const bool is_text = 0; static const bool is_binfmt = 0; static const bool is_size = 0; };$/;"	m	struct:gnuplotio::ModeBinary
+is_text	gnuplot-iostream.h	/^struct ModeBinfmt { static const bool is_text = 0; static const bool is_binfmt = 1; static const bool is_size = 0; };$/;"	m	struct:gnuplotio::ModeBinfmt
+is_text	gnuplot-iostream.h	/^struct ModeSize   { static const bool is_text = 0; static const bool is_binfmt = 0; static const bool is_size = 1; };$/;"	m	struct:gnuplotio::ModeSize
+is_text	gnuplot-iostream.h	/^struct ModeText   { static const bool is_text = 1; static const bool is_binfmt = 0; static const bool is_size = 0; };$/;"	m	struct:gnuplotio::ModeText
+isfinite	jsoncpp.cpp	/^#define isfinite /;"	d	file:
+it	gnuplot-iostream.h	/^	TI it, end;$/;"	m	class:gnuplotio::IteratorRange
+iterator	json.h	/^  typedef ValueIterator iterator;$/;"	t	class:Json::Value
+iterator_category	json.h	/^  typedef std::bidirectional_iterator_tag iterator_category;$/;"	t	class:Json::ValueIteratorBase
+kNull	jsoncpp.cpp	/^static const unsigned char ALIGNAS(8) kNull[sizeof(Value)] = { 0 };$/;"	m	namespace:Json	file:
+kNullRef	jsoncpp.cpp	/^const unsigned char& kNullRef = kNull[0];$/;"	m	namespace:Json	file:
+key	jsoncpp.cpp	/^Value ValueIteratorBase::key() const {$/;"	f	class:Json::ValueIteratorBase
+key_	json.h	/^  JSONCPP_STRING key_;$/;"	m	class:Json::PathArgument
+kindIndex	json.h	/^    kindIndex,$/;"	e	enum:Json::PathArgument::Kind
+kindKey	json.h	/^    kindKey$/;"	e	enum:Json::PathArgument::Kind
+kindNone	json.h	/^    kindNone = 0,$/;"	e	enum:Json::PathArgument::Kind
+kind_	json.h	/^  Kind kind_;$/;"	m	class:Json::PathArgument
+l	gnuplot-iostream.h	/^	RT l;$/;"	m	class:gnuplotio::PairOfRange
+l_depth	gnuplot-iostream.h	/^	static const size_t l_depth = ArrayTraits<T>::depth;$/;"	m	class:gnuplotio::ArrayTraits
+lastValueEnd_	json.h	/^  Location lastValueEnd_;$/;"	m	class:Json::Reader
+lastValueEnd_	jsoncpp.cpp	/^  Location lastValueEnd_;$/;"	m	class:Json::OurReader	file:
+lastValue_	json.h	/^  Value* lastValue_;$/;"	m	class:Json::Reader
+lastValue_	jsoncpp.cpp	/^  Value* lastValue_;$/;"	m	class:Json::OurReader	file:
+length	jsoncpp.cpp	/^unsigned Value::CZString::length() const { return storage_.length_; }$/;"	f	class:Json::Value::CZString
+length_	json.h	/^      unsigned length_: 30; \/\/ 1GB max$/;"	m	struct:Json::Value::CZString::StringStorage
+limit_	json.h	/^  ptrdiff_t limit_;$/;"	m	class:Json::Value
+line	serial.h	/^		std::string line;$/;"	m	class:serial_port
+main	test.cpp	/^int main() {$/;"	f
+make	jsoncpp.cpp	/^Value& Path::make(Value& root) const {$/;"	f	class:Json::Path
+makePath	jsoncpp.cpp	/^void Path::makePath(const JSONCPP_STRING& path, const InArgs& in) {$/;"	f	class:Json::Path
+make_tmpfile	gnuplot-iostream.h	/^	std::string make_tmpfile() {$/;"	f	class:gnuplotio::Gnuplot
+map_	json.h	/^    ObjectValues* map_;$/;"	m	union:Json::Value::ValueHolder
+master_fd	gnuplot-iostream.h	/^	int master_fd, slave_fd;$/;"	m	class:gnuplotio::GnuplotFeedbackPty
+match	jsoncpp.cpp	/^bool OurReader::match(Location pattern, int patternLength) {$/;"	f	class:Json::OurReader
+match	jsoncpp.cpp	/^bool Reader::match(Location pattern, int patternLength) {$/;"	f	class:Json::Reader
+maxInt	json.h	/^  static const Int maxInt;$/;"	m	class:Json::Value
+maxInt	jsoncpp.cpp	/^const Int Value::maxInt = Int(UInt(-1) \/ 2);$/;"	m	class:Json::Value	file:
+maxInt64	json.h	/^  static const Int64 maxInt64;$/;"	m	class:Json::Value
+maxInt64	jsoncpp.cpp	/^const Int64 Value::maxInt64 = Int64(UInt64(-1) \/ 2);$/;"	m	class:Json::Value	file:
+maxLargestInt	json.h	/^  static const LargestInt maxLargestInt;$/;"	m	class:Json::Value
+maxLargestInt	jsoncpp.cpp	/^const LargestInt Value::maxLargestInt = LargestInt(LargestUInt(-1) \/ 2);$/;"	m	class:Json::Value	file:
+maxLargestUInt	json.h	/^  static const LargestUInt maxLargestUInt;$/;"	m	class:Json::Value
+maxLargestUInt	jsoncpp.cpp	/^const LargestUInt Value::maxLargestUInt = LargestUInt(-1);$/;"	m	class:Json::Value	file:
+maxUInt	json.h	/^  static const UInt maxUInt;$/;"	m	class:Json::Value
+maxUInt	jsoncpp.cpp	/^const UInt Value::maxUInt = UInt(-1);$/;"	m	class:Json::Value	file:
+maxUInt64	json.h	/^  static const UInt64 maxUInt64;$/;"	m	class:Json::Value
+maxUInt64	jsoncpp.cpp	/^const UInt64 Value::maxUInt64 = UInt64(-1);$/;"	m	class:Json::Value	file:
+maxUInt64AsDouble	jsoncpp.cpp	/^static const double maxUInt64AsDouble = 18446744073709551615.0;$/;"	m	namespace:Json	file:
+max_size	json.h	/^		size_type max_size() const {$/;"	f	class:Json::SecureAllocator
+memberName	jsoncpp.cpp	/^char const* ValueIteratorBase::memberName() const {$/;"	f	class:Json::ValueIteratorBase
+memberName	jsoncpp.cpp	/^char const* ValueIteratorBase::memberName(char const** end) const {$/;"	f	class:Json::ValueIteratorBase
+message	json.h	/^    JSONCPP_STRING message;$/;"	m	struct:Json::Reader::StructuredError
+message	jsoncpp.cpp	/^    JSONCPP_STRING message;$/;"	m	struct:Json::OurReader::StructuredError	file:
+message_	json.h	/^    JSONCPP_STRING message_;$/;"	m	class:Json::Reader::ErrorInfo
+message_	jsoncpp.cpp	/^    JSONCPP_STRING message_;$/;"	m	class:Json::OurReader::ErrorInfo	file:
+minInt	json.h	/^  static const Int minInt;$/;"	m	class:Json::Value
+minInt	jsoncpp.cpp	/^const Int Value::minInt = Int(~(UInt(-1) \/ 2));$/;"	m	class:Json::Value	file:
+minInt64	json.h	/^  static const Int64 minInt64;$/;"	m	class:Json::Value
+minInt64	jsoncpp.cpp	/^const Int64 Value::minInt64 = Int64(~(UInt64(-1) \/ 2));$/;"	m	class:Json::Value	file:
+minLargestInt	json.h	/^  static const LargestInt minLargestInt;$/;"	m	class:Json::Value
+minLargestInt	jsoncpp.cpp	/^const LargestInt Value::minLargestInt = LargestInt(~(LargestUInt(-1) \/ 2));$/;"	m	class:Json::Value	file:
+mode	gnuplot-iostream.h	/^	typedef Mode1D mode;$/;"	t	struct:gnuplotio::ModeAutoDecoder
+mode	gnuplot-iostream.h	/^	typedef Mode1DUnwrap mode;$/;"	t	struct:gnuplotio::ModeAutoDecoder
+mode	gnuplot-iostream.h	/^	typedef Mode2D mode;$/;"	t	struct:gnuplotio::ModeAutoDecoder
+mode	gnuplot-iostream.h	/^	typedef Mode2D mode;$/;"	t	struct:gnuplotio::ModeAutoDecoder::type
+mode	gnuplot-iostream.h	/^	typedef Mode2DUnwrap mode;$/;"	t	struct:gnuplotio::ModeAutoDecoder::type
+msg_	json.h	/^  JSONCPP_STRING msg_;$/;"	m	class:Json::Exception
+myclock	coordinates.h	/^typedef std::chrono::steady_clock myclock;$/;"	t
+mytime_point	coordinates.h	/^typedef myclock::time_point mytime_point;$/;"	t
+name	jsoncpp.cpp	/^JSONCPP_STRING ValueIteratorBase::name() const {$/;"	f	class:Json::ValueIteratorBase
+newCharReader	jsoncpp.cpp	/^CharReader* CharReaderBuilder::newCharReader() const$/;"	f	class:Json::CharReaderBuilder
+newStreamWriter	jsoncpp.cpp	/^StreamWriter* StreamWriterBuilder::newStreamWriter() const$/;"	f	class:Json::StreamWriterBuilder
+noDuplication	json.h	/^      noDuplication = 0,$/;"	e	enum:Json::Value::CZString::DuplicationPolicy
+nodes_	json.h	/^  Nodes nodes_;$/;"	m	class:Json::Reader
+nodes_	jsoncpp.cpp	/^  Nodes nodes_;$/;"	m	class:Json::OurReader	file:
+normalizeEOL	jsoncpp.cpp	/^static JSONCPP_STRING normalizeEOL(Reader::Location begin, Reader::Location end) {$/;"	f	namespace:Json
+null	json.h	/^  static const Value& null;  \/\/\/< We regret this reference to a global instance; prefer the simpler Value().$/;"	m	class:Json::Value
+null	jsoncpp.cpp	/^const Value& Value::null = reinterpret_cast<const Value&>(kNullRef);$/;"	m	class:Json::Value	file:
+nullRef	json.h	/^  static const Value& nullRef;  \/\/\/< just a kludge for binary-compatibility; same as null$/;"	m	class:Json::Value
+nullRef	jsoncpp.cpp	/^const Value& Value::nullRef = null;$/;"	m	class:Json::Value	file:
+nullSymbol_	jsoncpp.cpp	/^  JSONCPP_STRING nullSymbol_;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+nullValue	json.h	/^  nullValue = 0, \/\/\/< 'null' value$/;"	e	enum:Json::ValueType
+numberOfCommentPlacement	json.h	/^  numberOfCommentPlacement$/;"	e	enum:Json::CommentPlacement
+objectValue	json.h	/^  objectValue    \/\/\/< object value (collection of name\/value pairs).$/;"	e	enum:Json::ValueType
+offset_limit	json.h	/^    ptrdiff_t offset_limit;$/;"	m	struct:Json::Reader::StructuredError
+offset_limit	jsoncpp.cpp	/^    ptrdiff_t offset_limit;$/;"	m	struct:Json::OurReader::StructuredError	file:
+offset_start	json.h	/^    ptrdiff_t offset_start;$/;"	m	struct:Json::Reader::StructuredError
+offset_start	jsoncpp.cpp	/^    ptrdiff_t offset_start;$/;"	m	struct:Json::OurReader::StructuredError	file:
+omitEndingLineFeed	jsoncpp.cpp	/^void FastWriter::omitEndingLineFeed() { omitEndingLineFeed_ = true; }$/;"	f	class:Json::FastWriter
+omitEndingLineFeed_	json.h	/^  bool omitEndingLineFeed_;$/;"	m	class:Json::FastWriter
+open	serial.cpp	/^void serial_port::open(std::string new_name){$/;"	f	class:serial_port
+open_cmdline	gnuplot-iostream.h	/^	static FileHandleWrapper open_cmdline(const std::string &in) {$/;"	f	class:gnuplotio::Gnuplot
+operator !	jsoncpp.cpp	/^bool Value::operator!() const { return isNull(); }$/;"	f	class:Json::Value
+operator !=	json.h	/^  bool operator!=(const SelfType& other) const { return !isEqual(other); }$/;"	f	class:Json::ValueIteratorBase
+operator !=	json.h	/^bool operator!=(const SecureAllocator<T>&, const SecureAllocator<U>&) {$/;"	f	namespace:Json
+operator !=	jsoncpp.cpp	/^bool Value::operator!=(const Value& other) const { return !(*this == other); }$/;"	f	class:Json::Value
+operator *	json.h	/^  reference operator*() const { return deref(); }$/;"	f	class:Json::ValueConstIterator
+operator *	json.h	/^  reference operator*() const { return deref(); }$/;"	f	class:Json::ValueIterator
+operator +	coordinates.h	/^	processed_data operator+(const processed_data & other){$/;"	f	struct:processed_data
+operator ++	json.h	/^  SelfType operator++(int) {$/;"	f	class:Json::ValueConstIterator
+operator ++	json.h	/^  SelfType operator++(int) {$/;"	f	class:Json::ValueIterator
+operator ++	json.h	/^  SelfType& operator++() {$/;"	f	class:Json::ValueConstIterator
+operator ++	json.h	/^  SelfType& operator++() {$/;"	f	class:Json::ValueIterator
+operator -	json.h	/^  difference_type operator-(const SelfType& other) const {$/;"	f	class:Json::ValueIteratorBase
+operator --	json.h	/^  SelfType operator--(int) {$/;"	f	class:Json::ValueConstIterator
+operator --	json.h	/^  SelfType operator--(int) {$/;"	f	class:Json::ValueIterator
+operator --	json.h	/^  SelfType& operator--() {$/;"	f	class:Json::ValueConstIterator
+operator --	json.h	/^  SelfType& operator--() {$/;"	f	class:Json::ValueIterator
+operator ->	json.h	/^  pointer operator->() const { return &deref(); }$/;"	f	class:Json::ValueConstIterator
+operator ->	json.h	/^  pointer operator->() const { return &deref(); }$/;"	f	class:Json::ValueIterator
+operator <	jsoncpp.cpp	/^bool Value::CZString::operator<(const CZString& other) const {$/;"	f	class:Json::Value::CZString
+operator <	jsoncpp.cpp	/^bool Value::operator<(const Value& other) const {$/;"	f	class:Json::Value
+operator <<	jsoncpp.cpp	/^JSONCPP_OSTREAM& operator<<(JSONCPP_OSTREAM& sout, Value const& root) {$/;"	f	namespace:Json
+operator <=	jsoncpp.cpp	/^bool Value::operator<=(const Value& other) const { return !(other < *this); }$/;"	f	class:Json::Value
+operator =	coordinates.h	/^	processed_data & operator=(const processed_data & other){$/;"	f	struct:processed_data
+operator =	jsoncpp.cpp	/^Value& Value::operator=(Value other) {$/;"	f	class:Json::Value
+operator =	jsoncpp.cpp	/^Value::CZString& Value::CZString::operator=(CZString other) {$/;"	f	class:Json::Value::CZString
+operator =	jsoncpp.cpp	/^ValueIterator& ValueIterator::operator=(const SelfType& other) {$/;"	f	class:Json::ValueIterator
+operator =	jsoncpp.cpp	/^operator=(const ValueIteratorBase& other) {$/;"	f	class:Json::ValueConstIterator
+operator ==	json.h	/^  bool operator==(const SelfType& other) const { return isEqual(other); }$/;"	f	class:Json::ValueIteratorBase
+operator ==	json.h	/^bool operator==(const SecureAllocator<T>&, const SecureAllocator<U>&) {$/;"	f	namespace:Json
+operator ==	jsoncpp.cpp	/^bool Value::CZString::operator==(const CZString& other) const {$/;"	f	class:Json::Value::CZString
+operator ==	jsoncpp.cpp	/^bool Value::operator==(const Value& other) const {$/;"	f	class:Json::Value
+operator >	jsoncpp.cpp	/^bool Value::operator>(const Value& other) const { return other < *this; }$/;"	f	class:Json::Value
+operator >=	jsoncpp.cpp	/^bool Value::operator>=(const Value& other) const { return !(*this < other); }$/;"	f	class:Json::Value
+operator >>	jsoncpp.cpp	/^JSONCPP_ISTREAM& operator>>(JSONCPP_ISTREAM& sin, Value& root) {$/;"	f	namespace:Json
+operator []	jsoncpp.cpp	/^Value const& Value::operator[](CppTL::ConstString const& key) const$/;"	f	class:Json::Value
+operator []	jsoncpp.cpp	/^Value const& Value::operator[](JSONCPP_STRING const& key) const$/;"	f	class:Json::Value
+operator []	jsoncpp.cpp	/^Value& CharReaderBuilder::operator[](JSONCPP_STRING key)$/;"	f	class:Json::CharReaderBuilder
+operator []	jsoncpp.cpp	/^Value& StreamWriterBuilder::operator[](JSONCPP_STRING key)$/;"	f	class:Json::StreamWriterBuilder
+operator []	jsoncpp.cpp	/^Value& Value::operator[](ArrayIndex index) {$/;"	f	class:Json::Value
+operator []	jsoncpp.cpp	/^Value& Value::operator[](const CppTL::ConstString& key) {$/;"	f	class:Json::Value
+operator []	jsoncpp.cpp	/^Value& Value::operator[](const JSONCPP_STRING& key) {$/;"	f	class:Json::Value
+operator []	jsoncpp.cpp	/^Value& Value::operator[](const StaticString& key) {$/;"	f	class:Json::Value
+operator []	jsoncpp.cpp	/^Value& Value::operator[](const char* key) {$/;"	f	class:Json::Value
+operator []	jsoncpp.cpp	/^Value& Value::operator[](int index) {$/;"	f	class:Json::Value
+operator []	jsoncpp.cpp	/^const Value& Value::operator[](ArrayIndex index) const {$/;"	f	class:Json::Value
+operator []	jsoncpp.cpp	/^const Value& Value::operator[](const char* key) const$/;"	f	class:Json::Value
+operator []	jsoncpp.cpp	/^const Value& Value::operator[](int index) const {$/;"	f	class:Json::Value
+operator const char*	json.h	/^  operator const char*() const { return c_str_; }$/;"	f	class:Json::StaticString
+p	gnuplot-iostream.h	/^		const RF *p;$/;"	m	class:gnuplotio::ArrayTraits_ArmaMatOrField::ColRange
+p	gnuplot-iostream.h	/^		const RF *p;$/;"	m	class:gnuplotio::ArrayTraits_ArmaMatOrField::RowRange
+p	gnuplot-iostream.h	/^		const arma::Cube<T> *p;$/;"	m	class:gnuplotio::ArrayTraits::ColRange
+p	gnuplot-iostream.h	/^		const arma::Cube<T> *p;$/;"	m	class:gnuplotio::ArrayTraits::RowRange
+p	gnuplot-iostream.h	/^		const arma::Cube<T> *p;$/;"	m	class:gnuplotio::ArrayTraits::SliceRange
+p	gnuplot-iostream.h	/^	const blitz::Array<T, ArrayDim> *p;$/;"	m	class:gnuplotio::BlitzIterator
+parent	gnuplot-iostream.h	/^	typedef ArrayTraits<HT> parent;$/;"	t	class:gnuplotio::ArrayTraits
+parent	gnuplot-iostream.h	/^	typedef ArrayTraits<typename StdTupUnwinder<Tuple, sizeof...(Args)-1>::type> parent;$/;"	t	class:gnuplotio::ArrayTraits
+parent	gnuplot-iostream.h	/^	typedef ArrayTraits<typename std::pair<HT, TT> > parent;$/;"	t	class:gnuplotio::ArrayTraits
+parse	jsoncpp.cpp	/^Reader::parse(const std::string& document, Value& root, bool collectComments) {$/;"	f	class:Json::Reader
+parse	jsoncpp.cpp	/^bool OurReader::parse(const char* beginDoc,$/;"	f	class:Json::OurReader
+parse	jsoncpp.cpp	/^bool Reader::parse(const char* beginDoc,$/;"	f	class:Json::Reader
+parse	jsoncpp.cpp	/^bool Reader::parse(std::istream& sin, Value& root, bool collectComments) {$/;"	f	class:Json::Reader
+parseFromStream	jsoncpp.cpp	/^bool parseFromStream($/;"	f	namespace:Json
+plotting_empty_container	gnuplot-iostream.h	/^	plotting_empty_container() : std::length_error("plotting empty container") { }$/;"	f	class:gnuplotio::plotting_empty_container
+plotting_empty_container	gnuplot-iostream.h	/^class plotting_empty_container : public std::length_error {$/;"	c	namespace:gnuplotio
+pointer	json.h	/^  typedef Value* pointer;$/;"	t	class:Json::ValueIterator
+pointer	json.h	/^  typedef const Value* pointer;$/;"	t	class:Json::ValueConstIterator
+policy_	json.h	/^      unsigned policy_: 2;$/;"	m	struct:Json::Value::CZString::StringStorage
+port	serial.h	/^		asio::serial_port port = asio::serial_port(io);$/;"	m	class:serial_port
+pos_lock	plot.h	/^    std::mutex pos_lock;$/;"	m	class:DotPlot
+precision_	jsoncpp.cpp	/^  unsigned int precision_;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+print	coordinates.cpp	/^void coordinates::print(){$/;"	f	class:coordinates
+printPos	coordinates.cpp	/^void coordinates::printPos(){$/;"	f	class:coordinates
+printRot	coordinates.cpp	/^void coordinates::printRot(){$/;"	f	class:coordinates
+printRotSpeed	coordinates.cpp	/^void coordinates::printRotSpeed(){$/;"	f	class:coordinates
+print_block	gnuplot-iostream.h	/^print_block(std::ostream &stream, T &arg, PrintMode) {$/;"	f	namespace:gnuplotio
+processed_data	coordinates.h	/^struct processed_data{$/;"	s
+pty_fh	gnuplot-iostream.h	/^	FILE *pty_fh;$/;"	m	class:gnuplotio::GnuplotFeedbackPty
+pty_fn	gnuplot-iostream.h	/^	std::string pty_fn;$/;"	m	class:gnuplotio::GnuplotFeedbackPty
+pushError	jsoncpp.cpp	/^bool OurReader::pushError(const Value& value, const JSONCPP_STRING& message) {$/;"	f	class:Json::OurReader
+pushError	jsoncpp.cpp	/^bool OurReader::pushError(const Value& value, const JSONCPP_STRING& message, const Value& extra) {$/;"	f	class:Json::OurReader
+pushError	jsoncpp.cpp	/^bool Reader::pushError(const Value& value, const JSONCPP_STRING& message) {$/;"	f	class:Json::Reader
+pushError	jsoncpp.cpp	/^bool Reader::pushError(const Value& value, const JSONCPP_STRING& message, const Value& extra) {$/;"	f	class:Json::Reader
+pushValue	jsoncpp.cpp	/^void BuiltStyledStreamWriter::pushValue(JSONCPP_STRING const& value) {$/;"	f	class:Json::BuiltStyledStreamWriter
+pushValue	jsoncpp.cpp	/^void StyledStreamWriter::pushValue(const JSONCPP_STRING& value) {$/;"	f	class:Json::StyledStreamWriter
+pushValue	jsoncpp.cpp	/^void StyledWriter::pushValue(const JSONCPP_STRING& value) {$/;"	f	class:Json::StyledWriter
+r	gnuplot-iostream.h	/^	RU r;$/;"	m	class:gnuplotio::PairOfRange
+rX	coordinates.h	/^	float rX, rY, rZ;		\/\/ rotation offset in Pi$/;"	m	class:coordinates
+rY	coordinates.h	/^	float rX, rY, rZ;		\/\/ rotation offset in Pi$/;"	m	class:coordinates
+rZ	coordinates.h	/^	float rX, rY, rZ;		\/\/ rotation offset in Pi$/;"	m	class:coordinates
+r_depth	gnuplot-iostream.h	/^	static const size_t r_depth = ArrayTraits<U>::depth;$/;"	m	class:gnuplotio::ArrayTraits
+range_type	gnuplot-iostream.h	/^	typedef BlitzIterator<T, ArrayDim, ArrayDim> range_type;$/;"	t	class:gnuplotio::ArrayTraits
+range_type	gnuplot-iostream.h	/^	typedef Error_WasNotContainer range_type;$/;"	t	class:gnuplotio::ArrayTraits
+range_type	gnuplot-iostream.h	/^	typedef IteratorRange<const T*, T> range_type;$/;"	t	class:gnuplotio::ArrayTraits
+range_type	gnuplot-iostream.h	/^	typedef IteratorRange<typename T::const_iterator, typename T::value_type> range_type;$/;"	t	class:gnuplotio::ArrayTraits
+range_type	gnuplot-iostream.h	/^	typedef IteratorRange<typename arma::Col<T>::const_iterator, T> range_type;$/;"	t	class:gnuplotio::ArrayTraits
+range_type	gnuplot-iostream.h	/^	typedef IteratorRange<typename arma::Row<T>::const_iterator, T> range_type;$/;"	t	class:gnuplotio::ArrayTraits
+range_type	gnuplot-iostream.h	/^	typedef PairOfRange<typename ArrayTraits<T>::range_type, typename ArrayTraits<U>::range_type> range_type;$/;"	t	class:gnuplotio::ArrayTraits
+range_type	gnuplot-iostream.h	/^	typedef RowRange range_type;$/;"	t	class:gnuplotio::ArrayTraits
+range_type	gnuplot-iostream.h	/^	typedef RowRange range_type;$/;"	t	class:gnuplotio::ArrayTraits_ArmaMatOrField
+raw_data	coordinates.h	/^}raw_data;$/;"	t	typeref:struct:__anon1
+readArray	jsoncpp.cpp	/^bool OurReader::readArray(Token& tokenStart) {$/;"	f	class:Json::OurReader
+readArray	jsoncpp.cpp	/^bool Reader::readArray(Token& tokenStart) {$/;"	f	class:Json::Reader
+readCStyleComment	jsoncpp.cpp	/^bool OurReader::readCStyleComment() {$/;"	f	class:Json::OurReader
+readCStyleComment	jsoncpp.cpp	/^bool Reader::readCStyleComment() {$/;"	f	class:Json::Reader
+readComment	jsoncpp.cpp	/^bool OurReader::readComment() {$/;"	f	class:Json::OurReader
+readComment	jsoncpp.cpp	/^bool Reader::readComment() {$/;"	f	class:Json::Reader
+readCppStyleComment	jsoncpp.cpp	/^bool OurReader::readCppStyleComment() {$/;"	f	class:Json::OurReader
+readCppStyleComment	jsoncpp.cpp	/^bool Reader::readCppStyleComment() {$/;"	f	class:Json::Reader
+readNumber	jsoncpp.cpp	/^bool OurReader::readNumber(bool checkInf) {$/;"	f	class:Json::OurReader
+readNumber	jsoncpp.cpp	/^void Reader::readNumber() {$/;"	f	class:Json::Reader
+readObject	jsoncpp.cpp	/^bool OurReader::readObject(Token& tokenStart) {$/;"	f	class:Json::OurReader
+readObject	jsoncpp.cpp	/^bool Reader::readObject(Token& tokenStart) {$/;"	f	class:Json::Reader
+readString	jsoncpp.cpp	/^bool OurReader::readString() {$/;"	f	class:Json::OurReader
+readString	jsoncpp.cpp	/^bool Reader::readString() {$/;"	f	class:Json::Reader
+readStringSingleQuote	jsoncpp.cpp	/^bool OurReader::readStringSingleQuote() {$/;"	f	class:Json::OurReader
+readToken	jsoncpp.cpp	/^bool OurReader::readToken(Token& token) {$/;"	f	class:Json::OurReader
+readToken	jsoncpp.cpp	/^bool Reader::readToken(Token& token) {$/;"	f	class:Json::Reader
+readValue	jsoncpp.cpp	/^bool OurReader::readValue() {$/;"	f	class:Json::OurReader
+readValue	jsoncpp.cpp	/^bool Reader::readValue() {$/;"	f	class:Json::Reader
+reader_	jsoncpp.cpp	/^  OurReader reader_;$/;"	m	class:Json::OurCharReader	file:
+readline	serial.cpp	/^std::string serial_port::readline(){$/;"	f	class:serial_port
+realValue	json.h	/^  realValue,     \/\/\/< double value$/;"	e	enum:Json::ValueType
+real_	json.h	/^    double real_;$/;"	m	union:Json::Value::ValueHolder
+rebind	json.h	/^		template<typename U> struct rebind { using other = SecureAllocator<U>; };$/;"	s	class:Json::SecureAllocator
+recoverFromError	jsoncpp.cpp	/^bool OurReader::recoverFromError(TokenType skipUntilToken) {$/;"	f	class:Json::OurReader
+recoverFromError	jsoncpp.cpp	/^bool Reader::recoverFromError(TokenType skipUntilToken) {$/;"	f	class:Json::Reader
+reference	json.h	/^  typedef Value& reference;$/;"	t	class:Json::ValueIterator
+reference	json.h	/^  typedef const Value& reference;$/;"	t	class:Json::ValueConstIterator
+rejectDupKeys_	jsoncpp.cpp	/^  bool rejectDupKeys_;$/;"	m	class:Json::OurFeatures	file:
+releasePrefixedStringValue	jsoncpp.cpp	/^static inline void releasePrefixedStringValue(char* value) {$/;"	f	namespace:Json
+releaseStringValue	jsoncpp.cpp	/^static inline void releaseStringValue(char* value, unsigned length) {$/;"	f	namespace:Json
+releaseStringValue	jsoncpp.cpp	/^static inline void releaseStringValue(char* value, unsigned) {$/;"	f	namespace:Json
+removeIndex	jsoncpp.cpp	/^bool Value::removeIndex(ArrayIndex index, Value* removed) {$/;"	f	class:Json::Value
+removeMember	jsoncpp.cpp	/^Value Value::removeMember(const JSONCPP_STRING& key)$/;"	f	class:Json::Value
+removeMember	jsoncpp.cpp	/^Value Value::removeMember(const char* key)$/;"	f	class:Json::Value
+removeMember	jsoncpp.cpp	/^bool Value::removeMember(JSONCPP_STRING const& key, Value* removed)$/;"	f	class:Json::Value
+removeMember	jsoncpp.cpp	/^bool Value::removeMember(const char* key, Value* removed)$/;"	f	class:Json::Value
+removeMember	jsoncpp.cpp	/^bool Value::removeMember(const char* key, const char* cend, Value* removed)$/;"	f	class:Json::Value
+reset	coordinates.cpp	/^void coordinates::reset(){$/;"	f	class:coordinates
+resize	jsoncpp.cpp	/^void Value::resize(ArrayIndex newSize) {$/;"	f	class:Json::Value
+resolve	jsoncpp.cpp	/^Value Path::resolve(const Value& root, const Value& defaultValue) const {$/;"	f	class:Json::Path
+resolve	jsoncpp.cpp	/^const Value& Path::resolve(const Value& root) const {$/;"	f	class:Json::Path
+resolveReference	jsoncpp.cpp	/^Value& Value::resolveReference(char const* key, char const* cend)$/;"	f	class:Json::Value
+resolveReference	jsoncpp.cpp	/^Value& Value::resolveReference(const char* key) {$/;"	f	class:Json::Value
+rightMargin_	json.h	/^  unsigned int rightMargin_;$/;"	m	class:Json::StyledStreamWriter
+rightMargin_	json.h	/^  unsigned int rightMargin_;$/;"	m	class:Json::StyledWriter
+rightMargin_	jsoncpp.cpp	/^  unsigned int rightMargin_;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+rot_sensitivity	coordinates.h	/^	float rot_sensitivity;$/;"	m	class:coordinates
+row	gnuplot-iostream.h	/^		size_t row, col, slice;$/;"	m	class:gnuplotio::ArrayTraits::SliceRange
+row	gnuplot-iostream.h	/^		size_t row, col;$/;"	m	class:gnuplotio::ArrayTraits::ColRange
+row	gnuplot-iostream.h	/^		size_t row, col;$/;"	m	class:gnuplotio::ArrayTraits_ArmaMatOrField::ColRange
+row	gnuplot-iostream.h	/^		size_t row;$/;"	m	class:gnuplotio::ArrayTraits::RowRange
+row	gnuplot-iostream.h	/^		size_t row;$/;"	m	class:gnuplotio::ArrayTraits_ArmaMatOrField::RowRange
+run	plot.cpp	/^void DotPlot::run() {$/;"	f	class:DotPlot
+rvec	gnuplot-iostream.h	/^	std::vector<RT> rvec;$/;"	m	class:gnuplotio::VecOfRange
+send	gnuplot-iostream.h	/^		&send(const T &arg) { return send(arg, ModeAuto()); }$/;"	f	class:gnuplotio::Gnuplot
+send	gnuplot-iostream.h	/^	Gnuplot &send(const T &arg, OrganizationMode) {$/;"	f	class:gnuplotio::Gnuplot
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream) {$/;"	f	struct:gnuplotio::BinfmtSender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const T &v) {$/;"	f	struct:gnuplotio::BinarySender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const T &v) {$/;"	f	struct:gnuplotio::CastIntTextSender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const T &v) {$/;"	f	struct:gnuplotio::FlatBinarySender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const T &v) {$/;"	f	struct:gnuplotio::FloatTextSender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const T &v) {$/;"	f	struct:gnuplotio::TextSender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const Tuple &v) {$/;"	f	struct:gnuplotio::BinarySender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const Tuple &v) {$/;"	f	struct:gnuplotio::TextSender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const blitz::TinyVector<T, N> &v) {$/;"	f	struct:gnuplotio::BinarySender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const blitz::TinyVector<T, N> &v) {$/;"	f	struct:gnuplotio::TextSender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const std::complex<T> &v) {$/;"	f	struct:gnuplotio::BinarySender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const std::complex<T> &v) {$/;"	f	struct:gnuplotio::TextSender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const std::pair<T, U> &v) {$/;"	f	struct:gnuplotio::BinarySender
+send	gnuplot-iostream.h	/^	static void send(std::ostream &stream, const std::pair<T, U> &v) {$/;"	f	struct:gnuplotio::TextSender
+send	gnuplot-iostream.h	/^template<> struct BinfmtSender< float> { static void send(std::ostream &stream) { stream << "%float";  } };$/;"	f	struct:gnuplotio::BinfmtSender
+send	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost::  int8_t> { static void send(std::ostream &stream) { stream << "%int8";   } };$/;"	f	struct:gnuplotio::BinfmtSender
+send	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost:: int16_t> { static void send(std::ostream &stream) { stream << "%int16";  } };$/;"	f	struct:gnuplotio::BinfmtSender
+send	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost:: int32_t> { static void send(std::ostream &stream) { stream << "%int32";  } };$/;"	f	struct:gnuplotio::BinfmtSender
+send	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost:: int64_t> { static void send(std::ostream &stream) { stream << "%int64";  } };$/;"	f	struct:gnuplotio::BinfmtSender
+send	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost:: uint8_t> { static void send(std::ostream &stream) { stream << "%uint8";  } };$/;"	f	struct:gnuplotio::BinfmtSender
+send	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost::uint16_t> { static void send(std::ostream &stream) { stream << "%uint16"; } };$/;"	f	struct:gnuplotio::BinfmtSender
+send	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost::uint32_t> { static void send(std::ostream &stream) { stream << "%uint32"; } };$/;"	f	struct:gnuplotio::BinfmtSender
+send	gnuplot-iostream.h	/^template<> struct BinfmtSender<boost::uint64_t> { static void send(std::ostream &stream) { stream << "%uint64"; } };$/;"	f	struct:gnuplotio::BinfmtSender
+send	gnuplot-iostream.h	/^template<> struct BinfmtSender<double> { static void send(std::ostream &stream) { stream << "%double"; } };$/;"	f	struct:gnuplotio::BinfmtSender
+send1d	gnuplot-iostream.h	/^	template <typename T> Gnuplot &send1d         (const T &arg) { return send(arg, Mode1D      ()); }$/;"	f	class:gnuplotio::Gnuplot
+send1d_colmajor	gnuplot-iostream.h	/^	template <typename T> Gnuplot &send1d_colmajor(const T &arg) { return send(arg, Mode1DUnwrap()); }$/;"	f	class:gnuplotio::Gnuplot
+send2d	gnuplot-iostream.h	/^	template <typename T> Gnuplot &send2d         (const T &arg) { return send(arg, Mode2D      ()); }$/;"	f	class:gnuplotio::Gnuplot
+send2d_colmajor	gnuplot-iostream.h	/^	template <typename T> Gnuplot &send2d_colmajor(const T &arg) { return send(arg, Mode2DUnwrap()); }$/;"	f	class:gnuplotio::Gnuplot
+sendBinary	gnuplot-iostream.h	/^		&sendBinary(const T &arg) { return sendBinary(arg, ModeAuto()); }$/;"	f	class:gnuplotio::Gnuplot
+sendBinary	gnuplot-iostream.h	/^	Gnuplot &sendBinary(const T &arg, OrganizationMode) {$/;"	f	class:gnuplotio::Gnuplot
+sendBinary1d	gnuplot-iostream.h	/^	template <typename T> Gnuplot &sendBinary1d         (const T &arg) { return sendBinary(arg, Mode1D      ()); }$/;"	f	class:gnuplotio::Gnuplot
+sendBinary1d_colmajor	gnuplot-iostream.h	/^	template <typename T> Gnuplot &sendBinary1d_colmajor(const T &arg) { return sendBinary(arg, Mode1DUnwrap()); }$/;"	f	class:gnuplotio::Gnuplot
+sendBinary2d	gnuplot-iostream.h	/^	template <typename T> Gnuplot &sendBinary2d         (const T &arg) { return sendBinary(arg, Mode2D      ()); }$/;"	f	class:gnuplotio::Gnuplot
+sendBinary2d_colmajor	gnuplot-iostream.h	/^	template <typename T> Gnuplot &sendBinary2d_colmajor(const T &arg) { return sendBinary(arg, Mode2DUnwrap()); }$/;"	f	class:gnuplotio::Gnuplot
+send_scalar	gnuplot-iostream.h	/^void send_scalar(std::ostream &stream, const T &, ModeBinfmt) {$/;"	f	namespace:gnuplotio
+send_scalar	gnuplot-iostream.h	/^void send_scalar(std::ostream &stream, const T &arg, ModeBinary) {$/;"	f	namespace:gnuplotio
+send_scalar	gnuplot-iostream.h	/^void send_scalar(std::ostream &stream, const T &arg, ModeText) {$/;"	f	namespace:gnuplotio
+serial_port	serial.cpp	/^serial_port::serial_port(){$/;"	f	class:serial_port
+serial_port	serial.cpp	/^serial_port::serial_port(std::string new_name){$/;"	f	class:serial_port
+serial_port	serial.h	/^class serial_port{$/;"	c
+setBuff	coordinates.cpp	/^void coordinates::setBuff(int new_buff_size){$/;"	f	class:coordinates
+setComment	jsoncpp.cpp	/^void Value::CommentInfo::setComment(const char* text, size_t len) {$/;"	f	class:Json::Value::CommentInfo
+setComment	jsoncpp.cpp	/^void Value::setComment(const JSONCPP_STRING& comment, CommentPlacement placement) {$/;"	f	class:Json::Value
+setComment	jsoncpp.cpp	/^void Value::setComment(const char* comment, CommentPlacement placement) {$/;"	f	class:Json::Value
+setComment	jsoncpp.cpp	/^void Value::setComment(const char* comment, size_t len, CommentPlacement placement) {$/;"	f	class:Json::Value
+setDefaults	jsoncpp.cpp	/^void CharReaderBuilder::setDefaults(Json::Value* settings)$/;"	f	class:Json::CharReaderBuilder
+setDefaults	jsoncpp.cpp	/^void StreamWriterBuilder::setDefaults(Json::Value* settings)$/;"	f	class:Json::StreamWriterBuilder
+setOffsetLimit	jsoncpp.cpp	/^void Value::setOffsetLimit(ptrdiff_t limit) { limit_ = limit; }$/;"	f	class:Json::Value
+setOffsetStart	jsoncpp.cpp	/^void Value::setOffsetStart(ptrdiff_t start) { start_ = start; }$/;"	f	class:Json::Value
+setSensitivity	coordinates.cpp	/^void coordinates::setSensitivity(int acc_sen, int rot_sen){$/;"	f	class:coordinates
+settings_	json.h	/^  Json::Value settings_;$/;"	m	class:Json::CharReaderBuilder
+settings_	json.h	/^  Json::Value settings_;$/;"	m	class:Json::StreamWriterBuilder
+should_use_pclose	gnuplot-iostream.h	/^	bool should_use_pclose;$/;"	m	struct:gnuplotio::FileHandleWrapper
+size	jsoncpp.cpp	/^ArrayIndex Value::size() const {$/;"	f	class:Json::Value
+size_t	json.h	/^  typedef unsigned int size_t;$/;"	t	class:Json::ValueIterator
+size_t	json.h	/^  typedef unsigned int size_t;$/;"	t	class:Json::ValueIteratorBase
+skipCommentTokens	jsoncpp.cpp	/^void OurReader::skipCommentTokens(Token& token) {$/;"	f	class:Json::OurReader
+skipCommentTokens	jsoncpp.cpp	/^void Reader::skipCommentTokens(Token& token) {$/;"	f	class:Json::Reader
+skipSpaces	jsoncpp.cpp	/^void OurReader::skipSpaces() {$/;"	f	class:Json::OurReader
+skipSpaces	jsoncpp.cpp	/^void Reader::skipSpaces() {$/;"	f	class:Json::Reader
+slave_fd	gnuplot-iostream.h	/^	int master_fd, slave_fd;$/;"	m	class:gnuplotio::GnuplotFeedbackPty
+slice	gnuplot-iostream.h	/^		size_t row, col, slice;$/;"	m	class:gnuplotio::ArrayTraits::SliceRange
+snprintf	jsoncpp.cpp	/^#define snprintf /;"	d	file:
+sout_	json.h	/^  JSONCPP_OSTREAM* sout_;  \/\/ not owned; will not delete$/;"	m	class:Json::StreamWriter
+sscanf	jsoncpp.cpp	/^#define sscanf /;"	d	file:
+stackDepth_	jsoncpp.cpp	/^  int stackDepth_;$/;"	m	class:Json::OurReader	file:
+stackDepth_g	jsoncpp.cpp	/^static int       stackDepth_g = 0;  \/\/ see readValue()$/;"	v	file:
+stackLimit_	jsoncpp.cpp	/^  int stackLimit_;$/;"	m	class:Json::OurFeatures	file:
+stackLimit_g	jsoncpp.cpp	/^static int const stackLimit_g = 1000;$/;"	v	file:
+start	coordinates.h	/^	mytime_point start, finish;$/;"	m	class:coordinates
+start_	json.h	/^    Location start_;$/;"	m	class:Json::Reader::Token
+start_	json.h	/^  ptrdiff_t start_;$/;"	m	class:Json::Value
+start_	jsoncpp.cpp	/^    Location start_;$/;"	m	class:Json::OurReader::Token	file:
+std	json.h	/^namespace std {$/;"	n
+std_tuple_binsend_helper	gnuplot-iostream.h	/^void std_tuple_binsend_helper(std::ostream &stream, const Tuple &v, int_<0>) {$/;"	f	namespace:gnuplotio
+std_tuple_binsend_helper	gnuplot-iostream.h	/^void std_tuple_binsend_helper(std::ostream &stream, const Tuple &v, int_<I>) {$/;"	f	namespace:gnuplotio
+std_tuple_formatcode_helper	gnuplot-iostream.h	/^void std_tuple_formatcode_helper(std::ostream &stream, const Tuple *, int_<0>) {$/;"	f	namespace:gnuplotio
+std_tuple_formatcode_helper	gnuplot-iostream.h	/^void std_tuple_formatcode_helper(std::ostream &stream, const Tuple *, int_<I>) {$/;"	f	namespace:gnuplotio
+std_tuple_textsend_helper	gnuplot-iostream.h	/^void std_tuple_textsend_helper(std::ostream &stream, const Tuple &v, int_<0>) {$/;"	f	namespace:gnuplotio
+std_tuple_textsend_helper	gnuplot-iostream.h	/^void std_tuple_textsend_helper(std::ostream &stream, const Tuple &v, int_<I>) {$/;"	f	namespace:gnuplotio
+storage_	json.h	/^      StringStorage storage_;$/;"	m	union:Json::Value::CZString::__anon2
+strictMode	jsoncpp.cpp	/^Features Features::strictMode() {$/;"	f	class:Json::Features
+strictMode	jsoncpp.cpp	/^void CharReaderBuilder::strictMode(Json::Value* settings)$/;"	f	class:Json::CharReaderBuilder
+strictRoot_	json.h	/^  bool strictRoot_;$/;"	m	class:Json::Features
+strictRoot_	jsoncpp.cpp	/^  bool strictRoot_;$/;"	m	class:Json::OurFeatures	file:
+stringValue	json.h	/^  stringValue,   \/\/\/< UTF-8 string value$/;"	e	enum:Json::ValueType
+string_	json.h	/^    char* string_;  \/\/ actually ptr to unsigned, followed by str, unless !allocated_$/;"	m	union:Json::Value::ValueHolder
+strnpbrk	jsoncpp.cpp	/^static char const* strnpbrk(char const* s, char const* accept, size_t n) {$/;"	f	namespace:Json
+subiter_type	gnuplot-iostream.h	/^		typedef ColRange subiter_type;$/;"	t	class:gnuplotio::ArrayTraits::RowRange
+subiter_type	gnuplot-iostream.h	/^		typedef ColRange subiter_type;$/;"	t	class:gnuplotio::ArrayTraits_ArmaMatOrField::RowRange
+subiter_type	gnuplot-iostream.h	/^		typedef Error_WasNotContainer subiter_type;$/;"	t	class:gnuplotio::ArrayTraits::SliceRange
+subiter_type	gnuplot-iostream.h	/^		typedef Error_WasNotContainer subiter_type;$/;"	t	class:gnuplotio::ArrayTraits_ArmaMatOrField::ColRange
+subiter_type	gnuplot-iostream.h	/^		typedef SliceRange subiter_type;$/;"	t	class:gnuplotio::ArrayTraits::ColRange
+subiter_type	gnuplot-iostream.h	/^	typedef BlitzIterator<T, ArrayDim, SliceDim-1> subiter_type;$/;"	t	class:gnuplotio::BlitzIterator
+subiter_type	gnuplot-iostream.h	/^	typedef Error_WasNotContainer subiter_type;$/;"	t	class:gnuplotio::BlitzIterator
+subiter_type	gnuplot-iostream.h	/^	typedef PairOfRange<typename RT::subiter_type, typename RU::subiter_type> subiter_type;$/;"	t	class:gnuplotio::PairOfRange
+subiter_type	gnuplot-iostream.h	/^	typedef VecOfRange<typename RT::subiter_type> subiter_type;$/;"	t	class:gnuplotio::VecOfRange
+subiter_type	gnuplot-iostream.h	/^	typedef typename ArrayTraits<TV>::range_type subiter_type;$/;"	t	class:gnuplotio::IteratorRange
+subiter_type	gnuplot-iostream.h	/^	typedef void subiter_type;$/;"	t	struct:gnuplotio::Error_WasNotContainer
+swap	json.h	/^inline void swap(Json::Value& a, Json::Value& b) { a.swap(b); }$/;"	f	namespace:std
+swap	jsoncpp.cpp	/^void Value::CZString::swap(CZString& other) {$/;"	f	class:Json::Value::CZString
+swap	jsoncpp.cpp	/^void Value::swap(Value& other) {$/;"	f	class:Json::Value
+swapPayload	jsoncpp.cpp	/^void Value::swapPayload(Value& other) {$/;"	f	class:Json::Value
+throwLogicError	jsoncpp.cpp	/^JSONCPP_NORETURN void throwLogicError(JSONCPP_STRING const& msg)$/;"	f	namespace:Json
+throwRuntimeError	jsoncpp.cpp	/^JSONCPP_NORETURN void throwRuntimeError(JSONCPP_STRING const& msg)$/;"	f	namespace:Json
+tmp_files	gnuplot-iostream.h	/^	std::vector<boost::shared_ptr<GnuplotTmpfile> > tmp_files;$/;"	m	class:gnuplotio::Gnuplot
+tmp_files	gnuplot-iostream.h	/^	std::vector<int> tmp_files;$/;"	m	class:gnuplotio::Gnuplot
+toStyledString	jsoncpp.cpp	/^JSONCPP_STRING Value::toStyledString() const {$/;"	f	class:Json::Value
+tokenArrayBegin	json.h	/^    tokenArrayBegin,$/;"	e	enum:Json::Reader::TokenType
+tokenArrayBegin	jsoncpp.cpp	/^    tokenArrayBegin,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenArrayEnd	json.h	/^    tokenArrayEnd,$/;"	e	enum:Json::Reader::TokenType
+tokenArrayEnd	jsoncpp.cpp	/^    tokenArrayEnd,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenArraySeparator	json.h	/^    tokenArraySeparator,$/;"	e	enum:Json::Reader::TokenType
+tokenArraySeparator	jsoncpp.cpp	/^    tokenArraySeparator,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenComment	json.h	/^    tokenComment,$/;"	e	enum:Json::Reader::TokenType
+tokenComment	jsoncpp.cpp	/^    tokenComment,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenEndOfStream	json.h	/^    tokenEndOfStream = 0,$/;"	e	enum:Json::Reader::TokenType
+tokenEndOfStream	jsoncpp.cpp	/^    tokenEndOfStream = 0,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenError	json.h	/^    tokenError$/;"	e	enum:Json::Reader::TokenType
+tokenError	jsoncpp.cpp	/^    tokenError$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenFalse	json.h	/^    tokenFalse,$/;"	e	enum:Json::Reader::TokenType
+tokenFalse	jsoncpp.cpp	/^    tokenFalse,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenMemberSeparator	json.h	/^    tokenMemberSeparator,$/;"	e	enum:Json::Reader::TokenType
+tokenMemberSeparator	jsoncpp.cpp	/^    tokenMemberSeparator,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenNaN	jsoncpp.cpp	/^    tokenNaN,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenNegInf	jsoncpp.cpp	/^    tokenNegInf,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenNull	json.h	/^    tokenNull,$/;"	e	enum:Json::Reader::TokenType
+tokenNull	jsoncpp.cpp	/^    tokenNull,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenNumber	json.h	/^    tokenNumber,$/;"	e	enum:Json::Reader::TokenType
+tokenNumber	jsoncpp.cpp	/^    tokenNumber,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenObjectBegin	json.h	/^    tokenObjectBegin,$/;"	e	enum:Json::Reader::TokenType
+tokenObjectBegin	jsoncpp.cpp	/^    tokenObjectBegin,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenObjectEnd	json.h	/^    tokenObjectEnd,$/;"	e	enum:Json::Reader::TokenType
+tokenObjectEnd	jsoncpp.cpp	/^    tokenObjectEnd,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenPosInf	jsoncpp.cpp	/^    tokenPosInf,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenString	json.h	/^    tokenString,$/;"	e	enum:Json::Reader::TokenType
+tokenString	jsoncpp.cpp	/^    tokenString,$/;"	e	enum:Json::OurReader::TokenType	file:
+tokenTrue	json.h	/^    tokenTrue,$/;"	e	enum:Json::Reader::TokenType
+tokenTrue	jsoncpp.cpp	/^    tokenTrue,$/;"	e	enum:Json::OurReader::TokenType	file:
+token_	json.h	/^    Token token_;$/;"	m	class:Json::Reader::ErrorInfo
+token_	jsoncpp.cpp	/^    Token token_;$/;"	m	class:Json::OurReader::ErrorInfo	file:
+top_level_array_sender	gnuplot-iostream.h	/^void top_level_array_sender(std::ostream &stream, const T &arg, OrganizationMode, PrintMode) {$/;"	f	namespace:gnuplotio
+type	gnuplot-iostream.h	/^		> type;$/;"	t	struct:gnuplotio::is_boost_tuple
+type	gnuplot-iostream.h	/^		> type;$/;"	t	struct:gnuplotio::is_like_stl_container
+type	gnuplot-iostream.h	/^	> type;$/;"	t	struct:gnuplotio::StdTupUnwinder
+type	gnuplot-iostream.h	/^	>::type>$/;"	s	class:gnuplotio::ModeAutoDecoder
+type	gnuplot-iostream.h	/^	typedef boost::mpl::bool_<false> type;$/;"	t	struct:gnuplotio::dont_treat_as_stl_container
+type	gnuplot-iostream.h	/^	typedef boost::mpl::bool_<value> type;$/;"	t	struct:gnuplotio::is_boost_tuple_nulltype
+type	gnuplot-iostream.h	/^	typedef typename std::tuple_element<0, Tuple>::type type;$/;"	t	struct:gnuplotio::StdTupUnwinder
+type	gnuplot-iostream.h	/^template <typename T> struct dont_treat_as_stl_container<arma::Col  <T> > { typedef boost::mpl::bool_<true> type; };$/;"	t	struct:gnuplotio::dont_treat_as_stl_container
+type	gnuplot-iostream.h	/^template <typename T> struct dont_treat_as_stl_container<arma::Cube <T> > { typedef boost::mpl::bool_<true> type; };$/;"	t	struct:gnuplotio::dont_treat_as_stl_container
+type	gnuplot-iostream.h	/^template <typename T> struct dont_treat_as_stl_container<arma::Mat  <T> > { typedef boost::mpl::bool_<true> type; };$/;"	t	struct:gnuplotio::dont_treat_as_stl_container
+type	gnuplot-iostream.h	/^template <typename T> struct dont_treat_as_stl_container<arma::Row  <T> > { typedef boost::mpl::bool_<true> type; };$/;"	t	struct:gnuplotio::dont_treat_as_stl_container
+type	gnuplot-iostream.h	/^template <typename T> struct dont_treat_as_stl_container<arma::field<T> > { typedef boost::mpl::bool_<true> type; };$/;"	t	struct:gnuplotio::dont_treat_as_stl_container
+type	jsoncpp.cpp	/^ValueType Value::type() const { return type_; }$/;"	f	class:Json::Value
+type_	json.h	/^    TokenType type_;$/;"	m	class:Json::Reader::Token
+type_	jsoncpp.cpp	/^    TokenType type_;$/;"	m	class:Json::OurReader::Token	file:
+uintToString	jsoncpp.cpp	/^static inline void uintToString(LargestUInt value, char*& current) {$/;"	f	namespace:Json
+uintToStringBufferSize	jsoncpp.cpp	/^  uintToStringBufferSize = 3 * sizeof(LargestUInt) + 1$/;"	e	enum:Json::__anon3	file:
+uintValue	json.h	/^  uintValue,     \/\/\/< unsigned integer value$/;"	e	enum:Json::ValueType
+uint_	json.h	/^    LargestUInt uint_;$/;"	m	union:Json::Value::ValueHolder
+unindent	jsoncpp.cpp	/^void BuiltStyledStreamWriter::unindent() {$/;"	f	class:Json::BuiltStyledStreamWriter
+unindent	jsoncpp.cpp	/^void StyledStreamWriter::unindent() {$/;"	f	class:Json::StyledStreamWriter
+unindent	jsoncpp.cpp	/^void StyledWriter::unindent() {$/;"	f	class:Json::StyledWriter
+update	coordinates.cpp	/^void coordinates::update(raw_data new_data){$/;"	f	class:coordinates
+updateDot	plot.cpp	/^void DotPlot::updateDot(double x, double y, double z) {$/;"	f	class:DotPlot
+useSpecialFloats_	jsoncpp.cpp	/^  bool useSpecialFloats_ : 1;$/;"	m	struct:Json::BuiltStyledStreamWriter	file:
+vX	coordinates.h	/^	float vX, vY, vZ;		\/\/ speed of x y z$/;"	m	class:coordinates
+vY	coordinates.h	/^	float vX, vY, vZ;		\/\/ speed of x y z$/;"	m	class:coordinates
+vZ	coordinates.h	/^	float vX, vY, vZ;		\/\/ speed of x y z$/;"	m	class:coordinates
+validate	jsoncpp.cpp	/^bool CharReaderBuilder::validate(Json::Value* invalid) const$/;"	f	class:Json::CharReaderBuilder
+validate	jsoncpp.cpp	/^bool StreamWriterBuilder::validate(Json::Value* invalid) const$/;"	f	class:Json::StreamWriterBuilder
+value	gnuplot-iostream.h	/^	static const bool value = false;$/;"	m	struct:gnuplotio::is_boost_tuple_nulltype
+value	gnuplot-iostream.h	/^	static const bool value = true;$/;"	m	struct:gnuplotio::is_boost_tuple_nulltype
+value	gnuplot-iostream.h	/^	static const bool value = type::value;$/;"	m	struct:gnuplotio::is_boost_tuple
+value	gnuplot-iostream.h	/^	static const bool value = type::value;$/;"	m	struct:gnuplotio::is_like_stl_container
+valueToQuotedString	jsoncpp.cpp	/^JSONCPP_STRING valueToQuotedString(const char* value) {$/;"	f	namespace:Json
+valueToQuotedStringN	jsoncpp.cpp	/^static JSONCPP_STRING valueToQuotedStringN(const char* value, unsigned length) {$/;"	f	namespace:Json
+valueToString	jsoncpp.cpp	/^JSONCPP_STRING valueToString(Int value) {$/;"	f	namespace:Json
+valueToString	jsoncpp.cpp	/^JSONCPP_STRING valueToString(LargestInt value) {$/;"	f	namespace:Json
+valueToString	jsoncpp.cpp	/^JSONCPP_STRING valueToString(LargestUInt value) {$/;"	f	namespace:Json
+valueToString	jsoncpp.cpp	/^JSONCPP_STRING valueToString(UInt value) {$/;"	f	namespace:Json
+valueToString	jsoncpp.cpp	/^JSONCPP_STRING valueToString(bool value) { return value ? "true" : "false"; }$/;"	f	namespace:Json
+valueToString	jsoncpp.cpp	/^JSONCPP_STRING valueToString(double value) { return valueToString(value, false, 17); }$/;"	f	namespace:Json
+valueToString	jsoncpp.cpp	/^JSONCPP_STRING valueToString(double value, bool useSpecialFloats, unsigned int precision) {$/;"	f	namespace:Json
+value_	json.h	/^  } value_;$/;"	m	class:Json::Value	typeref:union:Json::Value::ValueHolder
+value_type	gnuplot-iostream.h	/^			Error_InappropriateDeref, TV>::type value_type;$/;"	t	class:gnuplotio::IteratorRange
+value_type	gnuplot-iostream.h	/^		typedef T value_type;$/;"	t	class:gnuplotio::ArrayTraits::ColRange
+value_type	gnuplot-iostream.h	/^		typedef T value_type;$/;"	t	class:gnuplotio::ArrayTraits::RowRange
+value_type	gnuplot-iostream.h	/^		typedef T value_type;$/;"	t	class:gnuplotio::ArrayTraits::SliceRange
+value_type	gnuplot-iostream.h	/^		typedef T value_type;$/;"	t	class:gnuplotio::ArrayTraits_ArmaMatOrField::ColRange
+value_type	gnuplot-iostream.h	/^		typedef T value_type;$/;"	t	class:gnuplotio::ArrayTraits_ArmaMatOrField::RowRange
+value_type	gnuplot-iostream.h	/^	typedef Error_WasBlitzPartialSlice value_type;$/;"	t	class:gnuplotio::BlitzIterator
+value_type	gnuplot-iostream.h	/^	typedef Error_WasNotContainer value_type;$/;"	t	class:gnuplotio::ArrayTraits
+value_type	gnuplot-iostream.h	/^	typedef T value_type;$/;"	t	class:gnuplotio::BlitzIterator
+value_type	gnuplot-iostream.h	/^	typedef V value_type;$/;"	t	class:gnuplotio::ArrayTraitsDefaults
+value_type	gnuplot-iostream.h	/^	typedef std::pair<typename ArrayTraits<T>::value_type, typename ArrayTraits<U>::value_type> value_type;$/;"	t	class:gnuplotio::ArrayTraits
+value_type	gnuplot-iostream.h	/^	typedef std::pair<typename RT::value_type, typename RU::value_type> value_type;$/;"	t	class:gnuplotio::PairOfRange
+value_type	gnuplot-iostream.h	/^	typedef std::vector<typename RT::value_type> value_type;$/;"	t	class:gnuplotio::VecOfRange
+value_type	json.h	/^  typedef Value value_type;$/;"	t	class:Json::ValueIterator
+value_type	json.h	/^  typedef const Value value_type;$/;"	t	class:Json::ValueConstIterator
+velocity_reset_counter	coordinates.h	/^	int velocity_reset_counter;$/;"	m	class:coordinates
+what	jsoncpp.cpp	/^char const* Exception::what() const throw()$/;"	f	class:Json::Exception
+wrapped_fh	gnuplot-iostream.h	/^	std::FILE *wrapped_fh;$/;"	m	struct:gnuplotio::FileHandleWrapper
+write	jsoncpp.cpp	/^JSONCPP_STRING FastWriter::write(const Value& root) {$/;"	f	class:Json::FastWriter
+write	jsoncpp.cpp	/^JSONCPP_STRING StyledWriter::write(const Value& root) {$/;"	f	class:Json::StyledWriter
+write	jsoncpp.cpp	/^int BuiltStyledStreamWriter::write(Value const& root, JSONCPP_OSTREAM* sout)$/;"	f	class:Json::BuiltStyledStreamWriter
+write	jsoncpp.cpp	/^void StyledStreamWriter::write(JSONCPP_OSTREAM& out, const Value& root) {$/;"	f	class:Json::StyledStreamWriter
+writeArrayValue	jsoncpp.cpp	/^void BuiltStyledStreamWriter::writeArrayValue(Value const& value) {$/;"	f	class:Json::BuiltStyledStreamWriter
+writeArrayValue	jsoncpp.cpp	/^void StyledStreamWriter::writeArrayValue(const Value& value) {$/;"	f	class:Json::StyledStreamWriter
+writeArrayValue	jsoncpp.cpp	/^void StyledWriter::writeArrayValue(const Value& value) {$/;"	f	class:Json::StyledWriter
+writeCommentAfterValueOnSameLine	jsoncpp.cpp	/^void BuiltStyledStreamWriter::writeCommentAfterValueOnSameLine(Value const& root) {$/;"	f	class:Json::BuiltStyledStreamWriter
+writeCommentAfterValueOnSameLine	jsoncpp.cpp	/^void StyledStreamWriter::writeCommentAfterValueOnSameLine(const Value& root) {$/;"	f	class:Json::StyledStreamWriter
+writeCommentAfterValueOnSameLine	jsoncpp.cpp	/^void StyledWriter::writeCommentAfterValueOnSameLine(const Value& root) {$/;"	f	class:Json::StyledWriter
+writeCommentBeforeValue	jsoncpp.cpp	/^void BuiltStyledStreamWriter::writeCommentBeforeValue(Value const& root) {$/;"	f	class:Json::BuiltStyledStreamWriter
+writeCommentBeforeValue	jsoncpp.cpp	/^void StyledStreamWriter::writeCommentBeforeValue(const Value& root) {$/;"	f	class:Json::StyledStreamWriter
+writeCommentBeforeValue	jsoncpp.cpp	/^void StyledWriter::writeCommentBeforeValue(const Value& root) {$/;"	f	class:Json::StyledWriter
+writeIndent	jsoncpp.cpp	/^void BuiltStyledStreamWriter::writeIndent() {$/;"	f	class:Json::BuiltStyledStreamWriter
+writeIndent	jsoncpp.cpp	/^void StyledStreamWriter::writeIndent() {$/;"	f	class:Json::StyledStreamWriter
+writeIndent	jsoncpp.cpp	/^void StyledWriter::writeIndent() {$/;"	f	class:Json::StyledWriter
+writeString	jsoncpp.cpp	/^JSONCPP_STRING writeString(StreamWriter::Factory const& builder, Value const& root) {$/;"	f	namespace:Json
+writeValue	jsoncpp.cpp	/^void BuiltStyledStreamWriter::writeValue(Value const& value) {$/;"	f	class:Json::BuiltStyledStreamWriter
+writeValue	jsoncpp.cpp	/^void FastWriter::writeValue(const Value& value) {$/;"	f	class:Json::FastWriter
+writeValue	jsoncpp.cpp	/^void StyledStreamWriter::writeValue(const Value& value) {$/;"	f	class:Json::StyledStreamWriter
+writeValue	jsoncpp.cpp	/^void StyledWriter::writeValue(const Value& value) {$/;"	f	class:Json::StyledWriter
+writeWithIndent	jsoncpp.cpp	/^void BuiltStyledStreamWriter::writeWithIndent(JSONCPP_STRING const& value) {$/;"	f	class:Json::BuiltStyledStreamWriter
+writeWithIndent	jsoncpp.cpp	/^void StyledStreamWriter::writeWithIndent(const JSONCPP_STRING& value) {$/;"	f	class:Json::StyledStreamWriter
+writeWithIndent	jsoncpp.cpp	/^void StyledWriter::writeWithIndent(const JSONCPP_STRING& value) {$/;"	f	class:Json::StyledWriter
+x	plot.h	/^    double x;$/;"	m	class:DotPlot
+y	plot.h	/^    double y;$/;"	m	class:DotPlot
+yamlCompatiblityEnabled_	json.h	/^  bool yamlCompatiblityEnabled_;$/;"	m	class:Json::FastWriter
+z	plot.h	/^    double z;$/;"	m	class:DotPlot
+~CZString	jsoncpp.cpp	/^Value::CZString::~CZString() {$/;"	f	class:Json::Value::CZString
+~CharReader	json.h	/^  virtual ~CharReader() {}$/;"	f	class:Json::CharReader
+~CharReaderBuilder	jsoncpp.cpp	/^CharReaderBuilder::~CharReaderBuilder()$/;"	f	class:Json::CharReaderBuilder
+~CommentInfo	jsoncpp.cpp	/^Value::CommentInfo::~CommentInfo() {$/;"	f	class:Json::Value::CommentInfo
+~Exception	jsoncpp.cpp	/^Exception::~Exception() throw()$/;"	f	class:Json::Exception
+~Factory	json.h	/^    virtual ~Factory() {}$/;"	f	class:Json::CharReader::Factory
+~Factory	jsoncpp.cpp	/^StreamWriter::Factory::~Factory()$/;"	f	class:Json::StreamWriter::Factory
+~Gnuplot	gnuplot-iostream.h	/^	~Gnuplot() {$/;"	f	class:gnuplotio::Gnuplot
+~GnuplotFeedback	gnuplot-iostream.h	/^	virtual ~GnuplotFeedback() { }$/;"	f	class:gnuplotio::GnuplotFeedback
+~GnuplotFeedbackPty	gnuplot-iostream.h	/^	~GnuplotFeedbackPty() {$/;"	f	class:gnuplotio::GnuplotFeedbackPty
+~GnuplotTmpfile	gnuplot-iostream.h	/^	~GnuplotTmpfile() {$/;"	f	class:gnuplotio::GnuplotTmpfile
+~StreamWriter	jsoncpp.cpp	/^StreamWriter::~StreamWriter()$/;"	f	class:Json::StreamWriter
+~StreamWriterBuilder	jsoncpp.cpp	/^StreamWriterBuilder::~StreamWriterBuilder()$/;"	f	class:Json::StreamWriterBuilder
+~StyledStreamWriter	json.h	/^  ~StyledStreamWriter() {}$/;"	f	class:Json::StyledStreamWriter
+~Value	jsoncpp.cpp	/^Value::~Value() {$/;"	f	class:Json::Value
+~Writer	jsoncpp.cpp	/^Writer::~Writer() {}$/;"	f	class:Json::Writer
+~coordinates	coordinates.cpp	/^coordinates::~coordinates(){}$/;"	f	class:coordinates
+~serial_port	serial.cpp	/^serial_port::~serial_port(){$/;"	f	class:serial_port
