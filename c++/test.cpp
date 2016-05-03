@@ -4,7 +4,7 @@
 #include <thread>
 #include "serial.h"
 #include "json.h"
-//#include "plot.h"
+#include "plot.h"
 #include "coordinates.h"
 
 
@@ -23,8 +23,8 @@ int main() {
 	Json::Reader reader;
 	bool parse_success;
 	coordinates mycoord(SAMPLE_SIZE);
-//	DotPlot dot;
-//	std::thread dot_th(&DotPlot::run, &dot);
+	DotPlot dot;
+	std::thread dot_th(&DotPlot::run, &dot);
 	std::thread poll_key_th(&coordinates::pollResetKey, &mycoord, 'd');
 	double x,y,z;
 	x = 0;
@@ -54,8 +54,8 @@ int main() {
 		x = (double)mycoord.getX();
 		y = (double)mycoord.getY();
 		z = (double)mycoord.getZ();
-		mycoord.printToFile(f);
-                //dot.updateDot(x,y,z);
+		//mycoord.printToFile(f);
+                dot.updateDot(x,y,z);
 	}
 	return 0;
 
