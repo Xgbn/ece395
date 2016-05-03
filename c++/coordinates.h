@@ -6,6 +6,7 @@
 #include <iostream>
 #include "json.h"
 #include <fstream>
+#include <mutex>
 /**
 *	sensitivity of acceleration is determined by AFS_SEL
 *	Register 0x1C bit 4 bit 3
@@ -28,11 +29,13 @@
 #define ROT_SENSITIVITY_2 32.8f
 #define ROT_SENSITIVITY_3 16.4f
 
-#define DEFAULT_LOW_PASS 0.98f
+#define DEFAULT_LOW_PASS 0.90f
 #define VELOCITY_RESET_VAL 2
 #define GRAVITY 9.81f
-#define SAMPLE_SIZE 2
+#define SAMPLE_SIZE 1
 #define PI_CONST 3.1415926f
+#define NOISE_FILTER 0.2f
+#define GYRO_NOISE_FILTER 2.0f
 
 using namespace std;
 
@@ -95,6 +98,7 @@ public:
 	void printPos();
 	void printRot();
 	void printRotSpeed();
+	void pollResetKey(char key);
 	float getX();
 	float getY();
 	float getZ();
@@ -103,9 +107,11 @@ public:
 
 
 private:
+	std::mutex data_lock;
         float elapsed_time;
         float X, Y, Z;			// coordinates of x y z
 	float rX, rY, rZ;		// rotation offset in Pi
+	float prevRX, prevRY, prevRZ;
 	float gyX, gyY, gyZ;	// speed of gyroscope
 	float vX, vY, vZ;		// speed of x y z
 	float aX, aY, aZ;
@@ -124,13 +130,5 @@ private:
 	void filterCurr();
 	void flush();
 	data getBuffAvg();
+	void rotate(float & acA, float & acB, float rotC);
 };
-
-
-
-
-
-
-
-
-

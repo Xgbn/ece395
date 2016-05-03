@@ -1,6 +1,7 @@
 #include "coordinates.h"
 #include <algorithm>
 #include <cmath>
+#include <unistd.h>
 
 using namespace std;
 
@@ -28,7 +29,7 @@ void coordinates::setSensitivity(int acc_sen, int rot_sen){
 		case 1:
 			acc_sensitivity = ACC_SENSITIVITY_1;
 			break;
-		case 2:	
+		case 2:
 			acc_sensitivity = ACC_SENSITIVITY_2;
 			break;
 		case 3:
@@ -42,7 +43,7 @@ void coordinates::setSensitivity(int acc_sen, int rot_sen){
 		case 1:
 			rot_sensitivity = ROT_SENSITIVITY_1;
 			break;
-		case 2:	
+		case 2:
 			rot_sensitivity = ROT_SENSITIVITY_2;
 			break;
 		case 3:
@@ -78,9 +79,13 @@ void coordinates::update(raw_data new_data){
 }
 
 void coordinates::print(){
+	cout << endl << endl << endl;
 	cout << "X: " << X << endl;
 	cout << "Y: " << Y << endl;
 	cout << "Z: " << Z << endl;
+	cout << "rX: " << rX << endl;
+	cout << "rY: " << rY << endl;
+	cout << "rZ: " << rZ << endl;
 	cout << "vX: " << vX << endl;
 	cout << "vY: " << vY << endl;
 	cout << "vZ: " << vZ << endl;
@@ -142,6 +147,36 @@ void coordinates::printToFile(ofstream& f){
     return;
 }
 
+void coordinates::pollResetKey(char key){
+	char buff;
+	while(1){
+		cin.get(buff);
+		if(buff != 'd'){
+			//usleep(50);
+			continue;
+		}
+		cout << "got in" << endl;
+		data_lock.lock();
+		X = 0;
+		Y = 0;
+		Z = 0;
+		rX = 0;
+		rY = 0;
+		rZ = 0;
+		gyX = 0;
+		gyY = 0;
+		gyZ = 0;
+		vX = 0;
+		vY = 0;
+		vZ = 0;
+		prevRX = 0;
+		prevRY = 0;
+		prevRZ = 0;
+		data_lock.unlock();
+	}
+	return;
+}
+
 
 /**
 *
@@ -150,8 +185,12 @@ void coordinates::printToFile(ofstream& f){
 **/
 
 void coordinates::reset(){
+	data_lock.lock();
 	elapsed_time = 0.0;
-        X = 0;
+	prevRX = 0;
+	prevRY = 0;
+	prevRZ = 0;
+	X = 0;
 	Y = 0;
 	Z = 0;
 	rX = 0;
@@ -172,13 +211,14 @@ void coordinates::reset(){
 	a = DEFAULT_LOW_PASS;
 	first = true;
 	first_zero = true;
+	data_lock.unlock();
 }
 
 /**
-*	Filter noise out of data
+*	Filter gravity out of data
 **/
 void coordinates::filterCurr(){
-        return;
+      //  return;
 	gX = gX * a + (1-a) * buff[count].Ac_X;
 	gY = gY * a + (1-a) * buff[count].Ac_Y;
 	gZ = gZ * a + (1-a) * buff[count].Ac_Z;
@@ -186,13 +226,47 @@ void coordinates::filterCurr(){
 	buff[count].Ac_X -= gX;
 	buff[count].Ac_Y -= gY;
 	buff[count].Ac_Z -= gZ;
-
+	if(abs(buff[count].Gy_X) < GYRO_NOISE_FILTER)
+		buff[count].Gy_X = 0;
+	if(abs(buff[count].Gy_Y) < GYRO_NOISE_FILTER)
+		buff[count].Gy_Y = 0;
+	if(abs(buff[count].Gy_Z) < GYRO_NOISE_FILTER)
+		buff[count].Gy_Z = 0;
+	if(abs(buff[count].Ac_X) < NOISE_FILTER)
+		buff[count].Ac_X = 0;
+	if(abs(buff[count].Ac_Y) < NOISE_FILTER)
+		buff[count].Ac_Y = 0;
+	if(abs(buff[count].Ac_Z) < NOISE_FILTER)
+		buff[count].Ac_Z = 0;
+	data_lock.lock();
+	float deltaRX = rX - prevRX;
+	float deltaRY = rY - prevRY;
+	float deltaRZ = rZ - prevRZ;
+	prevRX = rX;
+	prevRY = rY;
+	prevRZ = rZ;
+	data_lock.unlock();
+	rotate(gX, gY, deltaRZ);
+	rotate(gY, gZ, deltaRX);
+	rotate(gZ, gX, deltaRY);
 	// if(abs(buff[count].Ac_X) < 0.3)
 	// 	buff[count].Ac_X = 0;
 	// if(abs(buff[count].Ac_Y) < 0.3)
 	// 	buff[count].Ac_Y = 0;
 	// if(abs(buff[count].Ac_Z) < 0.3)
 	// 	buff[count].Ac_Z = 0;
+}
+
+void coordinates::rotate(float & acA, float & acB, float rotC){
+	float newAcA = 0, newAcB = 0;
+	float cosC, sinC;
+	cosC = cos(rotC*PI_CONST/180);
+	sinC = sin(rotC*PI_CONST/180);
+	newAcA = acA * cosC + acB * sinC;
+	newAcB = acB * cosC - acA * sinC;
+	acA = newAcA;
+	acB = newAcB;
+	return;
 }
 
 void coordinates::flush(){
@@ -208,6 +282,7 @@ void coordinates::flush(){
 	// get avg of previous data
 	avg = getBuffAvg();
 	// record previous velocity
+	data_lock.lock();
 	preVX = vX;
 	preVY = vY;
 	preVZ = vZ;
@@ -237,34 +312,39 @@ void coordinates::flush(){
 		rZ += 360;
 	else if(rZ > 360)
 		rZ -= 360;
+	if(aX == 0 && aY == 0 && aZ == 0){
+		vX = 0;
+		vY = 0;
+		vZ = 0;
+	}
 	// check if velocity should be reset to zero
-	if(max(max(abs(aX), abs(aY)), abs(aZ)) < 0.2 && false)
-		if(velocity_reset_counter != VELOCITY_RESET_VAL)
-			velocity_reset_counter += 1;
-		else{
-			if(first_zero){
-				X = 0;
-				Y = 0;
-				Z = 0;
-				
-                                
-                                
-                                first_zero = false;
-			}
-			vX = 0;
-			vY = 0;
-			vZ = 0;
-			count = 0;
-			cout << "hold velocity at zero..." << endl;
-			return;
-		}
-	else
-		velocity_reset_counter = 0;
+	// if(max(max(abs(aX), abs(aY)), abs(aZ)) < 0.2 && false)
+	// 	if(velocity_reset_counter != VELOCITY_RESET_VAL)
+	// 		velocity_reset_counter += 1;
+	// 	else{
+	// 		if(first_zero){
+	// 			X = 0;
+	// 			Y = 0;
+	// 			Z = 0;
+	//
+  //
+  //
+  //                               first_zero = false;
+	// 		}
+	// 		vX = 0;
+	// 		vY = 0;
+	// 		vZ = 0;
+	// 		count = 0;
+	// 		cout << "hold velocity at zero..." << endl;
+	// 		return;
+	// 	}
+	// else
+	// 	velocity_reset_counter = 0;
 	// accumulate position shift based on velocity
 	X += (preVX + vX) * delta / 2;
 	Y += (preVY + vY) * delta / 2;
 	Z += (preVZ + vZ) * delta / 2;
-
+	data_lock.unlock();
 	//std::cout << delta << std::endl;
 	count = 0;
 }
@@ -289,4 +369,3 @@ data coordinates::getBuffAvg(){
 
 	return avg;
 }
-

@@ -1,7 +1,7 @@
 #include <string>
 #include <iostream>
 #include <cmath>
-//#include <thread>
+#include <thread>
 #include "serial.h"
 #include "json.h"
 //#include "plot.h"
@@ -12,7 +12,7 @@ using namespace std;
 
 int main() {
 	//double ax, ay, az, G;
-	serial_port port("/dev/tty.usbserial-A50285BI");
+	serial_port port("/dev/rfcomm0");
         cout << "x1" << endl;
         ofstream f;
         f.open("log.txt");
@@ -25,11 +25,12 @@ int main() {
 	coordinates mycoord(SAMPLE_SIZE);
 //	DotPlot dot;
 //	std::thread dot_th(&DotPlot::run, &dot);
+	std::thread poll_key_th(&coordinates::pollResetKey, &mycoord, 'd');
 	double x,y,z;
 	x = 0;
 	y = 0;
 	z = 0;
-        cout <<"x2"<< endl;	
+        cout <<"x2"<< endl;
         while(1) {
 		for(int i=0; i< SAMPLE_SIZE; i++){
 			test_json = port.readline();
@@ -57,7 +58,7 @@ int main() {
                 //dot.updateDot(x,y,z);
 	}
 	return 0;
-	
+
 
 	while(1){
 		for(int i=0; i< SAMPLE_SIZE; i++){
@@ -87,14 +88,14 @@ int main() {
 
 	if(parse_success){
 		cout << root << endl;
-	
+
 		cout << endl << endl;
-	
+
 		cout << root["Ac_X"] << endl;
 	}
 	else{
 		cout << "parse fail" << endl;
 	}
-
+	poll_key_th.join();
 	return 0;
 }
